@@ -1,4 +1,4 @@
-﻿---
+---
 title: Installasjon av integrasjonspunkt
 pageid: installasjonavintegrasjonspunkt
 layout: default
