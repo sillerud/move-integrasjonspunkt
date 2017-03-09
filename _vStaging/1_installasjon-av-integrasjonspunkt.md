@@ -16,7 +16,7 @@ isHome: false
 
 ### Installere Java runtime environment (JRE)
 
-Integrasjonspunktet og DeployMangager er Java applikasjoner og krever derfor at man har Java kjøremiljø installert på maskinen dette skal kjøre.
+Integrasjonspunktet og DeployManager er Java applikasjoner og krever derfor at man har Java kjøremiljø installert på maskinen dette skal kjøre.
 For å verifisere om java er installert og hvilken versjon kan du i et kommandolinje vindu bruke kommandoen
 
 ```
@@ -37,7 +37,7 @@ Dersom JCE mangler vil integrasjonspunket stoppe under oppstart og skrive logmel
 ### Virksomhetssertifikat
 
 Integrasjonspunktet bruker virksomhetssertifikat til kryptering og signering av meldinger som går mellom integrasjonpunkter.
-Virksomhetssertifikat som kan benyttes som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](http://www.buypass.no/bedrift/produkter-og-tjenester/buypass-virksomhetssertifikat)
+Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](http://www.buypass.no/bedrift/produkter-og-tjenester/buypass-virksomhetssertifikat)
 
 ### Java Key Store (JKS)
 
@@ -50,7 +50,7 @@ keytool -importkeystore -srckeystore [MY_FILE.p12] -srcstoretype pkcs12
  -deststoretype jks -deststorepass [PASSWORD_JKS] -destalias [ALIAS]
 ```
 
-forklaring på bruk av komandoen finnes [her](https://www.tbs-certificates.co.uk/FAQ/en/626.html)
+forklaring på bruk av kommandoen finnes [her](https://www.tbs-certificates.co.uk/FAQ/en/626.html)
 
 Keytool finner du i
 
@@ -67,7 +67,7 @@ Dette legges senere inn som propertiene, keystorelocation, privatekeypassword, p
 
 Public key (.cer fil) lastes opp til [virksomhetssertifikatserveren](https://beta-meldingsutveksling.difi.no/virksomhetssertifikat/)
 
-public key kan eksporteres fra keystore med komandoen
+public key kan eksporteres fra keystore med kommandoen
 
 ```
 keytool -export -keystore [MY_KEYSTORE.jks] -alias [ALIAS] -file [FILENAME.cer]
@@ -81,14 +81,14 @@ keytool -export -keystore [MY_KEYSTORE.jks] -alias [ALIAS] -file [FILENAME.cer]
 
 ### Oppsett
 
-Start med å opprette en mappe med navn integrajsonspunkt på c:\
+Start med å opprette en mappe med navn integrasjonspunkt på c:\
 
 Last deretter ned integrasjonspunktet fra artifactory (se link i top av dokument) og legg den i overnevnte mappe
 Opprett filen integrasjonspunkt-local.properties på området
 
 ### integrasjonspunkt-local.properties
 
-Følgende verdier settest i integrasjonspunkt-local.properties
+Følgende verdier settes i integrasjonspunkt-local.properties
 
 #### For alle installasjoner
 
@@ -99,7 +99,7 @@ server.port                         |Portnummer integrasjonspunktet skal kjøre 
 difi.move.org.number                |Organisasjonsnummer til din organisasjon (9 siffer)                                                           |123456789
 difi.move.org.keystore.path         |Path til .jks fil                                                                                             |c:\integrajsonspunkt\keystore.jks
 difi.move.org.keystore.password     |Passord til keystore                                                                                          |changeit
-difi.move.org.keystore.alias        |Alieas til virksomhetssertifikatet som brukes i integrasjonspunktet                                           |alias
+difi.move.org.keystore.alias        |Alias til virksomhetssertifikatet som brukes i integrasjonspunktet                                           |alias
 
 
 #### DPO spesifikke
@@ -108,8 +108,8 @@ difi.move.org.keystore.alias        |Alieas til virksomhetssertifikatet som bruk
 ------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------
 difi.move.noarkSystem.endpointURL   |URL integrasjonspunktet finner sak-/arkivsystemets BestEdu tjenester                                          |Se eksempelfil for eksempel
 difi.move.noarkSystem.type          |Sak/-arkivsystem type                                                                                         |ephorte/P360/WebSak/mail
-difi.move.noarkSystem.username\*    |Brukernavn for autentisering mot sakarkivsystem                                                               |svc_sakark
-difi.move.noarkSystem.password\*    |Passord for autentisering mot sakarkivsystem                                                                  |changeit
+difi.move.noarkSystem.username\*    |Brukernavn for autentisering mot sak-/arkivsystem                                                               |svc_sakark
+difi.move.noarkSystem.password\*    |Passord for autentisering mot sak-/arkivsystem                                                                  |changeit
 difi.move.noarkSystem.domain\*      |Domene sakarkivsystemet kjører på                                                                             |
                                     |                                                                                                              |
 difi.move.msh.endpointURL\*\*       |Path til MSH                                                                                                  |
@@ -124,7 +124,7 @@ difi.move.altinn.password           |Passord du satte når du opprettet AltInn s
 \*\* Denne brukes bare dersom du allerede har BestEdu og ønsker å sende filer via gammel MSH til deltakere som ikke er en del av piloten. Integrasjonspunktet vil da opptre som en proxy.
 
 Last ned eksempel for [ephorte](../resources/integrasjonspunkt-local.properties_ephorte), [P360](../resources/integrasjonspunkt-local.properties_360), WebSak
-Lagre filen på området c:\integrajsonspunkt og endre navnet til integrasjonspunkt-local.properties
+Lagre filen på området c:\integrasjonspunkt og endre navnet til integrasjonspunkt-local.properties
 
 
 Når du er ferdig skal strukturen på området se slik ut:
@@ -137,15 +137,15 @@ c:/
 
 ### Opprette bruker til AltInn formidlingstjeneste
 
-> Gjelder DPO
+> Gjelder DPO (Digital post mellom offentlige virksomheter)
 
-Integrasjonspunktet kjører som [datasystem](https://www.altinn.no/no/Portalhjelp/Datasystemer/) mot AltInn's meldingsformidler. Integrsjonspunktet må registeres som et datasystem AltInn's portal. Informasjon om hvordan dette gjøres finnes [her](https://www.altinn.no/no/Portalhjelp/Datasystemer/Registrere-datasystem/).
+Integrasjonspunktet kjører som [datasystem](https://www.altinn.no/no/Portalhjelp/Datasystemer/) mot AltInn's meldingsformidler. Integrasjonspunktet må registeres som et datasystem AltInn's portal. Informasjon om hvordan dette gjøres finnes [her](https://www.altinn.no/no/Portalhjelp/Datasystemer/Registrere-datasystem/).
 
-Under opprettelse av datasystem velger du passord og får tildelt brukerid (ID), disse skal senere brukes i properties filen som beskrives lenger ned
+Under opprettelse av datasystem velger du passord og får tildelt brukerid (ID), disse skal senere brukes i properties filen som beskrives lenger nede.
 
 Eksempel:
 
-Registrere datasysem
+Registrere datasystem
 ![Registrere datasysem i AltInn](../resources/altinnDatasystemRegistrer.PNG)
 
 
@@ -156,7 +156,7 @@ Datasystem registrert
 Informasjon om hvordan du logger på AltInn portal finner du [her](https://www.altinn.no/no/Portalhjelp/Innlogging/).
 
 
-### Konfigurere sak-/arkivsystem til å bruke Integrsjonspunktet
+### Konfigurere sak-/arkivsystem til å bruke Integrasjonspunktet
 
 > Gjelder DPO
 
@@ -165,7 +165,7 @@ Oppsett for ephorte, [P360](../resources/Oppsett360.docx), WebSak
 
 ### Start Integrasjonspunktet
 
-Integrasjonspunktet startes fra kommandolinjen med kommandoen (Kjør som admindistrator)
+Integrasjonspunktet startes fra kommandolinjen med kommandoen (Kjør som administrator)
 
 ```powershell
 java -jar -Dspring.profiles.active=staging -Dapp.logging.enableSSL=false  integrasjonspunkt-[versjon].jar
