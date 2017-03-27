@@ -25,10 +25,14 @@ difi.move.noarkSystem.domain=
 difi.move.altinn.username=
 difi.move.altinn.password=
 
-## Digital post innbygger (Settes kun dersom man bruker DPI via integrasjonspunktet. Fjern utkommentering (#))
+## Digital post innbygger (Settes kun dersom man bruker DPI via integrasjonspunktet og annet sertifikat enn anngitt i difi.move.org.keystore.xxx . Fjern utkommentering (#))
 #difi.move.dpi.keystore.alias= 
 #difi.move.dpi.keystore.path=file: 
 #difi.move.dpi.keystore.password= 
+
+##eInnsyn
+difi.move.nextbest.serviceBus.enable=true
+difi.move.nextbest.serviceBus.sasToken=
 
 ##Dersom du vil endre område log skrives til
 #logging.file=

@@ -92,30 +92,32 @@ Følgende verdier settes i integrasjonspunkt-local.properties
 
 #### For alle installasjoner
 
-**Propertie**                       |**Beskrivelse**                                                                                               |**Eksempel**
-------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------
-server.port                         |Portnummer integrasjonspunktet skal kjøre på (default 9093)                                                   |9093
-                                    |                                                                                                              |
-difi.move.org.number                |Organisasjonsnummer til din organisasjon (9 siffer)                                                           |123456789
-difi.move.org.keystore.path         |Path til .jks fil                                                                                             |c:\integrajsonspunkt\keystore.jks
-difi.move.org.keystore.password     |Passord til keystore                                                                                          |changeit
-difi.move.org.keystore.alias        |Alias til virksomhetssertifikatet som brukes i integrasjonspunktet                                           |alias
+**Propertie**                          |**Beskrivelse**                                                                                               |**Eksempel**
+---------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------
+server.port                            |Portnummer integrasjonspunktet skal kjøre på (default 9093)                                                   |9093
+                                       |                                                                                                              |
+difi.move.org.number                   |Organisasjonsnummer til din organisasjon (9 siffer)                                                           |123456789
+difi.move.org.keystore.path            |Path til .jks fil                                                                                             |c:\integrajsonspunkt\keystore.jks
+difi.move.org.keystore.password        |Passord til keystore                                                                                          |changeit
+difi.move.org.keystore.alias           |Alias til virksomhetssertifikatet som brukes i integrasjonspunktet                                            |alias
+difi.move.nextbest.serviceBus.enable   |Skru på bruk av eInnsynsmeldinger                                                                             |true
+difi.move.nextbest.serviceBus.sasToken |Token som må brukes for tilang til meldingsformidler                                                          |
 
 
 #### DPO spesifikke
 
-**Propertie**                       |**Beskrivelse**                                                                                               |**Eksempel**
-------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------
-difi.move.noarkSystem.endpointURL   |URL integrasjonspunktet finner sak-/arkivsystemets BestEdu tjenester                                          |Se eksempelfil for eksempel
-difi.move.noarkSystem.type          |Sak/-arkivsystem type                                                                                         |ephorte/P360/WebSak/mail
-difi.move.noarkSystem.username\*    |Brukernavn for autentisering mot sak-/arkivsystem                                                               |svc_sakark
-difi.move.noarkSystem.password\*    |Passord for autentisering mot sak-/arkivsystem                                                                  |changeit
-difi.move.noarkSystem.domain\*      |Domene sakarkivsystemet kjører på                                                                             |
-                                    |                                                                                                              |
-difi.move.msh.endpointURL\*\*       |Path til MSH                                                                                                  |
-                                    |                                                                                                              |
-difi.move.altinn.username           |Brukernavnet du får ved [opprettelse av AltInn systembruker](#opprette-bruker-til-altinn-formidlingstjeneste) |123456
-difi.move.altinn.password           |Passord du satte når du opprettet AltInn systembruker                                                         |changeit
+**Propertie**                          |**Beskrivelse**                                                                                               |**Eksempel**
+---------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------
+difi.move.noarkSystem.endpointURL      |URL integrasjonspunktet finner sak-/arkivsystemets BestEdu tjenester                                          |Se eksempelfil for eksempel
+difi.move.noarkSystem.type             |Sak/-arkivsystem type                                                                                         |ephorte/P360/WebSak/mail
+difi.move.noarkSystem.username\*       |Brukernavn for autentisering mot sak-/arkivsystem                                                             |svc_sakark
+difi.move.noarkSystem.password\*       |Passord for autentisering mot sak-/arkivsystem                                                                |changeit
+difi.move.noarkSystem.domain\*         |Domene sakarkivsystemet kjører på                                                                             |
+                                       |                                                                                                              |
+difi.move.msh.endpointURL\*\*          |Path til MSH                                                                                                  |
+                                       |                                                                                                              |
+difi.move.altinn.username              |Brukernavnet du får ved [opprettelse av AltInn systembruker](#opprette-bruker-til-altinn-formidlingstjeneste) |123456
+difi.move.altinn.password              |Passord du satte når du opprettet AltInn systembruker                                                         |changeit
 
 
 
