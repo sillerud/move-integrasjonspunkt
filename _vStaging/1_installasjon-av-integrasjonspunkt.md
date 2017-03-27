@@ -168,7 +168,7 @@ Oppsett for ephorte, [P360](../resources/Oppsett360.docx), WebSak
 Integrasjonspunktet startes fra kommandolinjen med kommandoen (Kjør som administrator)
 
 ```powershell
-java -jar -Dspring.profiles.active=staging -Dapp.logging.enableSSL=false  integrasjonspunkt-[versjon].jar
+java -jar -Dspring.profiles.active=staging integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false 
 ```
 
 
