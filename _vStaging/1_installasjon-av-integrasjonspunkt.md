@@ -76,9 +76,9 @@ keytool -export -keystore [MY_KEYSTORE.jks] -alias [ALIAS] -file [FILENAME.cer]
 ### Brannmursåpninger
 
 Sentrale tjenester(Adresseoppslag, senteral konfigurasjon mm.)
-+ 93.94.10.30
-+ 93.94.10.45
-+ 93.94.10.5
++ 93.94.10.30:443
++ 93.94.10.45:443
++ 93.94.10.5:443
 
 Logging
 + 93.94.10.18:8300
