@@ -109,10 +109,27 @@ difi.move.nextbest.serviceBus.enable   |Skru på bruk av eInnsynsmeldinger      
 difi.move.nextbest.serviceBus.sasToken |Token som må brukes for tilang til meldingsformidler                                                          |
 
 
+#### DPV spesifikke
+
+**Propertie**                          |**Beskrivelse**                                                                                               |**Eksempel**
+---------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------
+difi.move.feature.enableDPV=true       |Skrur på muligheten til å sende meldinger til private virksomhter via AltInn                                  |true
+difi.move.altinnPTV.username           |Brukernavn for AltInn tjenesteeier                                                                            |
+difi.move.altinnPTV.password           |Passord for overnevnte bruker                                                                                 |
+
+
+#### DPI spesifikke
+
+**Propertie**                          |**Beskrivelse**                                                                                               |**Eksempel**
+---------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------
+difi.move.feature.enableDPI=true       |Skrur på muligheten til å sende meldinger til innbygger                                                       |true
+
+
 #### DPO spesifikke
 
 **Propertie**                          |**Beskrivelse**                                                                                               |**Eksempel**
 ---------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------
+difi.move.feature.enableDPO=true       |Skrur på muligheten til å sende og motta DPO meldinger vi integrasjonspunktet                                 |true
 difi.move.noarkSystem.endpointURL      |URL integrasjonspunktet finner sak-/arkivsystemets BestEdu tjenester                                          |Se eksempelfil for eksempel
 difi.move.noarkSystem.type             |Sak/-arkivsystem type                                                                                         |ephorte/P360/WebSak/mail
 difi.move.noarkSystem.username\*       |Brukernavn for autentisering mot sak-/arkivsystem                                                             |svc_sakark
@@ -123,7 +140,6 @@ difi.move.msh.endpointURL\*\*          |Path til MSH                            
                                        |                                                                                                              |
 difi.move.altinn.username              |Brukernavnet du får ved [opprettelse av AltInn systembruker](#opprette-bruker-til-altinn-formidlingstjeneste) |123456
 difi.move.altinn.password              |Passord du satte når du opprettet AltInn systembruker                                                         |changeit
-
 
 
 \* Autentisering mot sakarkivsystem benyttes av P360
@@ -147,6 +163,8 @@ c:/
 > Gjelder DPO (Digital post mellom offentlige virksomheter)
 
 Integrasjonspunktet kjører som [datasystem](https://www.altinn.no/no/Portalhjelp/Datasystemer/) mot AltInn's meldingsformidler. Integrasjonspunktet må registeres som et datasystem AltInn's portal. Informasjon om hvordan dette gjøres finnes [her](https://www.altinn.no/no/Portalhjelp/Datasystemer/Registrere-datasystem/).
+
+Når du oppretter datasystemet er det viktig at det gjøres av person som kan representere virksomheten. Hvordan man repreenterer virksomehen kan du lese [her](https://www.altinn.no/no/Portalhjelp/Hvordan-representere-andre/).
 
 Under opprettelse av datasystem velger du passord og får tildelt brukerid (ID), disse skal senere brukes i properties filen som beskrives lenger nede.
 
