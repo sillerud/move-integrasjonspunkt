@@ -95,6 +95,8 @@ Opprett filen integrasjonspunkt-local.properties på området
 
 Følgende verdier settes i integrasjonspunkt-local.properties
 
+NB: Benytt skråstrek (/) eller dobbel omvendt skråstrek (\\\\) ssom resursdeler når dere angir filer og mapper.
+
 #### For alle installasjoner
 
 **Propertie**                          |**Beskrivelse**                                                                                               |**Eksempel**
@@ -102,7 +104,7 @@ Følgende verdier settes i integrasjonspunkt-local.properties
 server.port                            |Portnummer integrasjonspunktet skal kjøre på (default 9093)                                                   |9093
                                        |                                                                                                              |
 difi.move.org.number                   |Organisasjonsnummer til din organisasjon (9 siffer)                                                           |123456789
-difi.move.org.keystore.path            |Path til .jks fil                                                                                             |c:\integrajsonspunkt\keystore.jks
+difi.move.org.keystore.path            |Path til .jks fil                                                                                             |c:/integrajsonspunkt/keystore.jks
 difi.move.org.keystore.password        |Passord til keystore                                                                                          |changeit
 difi.move.org.keystore.alias           |Alias til virksomhetssertifikatet som brukes i integrasjonspunktet                                            |alias
 difi.move.nextbest.serviceBus.enable   |Skru på bruk av eInnsynsmeldinger                                                                             |true
