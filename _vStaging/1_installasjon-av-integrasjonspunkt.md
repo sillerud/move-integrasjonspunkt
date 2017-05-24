@@ -36,6 +36,9 @@ Dersom JCE mangler vil integrasjonspunket stoppe under oppstart og skrive logmel
 
 ### Virksomhetssertifikat
 
+NB! Testmiljø krever testsertifikat. Produksjonsertifikat vil ikke virke i test
+
+
 Integrasjonspunktet bruker virksomhetssertifikat til kryptering og signering av meldinger som går mellom integrasjonpunkter.
 Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](http://www.buypass.no/bedrift/produkter-og-tjenester/buypass-virksomhetssertifikat)
 
@@ -65,7 +68,7 @@ Dette legges senere inn som propertiene, keystorelocation, privatekeypassword, p
 
 ### Laste opp public virksomhetssertifikat
 
-Public key (.cer fil) lastes opp til [virksomhetssertifikatserveren](https://beta-meldingsutveksling.difi.no/virksomhetssertifikat/)
+Public key (.cer fil) lastes opp til [virksomhetssertifikatserveren for test](https://beta-meldingsutveksling.difi.no/virksomhetssertifikat/) og [virksomhetssertifikatserveren for produksjon](https://meldingsutveksling.difi.no/virksomhetssertifikat/)
 
 public key kan eksporteres fra keystore med kommandoen
 
@@ -95,7 +98,7 @@ Opprett filen integrasjonspunkt-local.properties på området
 
 Følgende verdier settes i integrasjonspunkt-local.properties
 
-NB: Benytt skråstrek (/) eller dobbel omvendt skråstrek (\\\\) ssom resursdeler når dere angir filer og mapper.
+NB: Benytt skråstrek (/) eller dobbel omvendt skråstrek (\\\\) som resursdeler når dere angir filbaner.
 
 #### For alle installasjoner
 
