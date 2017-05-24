@@ -111,7 +111,7 @@ difi.move.org.keystore.path            |Path til .jks fil                       
 difi.move.org.keystore.password        |Passord til keystore                                                                                          |changeit
 difi.move.org.keystore.alias           |Alias til virksomhetssertifikatet som brukes i integrasjonspunktet                                            |alias
 difi.move.nextbest.serviceBus.enable   |Skru på bruk av eInnsynsmeldinger                                                                             |true
-difi.move.nextbest.serviceBus.sasToken |Token som må brukes for tilang til meldingsformidler                                                          |
+difi.move.nextbest.serviceBus.sasToken |Token som må brukes for tilang til meldingsformidler                                                          |*Se infobrev om einnsyn*
 
 
 #### DPV spesifikke
