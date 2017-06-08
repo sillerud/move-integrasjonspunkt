@@ -153,7 +153,7 @@ difi.move.altinn.password              |Passord du satte når du opprettet AltIn
 
 \*\* Denne brukes bare dersom du allerede har BestEdu og ønsker å sende filer via gammel MSH til deltakere som ikke er en del av piloten. Integrasjonspunktet vil da opptre som en proxy.
 
-Last ned eksempel for [ephorte](../resources/integrasjonspunkt-local.properties_ephorte), [P360](../resources/integrasjonspunkt-local.properties_360), WebSak
+Last ned eksempel for [ephorte](../resources/integrasjonspunkt-local.properties_ephorte), [P360](../resources/integrasjonspunkt-local.properties_360), [WebSak](../resources/integrasjonspunkt-local.properties_websak)
 Lagre filen på området c:\integrasjonspunkt og endre navnet til integrasjonspunkt-local.properties
 
 
