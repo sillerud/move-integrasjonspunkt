@@ -1,6 +1,7 @@
 #Fyll inn lokale vedier der de mangler
 #fjern _ephorte fra filnavn og lagre filen. navnet skal være: integrasjonspunkt-local.properties
 
+
 server.port=9093
 difi.move.org.number=
 
@@ -8,21 +9,28 @@ difi.move.org.keystore.alias=
 difi.move.org.keystore.password=
 difi.move.org.keystore.path=file:
 
-##eInnsyn
+## eInnsyn
+##--------
 difi.move.nextbest.serviceBus.enable=true
 difi.move.nextbest.serviceBus.sasToken=
 
-## NOARK settings. Bytt <servernavn> med navnet på serveren din ePhorte installsjon kjører
+
+## Digital post mellom offentlige virksomehter (Settes kun dersom man bruker DPO. Fjern utkommentering (#))
+##--------------------------------------------
+#difi.move.feature.enableDPO=true
 #difi.move.noarkSystem.type=ePhorte
 #difi.move.noarkSystem.endpointURL=http://<servernavn>:<port>/ePhorteWeb/shared/webservices/edu/ephorteedu.asmx
 
 #difi.move.altinn.username=
 #difi.move.altinn.password=
 
+## MSH (settes kun dersom du har MSH, Integrasjonspunktet blir proxy mot gammel installasjon. Fjern utkommentering (#) )
+#difi.move.msh.endpointURL=
+
+
 ## Digital post innbygger (Settes kun dersom man bruker DPI via integrasjonspunktet og annet sertifikat enn anngitt i difi.move.org.keystore.xxx . Fjern utkommentering (#))
-#difi.move.dpi.keystore.alias= 
-#difi.move.dpi.keystore.path=file: 
-#difi.move.dpi.keystore.password= 
+##-----------------------
+#difi.move.feature.enableDPI=true
 #difi.move.dpi.email.varslingstekst=Du har fått et nytt brev fra x i din digitale postkasse
 #difi.move.dpi.sms.varslingstekst=Nytt brev fra x i din digital postkasse
 #difi.move.dpi.feature.enableEmailNotification=true
@@ -30,12 +38,20 @@ difi.move.nextbest.serviceBus.sasToken=
 #difi.move.dpi.securityLevel=3
 
 ##Digital post private virksomheter (Settes kun dersom man bruker DPV via integrasjonspunktet. Fjern utkommentering (#))
+##---------------------------------
 #difi.move.feature.enableDPV=true
 #difi.move.altinnPTV.username=
 #difi.move.altinnPTV.password= 
 
-##MSH (settes kun dersom du har MSH, Integrasjonspunktet blir proxy mot gammel installasjon. Fjern utkommentering (#) )
-#difi.move.msh.endpointURL=
 
-##Dersom du vil endre område log skrives til
-#logging.file=
+## FIKS - SvarUt/SvarInn (Settes kun ved bruk av SvarUt/SvarInn)
+##----------------------
+#difi.move.feature.enableDPF=true
+
+## SvarInn (mottaker)
+#difi.move.fiks.inn.username=
+#difi.move.fiks.inn.password=
+
+## SvarUt (avsender)
+#difi.move.fiks.ut.username=
+#difi.move.fiks.ut.password=
