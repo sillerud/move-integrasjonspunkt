@@ -25,8 +25,8 @@ difi.move.nextbest.serviceBus.sasToken=
 #difi.move.noarkSystem.password=
 #difi.move.noarkSystem.domain=
 
-#difi.move.altinn.username=
-#difi.move.altinn.password=
+#difi.move.dpo.username=
+#difi.move.dpo.password=
 
 ## MSH (settes kun dersom du har MSH, Integrasjonspunktet blir proxy mot gammel installasjon. Fjern utkommentering (#) )
 #difi.move.msh.endpointURL=
@@ -45,8 +45,8 @@ difi.move.nextbest.serviceBus.sasToken=
 ##Digital post private virksomheter (Settes kun dersom man bruker DPV via integrasjonspunktet. Fjern utkommentering (#))
 ##---------------------------------
 #difi.move.feature.enableDPV=true
-#difi.move.altinnPTV.username=
-#difi.move.altinnPTV.password=
+#difi.move.dpv.username=
+#difi.move.dpv.password=
 
 
 ## FIKS - SvarUt/SvarInn (Settes kun ved bruk av SvarUt/SvarInn)

@@ -121,8 +121,8 @@ difi.move.nextbest.serviceBus.sasToken |Token som må brukes for tilang til meld
 **Propertie**                          |**Beskrivelse**                                                                                               |**Eksempel**
 ---------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------
 difi.move.feature.enableDPV=true       |Skrur på muligheten til å sende meldinger til private virksomhter via AltInn                                  |true
-difi.move.altinnPTV.username           |Brukernavn for AltInn tjenesteeier                                                                            |
-difi.move.altinnPTV.password           |Passord for overnevnte bruker                                                                                 |
+difi.move.dpv.username           |Brukernavn for AltInn tjenesteeier                                                                            |
+difi.move.dpv.password           |Passord for overnevnte bruker                                                                                 |
 
 
 #### DPI spesifikke
@@ -145,8 +145,8 @@ difi.move.noarkSystem.domain\*         |Domene sakarkivsystemet kjører på     
                                        |                                                                                                              |
 difi.move.msh.endpointURL\*\*          |Path til MSH                                                                                                  |
                                        |                                                                                                              |
-difi.move.altinn.username              |Brukernavnet du får ved [opprettelse av AltInn systembruker](#opprette-bruker-til-altinn-formidlingstjeneste) |123456
-difi.move.altinn.password              |Passord du satte når du opprettet AltInn systembruker                                                         |changeit
+difi.move.dpo.username              |Brukernavnet du får ved [opprettelse av AltInn systembruker](#opprette-bruker-til-altinn-formidlingstjeneste) |123456
+difi.move.dpo.password              |Passord du satte når du opprettet AltInn systembruker                                                         |changeit
 
 
 \* Autentisering mot sakarkivsystem benyttes av P360
