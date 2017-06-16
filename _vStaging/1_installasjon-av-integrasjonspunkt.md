@@ -16,7 +16,7 @@ isHome: false
 
 ### Installere Java runtime environment (JRE)
 
-Integrasjonspunktet og DeployManager er Java applikasjoner og krever derfor at man har Java kjøremiljø installert på maskinen dette skal kjøre.
+Integrasjonspunktet er en Java applikasjon og krever derfor at man har Java kjøremiljø installert på serveren den skal kjøre.
 For å verifisere om java er installert og hvilken versjon kan du i et kommandolinje vindu bruke kommandoen
 
 ```
