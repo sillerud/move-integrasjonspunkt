@@ -81,12 +81,25 @@ keytool -export -keystore [MY_KEYSTORE.jks] -alias [ALIAS] -file [FILENAME.cer]
 ### Brannmursåpninger
 
 Sentrale tjenester(Adresseoppslag, senteral konfigurasjon mm.)
-+ 93.94.10.30:443
-+ 93.94.10.45:443
-+ 93.94.10.5:443
++ beta-meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
+
+Id-portens autentiseringstjeneste
++ oidc-ver2.difi.no -> 146.192.252.152:443
 
 Logging
 + 93.94.10.18:8300
+
+Meldingsformidler DPO og DVP
++ www.altinn.no -> 79.171.86.33:443
+
+Meldingsformidler eInnsyn
++ move-dpe.servicebus.windows.net -> *.cloudapp.net
+
+Meldingsformidler DPI
++ qaoffentlig.meldingsformidler.digipost.no -> 146.192.168.18:443, 146.192.168.19:443
+
+Meldingsformidler KS SvarUt/SvarInn
++ test.svarut.ks.no -> 193.161.160.165:443
 
 
 ### Oppsett
