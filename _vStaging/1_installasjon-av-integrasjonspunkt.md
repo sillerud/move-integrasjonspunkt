@@ -6,15 +6,32 @@ description: Beskrivelse av oppsett av integrasjonspunktet.
 isHome: false
 ---
 
-### Krav til kjøremiljø
+eInnsyn er en prosess der statelige virksomheter gjør metadata for korrespondanse tilgjengelig for offentligheten. Integrasjonspunktet fungerer som et bindeledd mellom eInnsynsklienten brukt av arkivarene og det sentrale eInnsynsystemet.
 
-+ Java 8 med JCE installert
+For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følgende: 
+
+
+# Dette gjør du før installasjon av Integrasjonspunktet
+
 + 3x tilgjengelig minne i forhold til største meldinger ønsket sendt
 + Nødvendige brannmursåpninger
++ Java 8 med JCE installert
++ Test virksomhetssertifikat utstedt av Buypass eller Commfides. [Les mer] ()
 + BestEdu ekspederingskanal skrudd på i sak-/arkivsystem
++ Tips: Installer integrasjonspunktet og eInnsynsklient på samme server.
 
+### 1. Brannmuråpninger for eInnsyn
 
-### Installere Java runtime environment (JRE)
+Sentrale tjenester(Adresseoppslag, senteral konfigurasjon mm.)
++ beta-meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
+
+Id-portens autentiseringstjeneste
++ oidc-ver2.difi.no -> 146.192.252.152:443
+
+Meldingsformidler eInnsyn
++ move-dpe.servicebus.windows.net -> *.cloudapp.net
+
+### 2. Installere Java runtime environment (JRE)
 
 Integrasjonspunktet er en Java applikasjon og krever derfor at man har Java kjøremiljø installert på serveren den skal kjøre.
 For å verifisere om java er installert og hvilken versjon kan du i et kommandolinje vindu bruke kommandoen
@@ -27,25 +44,39 @@ Meldingsformidlingsapplikasjonen krever minimum versjon 1.8.0
 
 Dersom Java ikke er installert eller versjonen er for gammel, kan ny versjon lastes ned [her](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) og installeres.
 
-### Installere Java Cryptography Extension (JCE)
+### 3. Installere Java Cryptography Extension (JCE)
 
 Bruker du ny versjon av Java, må ny JCE installeres. Last ned JCE fra [Oracles sider](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html).
 
 Det er ikke noen enkel måte å sjekke om Java Cryptography Extension er installert. Ofte kan det enkleste være å bare laste ned og installere JCE, men om du ønsker å sjekke, kan du gå til mappen ```$JAVA_HOME/jre/lib/security``` og sjekke om filene ```US_export_policy.jar``` og ```local_policy.jar``` har nyere dato enn øvrige filer. Hvis datoen er lik, må du installere JCE.
 Dersom JCE mangler vil integrasjonspunket stoppe under oppstart og skrive logmelding om manglende JCE.
 
-### Virksomhetssertifikat
+### 4. Virksomhetssertifikat
 
-NB! Testmiljø krever testsertifikat. Produksjonsertifikat vil ikke virke i test
+NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test
+NB2! Bruk sertifikatet merkt som **Autentiseringssertifikatet**
 
 
 Integrasjonspunktet bruker virksomhetssertifikat til kryptering og signering av meldinger som går mellom integrasjonpunkter.
 Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](http://www.buypass.no/bedrift/produkter-og-tjenester/buypass-virksomhetssertifikat)
 
-### Java Key Store (JKS)
+Når du har fått sertifikatet, må det legges inn på serveren du kjører integrasjonspunket. Noter deg lokasjonen for sertifikatet, samt brukernavn og passord. 
+Dette legges senere inn som propertiene, keystorelocation, privatekeypassword, privatekeyalias
 
-Virksomhetssertifikatene må ligge i en Java key store.
+Sertifikatet må ligge i en Java Key Store (JKS).
+
+### 5. Java Key Store (JKS)
+
+NB! Pass på at passord på sertifikatet og keystore er like.
+NB! Unngå æøå i alias-navn.
+
+Virksomhetssertifikatene må ligge i en Java key store. 
+
+Konvertering av sertifikat kan gjøres via kommando i kommandovindu, eller ved bruk av gratis programvare
+[keystore explorer.](http://keystore-explorer.org/downloads.html) 
+
 Dersom du har p12 sertifikat kan dette konverteres til jks format slik:
+
 
 ```
 keytool -importkeystore -srckeystore [MY_FILE.p12] -srcstoretype pkcs12
@@ -63,10 +94,7 @@ Keytool finner du i
 
 (f.eks C:\Program Files\Java\jre1.8.0_101\bin)
 
-Når du har fått sertifikatet, må det legges inn på serveren du kjører integrasjonspunket. Noter deg lokasjonen for sertifikatet, samt brukernavn og passord.
-Dette legges senere inn som propertiene, keystorelocation, privatekeypassword, privatekeyalias
-
-### Laste opp public virksomhetssertifikat
+### 6. Laste opp public virksomhetssertifikat
 
 Public key (.cer fil) kan sendes på e-post til [idporten@difi.no](mailto:idporten@difi.no). Dette er en midlertidig løsning og vil bli erstattet av en selvbehandlingstjeneste snart.
 
@@ -78,28 +106,11 @@ public key kan eksporteres fra keystore med kommandoen
 keytool -export -keystore [MY_KEYSTORE.jks] -alias [ALIAS] -file [FILENAME.cer]
 ```
 
-### Brannmursåpninger
+# Installasjon av Integrasjonspunktet
 
-Sentrale tjenester(Adresseoppslag, senteral konfigurasjon mm.)
-+ beta-meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
+1. Last ned properties filen relevant til ditt sak-arkivsystem: 
+2. Fyll inn følgande felt
 
-Id-portens autentiseringstjeneste
-+ oidc-ver2.difi.no -> 146.192.252.152:443
-
-Logging
-+ 93.94.10.18:8300
-
-Meldingsformidler DPO og DVP
-+ www.altinn.no -> 79.171.86.33:443
-
-Meldingsformidler eInnsyn
-+ move-dpe.servicebus.windows.net -> *.cloudapp.net
-
-Meldingsformidler DPI
-+ qaoffentlig.meldingsformidler.digipost.no -> 146.192.168.18:443, 146.192.168.19:443
-
-Meldingsformidler KS SvarUt/SvarInn
-+ test.svarut.ks.no -> 193.161.160.165:443
 
 
 ### Oppsett
@@ -122,7 +133,7 @@ NB: Benytt skråstrek (/) eller dobbel omvendt skråstrek (\\\\) som resursdeler
 server.port                            |Portnummer integrasjonspunktet skal kjøre på (default 9093)                                                   |9093
                                        |                                                                                                              |
 difi.move.org.number                   |Organisasjonsnummer til din organisasjon (9 siffer)                                                           |123456789
-difi.move.org.keystore.path            |Path til .jks fil                                                                                             |c:/integrajsonspunkt/keystore.jks
+difi.move.org.keystore.path            |Path til .jks fil                                                                                             |c:/integrasjonspunkt/keystore.jks
 difi.move.org.keystore.password        |Passord til keystore                                                                                          |changeit
 difi.move.org.keystore.alias           |Alias til virksomhetssertifikatet som brukes i integrasjonspunktet                                            |alias
 difi.move.nextbest.serviceBus.enable   |Skru på bruk av eInnsynsmeldinger                                                                             |true
@@ -207,6 +218,28 @@ Informasjon om hvordan du logger på AltInn portal finner du [her](https://www.a
 
 Oppsett for ephorte, [P360](../resources/Oppsett360.docx), WebSak
 
+### Brannmursåpninger
+
+Sentrale tjenester(Adresseoppslag, senteral konfigurasjon mm.)
++ beta-meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
+
+Id-portens autentiseringstjeneste
++ oidc-ver2.difi.no -> 146.192.252.152:443
+
+Meldingsformidler eInnsyn
++ move-dpe.servicebus.windows.net -> *.cloudapp.net
+
+Logging
++ 93.94.10.18:8300
+
+Meldingsformidler DPO og DVP
++ www.altinn.no -> 79.171.86.33:443
+
+Meldingsformidler DPI
++ qaoffentlig.meldingsformidler.digipost.no -> 146.192.168.18:443, 146.192.168.19:443
+
+Meldingsformidler KS SvarUt/SvarInn
++ test.svarut.ks.no -> 193.161.160.165:443
 
 ### Start Integrasjonspunktet
 
