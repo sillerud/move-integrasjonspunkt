@@ -11,7 +11,7 @@ eInnsyn er en prosess der statelige virksomheter gjør metadata for korrespondan
 For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følgende: 
 
 
-# Dette gjør du før installasjon av Integrasjonspunktet
+## Dette gjør du før installasjon av Integrasjonspunktet
 
 + 3x tilgjengelig minne i forhold til største meldinger ønsket sendt
 + Nødvendige brannmursåpninger
