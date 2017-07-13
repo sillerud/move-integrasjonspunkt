@@ -29,9 +29,9 @@ Konvertering av sertifikat kan gjøres via kommando i kommandovindu, eller ved b
 Dersom du har p12 sertifikat
 1. Åpne sertifikatet i Keystore Explorer 
 2. På arbeidslinjen på toppen av vinduet:
-  - Tools
-  - Change Keystore type
-  - Velg: JKS.
+    - Tools
+    - Change Keystore type
+      - Velg: JKS.
   
 **Endre passord på sertifikat eller keystore:**
 
