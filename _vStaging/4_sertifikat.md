@@ -4,8 +4,9 @@
 
 NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test
 
-NB2! Bruk sertifikatet merkt som **Autentiseringssertifikatet**
+NB2! Bruk sertifikatet merket som **Autentiseringssertifikatet**
 
+NB3! Sertifikatet må ligge i en Java Key Store (JKS)
 
 Integrasjonspunktet bruker virksomhetssertifikat til kryptering og signering av meldinger som går mellom integrasjonpunkter.
 Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](http://www.buypass.no/bedrift/produkter-og-tjenester/buypass-virksomhetssertifikat)
@@ -13,7 +14,7 @@ Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfi
 Når du har fått sertifikatet, må det legges inn på serveren du kjører integrasjonspunket. Noter deg lokasjonen for sertifikatet, samt brukernavn og passord. 
 Dette legges senere inn integrasjonspunkt-local.properties som propertiene, keystorelocation, privatekeypassword, privatekeyalias
 
-Sertifikatet må ligge i en Java Key Store (JKS).
+
 
 ### 5. Konvertering til Java Key Store (JKS)
 
