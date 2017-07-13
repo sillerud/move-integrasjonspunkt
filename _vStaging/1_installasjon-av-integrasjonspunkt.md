@@ -108,7 +108,7 @@ public key kan eksporteres fra keystore med kommandoen
 keytool -export -keystore [MY_KEYSTORE.jks] -alias [ALIAS] -file [FILENAME.cer]
 ```
 
-# Installasjon av Integrasjonspunktet
+## Installasjon av Integrasjonspunktet
 
 1. Last ned properties filen relevant til ditt sak-arkivsystem: 
 2. Fyll inn følgande felt
