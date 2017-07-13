@@ -3,6 +3,7 @@
 ### om virksomhetssertifikat
 
 NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test
+
 NB2! Bruk sertifikatet merkt som **Autentiseringssertifikatet**
 
 
