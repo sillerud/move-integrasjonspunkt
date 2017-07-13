@@ -8,11 +8,11 @@ isHome: false
 
 ### Om virksomhetssertifikat
 
-NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test
+**NB!** Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test
 
-NB2! Bruk sertifikatet merket som **Autentiseringssertifikatet**
+**NB2!** Bruk sertifikatet merket som **Autentiseringssertifikatet**
 
-NB3! Sertifikatet må ligge i en Java Key Store (JKS)
+**NB3!** Sertifikatet må ligge i en Java Key Store (JKS)
 
 Integrasjonspunktet bruker virksomhetssertifikat til kryptering og signering av meldinger som går mellom integrasjonpunkter.
 Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](http://www.buypass.no/bedrift/produkter-og-tjenester/buypass-virksomhetssertifikat)
@@ -24,9 +24,9 @@ Dette legges senere inn integrasjonspunkt-local.properties som propertiene, keys
 
 ### Konvertering til Java Key Store (JKS)
 
-NB! Passord på keystore og sertifikat **MÅ** være like
+**NB!** Passord på keystore og sertifikat **MÅ** være like
 
-NB! Unngå æøå i alias-navn.
+**NB!** Unngå æøå i alias-navn.
 
 Virksomhetssertifikatene **må** ligge i en Java key store. 
 
