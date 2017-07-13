@@ -58,57 +58,20 @@ Dersom JCE mangler vil integrasjonspunket stoppe under oppstart og skrive logmel
 NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test
 NB2! Bruk sertifikatet merkt som **Autentiseringssertifikatet**
 
+**Å gjøre:**
+1. Anskaffe test virksomhetssertifikat
+2. Legge sertifikat i Java Key Store.
+3. Sende sertifikat til Difi.
+
+**Hvordan?**
+
+[VEILEDNING: Les alt om håndtering av virksomhetssertifikat her](http://difi.github.io/move-integrasjonspunkt/vStaging/#/4_sertifikat)
 
 Integrasjonspunktet bruker virksomhetssertifikat til kryptering og signering av meldinger som går mellom integrasjonpunkter.
 Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](http://www.buypass.no/bedrift/produkter-og-tjenester/buypass-virksomhetssertifikat)
 
-Når du har fått sertifikatet, må det legges inn på serveren du kjører integrasjonspunket. Noter deg lokasjonen for sertifikatet, samt brukernavn og passord. 
-Dette legges senere inn som propertiene, keystorelocation, privatekeypassword, privatekeyalias
 
-Sertifikatet må ligge i en Java Key Store (JKS).
-
-### 5. Java Key Store (JKS)
-
-NB! Pass på at passord på sertifikatet og keystore er like.
-NB! Unngå æøå i alias-navn.
-
-Virksomhetssertifikatene må ligge i en Java key store. 
-
-Konvertering av sertifikat kan gjøres via kommando i kommandovindu, eller ved bruk av gratis programvare
-[keystore explorer.](http://keystore-explorer.org/downloads.html) 
-
-Dersom du har p12 sertifikat kan dette konverteres til jks format slik:
-
-
-```
-keytool -importkeystore -srckeystore [MY_FILE.p12] -srcstoretype pkcs12
- -srcalias [ALIAS_SRC] -destkeystore [MY_KEYSTORE.jks]
- -deststoretype jks -deststorepass [PASSWORD_JKS] -destalias [ALIAS]
-```
-
-forklaring på bruk av kommandoen finnes [her](https://www.tbs-certificates.co.uk/FAQ/en/626.html)
-
-Keytool finner du i
-
-```
-%JAVA_HOME%/bin
-```
-
-(f.eks C:\Program Files\Java\jre1.8.0_101\bin)
-
-### 6. Laste opp public virksomhetssertifikat
-
-Public key (.cer fil) kan sendes på e-post til [idporten@difi.no](mailto:idporten@difi.no). Dette er en midlertidig løsning og vil bli erstattet av en selvbehandlingstjeneste snart.
-
-<!-- Public key (.cer fil) lastes opp til [virksomhetssertifikatserveren for test](https://beta-meldingsutveksling.difi.no/virksomhetssertifikat/) og [virksomhetssertifikatserveren for produksjon](https://meldingsutveksling.difi.no/virksomhetssertifikat/) -->
-
-public key kan eksporteres fra keystore med kommandoen
-
-```
-keytool -export -keystore [MY_KEYSTORE.jks] -alias [ALIAS] -file [FILENAME.cer]
-```
-
-## Installasjon av Integrasjonspunktet
+## Installasjon av Integrasjonspunktet *(under arbeid)*
 
 1. Last ned properties filen relevant til ditt sak-arkivsystem: 
 2. Fyll inn følgande felt
