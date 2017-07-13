@@ -31,7 +31,7 @@ Dersom du har p12 sertifikat
 2. På arbeidslinjen på toppen av vinduet:
     - Tools
     - Change Keystore type
-      - Velg: JKS.
+     - Velg: JKS.
   
 **Endre passord på sertifikat eller keystore:**
 
@@ -40,9 +40,9 @@ Det er viktig at passordet på keystore er likt passordet på sertifikatet for a
 *Endre keystore passord*
 1. Åpne opp keystoren i JKS.
 2. På arbeidslinjen på toppen av vinduet:
-  - Tools
-  - Set KeyStore password
-  - skriv inn nytt passord
+    - Tools
+    - Set KeyStore password
+    - skriv inn nytt passord
   
 *Endre sertifikat passord*
 1. Åpne opp keystore i JKS. 
