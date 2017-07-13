@@ -1,6 +1,12 @@
+---
+title: Virksomhetssertifikat
+pageid: virksomhetssertifikat
+layout: default
+description: Virksomhetssertifikat
+isHome: false
+---
 
-
-### om virksomhetssertifikat
+### Om virksomhetssertifikat
 
 NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test
 
@@ -16,9 +22,10 @@ Dette legges senere inn integrasjonspunkt-local.properties som propertiene, keys
 
 
 
-### 5. Konvertering til Java Key Store (JKS)
+### Konvertering til Java Key Store (JKS)
 
 NB! Passord på keystore og sertifikat **MÅ** være like
+
 NB! Unngå æøå i alias-navn.
 
 Virksomhetssertifikatene **må** ligge i en Java key store. 
@@ -71,7 +78,7 @@ Keytool finner du i
 
 (f.eks C:\Program Files\Java\jre1.8.0_101\bin)
 
-### 6. Laste opp public virksomhetssertifikat
+### Laste opp public virksomhetssertifikat
 
 For at Difi skal vite hvem sitt Integrasjonspunkt det er så må sertifikatet lastes opp hos Difi. Dette gjøres ved å sende 
 Public key (.cer fil) på e-post til [idporten@difi.no](mailto:idporten@difi.no). Dette er en midlertidig løsning og vil bli erstattet av en selvbehandlingstjeneste snart.
