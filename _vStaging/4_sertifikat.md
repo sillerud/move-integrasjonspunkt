@@ -80,6 +80,8 @@ Keytool finner du i
 
 ### Laste opp public virksomhetssertifikat
 
+NB! Zip sertifikatfila før du sender den.
+
 For at Difi skal vite hvem sitt Integrasjonspunkt det er så må sertifikatet lastes opp hos Difi. Dette gjøres ved å sende 
 Public key (.cer fil) på e-post til [idporten@difi.no](mailto:idporten@difi.no). Dette er en midlertidig løsning og vil bli erstattet av en selvbehandlingstjeneste snart.
 
