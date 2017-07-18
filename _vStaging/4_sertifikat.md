@@ -8,9 +8,8 @@ isHome: false
 
 ### Om virksomhetssertifikat
 
-> NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test  
-
-**NB2!** Bruk sertifikatet merket som **Autentiseringssertifikatet**
+> * NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test  
+> * NB2! Bruk sertifikatet merket som **Autentiseringssertifikatet**
 
 **NB3!** Sertifikatet må ligge i en Java Key Store (JKS)
 
