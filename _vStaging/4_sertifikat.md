@@ -8,7 +8,7 @@ isHome: false
 
 ### Om virksomhetssertifikat
 
-**NB!** Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test
+> NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test  
 
 **NB2!** Bruk sertifikatet merket som **Autentiseringssertifikatet**
 
