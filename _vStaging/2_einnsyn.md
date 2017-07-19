@@ -52,7 +52,7 @@ http://localhost:<port-til-integrasjonspunkt>/noarkExchange?wsdl
 
 > Har du fulgt installasjonsguiden helt hit så skal du være ferdig med installasjon av integrasjonspunktet for einnsyn, gratulerer! Om du har spørsmål eller behøver hjelp, kontakt oss gjerne på <idporten@difi.no> 
 
-*Den neste hovedoverskriften gjelder ikke for eInnsyn, men for DPO, DPI, DPV*
+*Den neste hovedoverskriften gjelder ikke for eInnsyn, men for DPI, DPO, DPV*
 
 
 
