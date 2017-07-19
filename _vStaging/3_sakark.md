@@ -22,7 +22,7 @@ Id-portens autentiseringstjeneste
 Logging
 + 93.94.10.18:8300
 
-Meldingsformidler DPO og DVP
+Meldingsformidler DPO og DPV
 + www.altinn.no -> 79.171.86.33:443
 
 Meldingsformidler DPI
