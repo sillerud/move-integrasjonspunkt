@@ -18,7 +18,7 @@ For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følg
 + 3x tilgjengelig minne i forhold til største meldinger ønsket sendt
 + Nødvendige brannmursåpninger
 + Java 8 med JCE installert
-+ Test virksomhetssertifikat utstedt av Buypass eller Commfides. [Les mer] ()
++ Test virksomhetssertifikat utstedt av Buypass eller Commfides. [Les mer] (http://difi.github.io/move-integrasjonspunkt/vStaging/#/4_sertifikat)
 + BestEdu ekspederingskanal skrudd på i sak-/arkivsystem
 + Tips: Installer integrasjonspunktet og eInnsynsklient på samme server.
 
