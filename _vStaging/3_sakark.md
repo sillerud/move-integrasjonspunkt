@@ -1,8 +1,12 @@
+---
+title: Oppsett av DPI/DPO/DPV
+pageid: Oppsett_av_DPI/DPO/DPV
+layout: default
+description: Oppsett av DPI/DPO/DPV 
+isHome: false
+---
 
-
-### Oppsett av DPI/DPO/DPV
-
-### Brannmursåpninger
+### Brannmuråpninger
 Tilleggsåpninger i brannmur er nødvendig for DPO, DPI og DPV.
 
 Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.)
