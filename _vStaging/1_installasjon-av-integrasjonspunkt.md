@@ -15,7 +15,7 @@ For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følg
 
 ## Dette gjør du før installasjon av Integrasjonspunktet
 
-+ 3x tilgjengelig minne i forhold til største meldinger ønsket sendt
++ Tilgjengelig minne må være minimum 3 ganger større enn størrelsen på meldinger ønsket sendt.
 + Nødvendige brannmuråpninger
 + Java 8 med JCE installert
 + Test virksomhetssertifikat utstedt av Buypass eller Commfides. [Les mer] (http://difi.github.io/move-integrasjonspunkt/vStaging/#/4_sertifikat)
