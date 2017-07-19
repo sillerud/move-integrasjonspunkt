@@ -6,6 +6,10 @@ description: Oppsett av DPI/DPO/DPV
 isHome: false
 ---
 
+* DPI = Digital post til innbygger ( Sikker digital post)
+* DPO = Digital post til det offentlige (statlig organisasjon)
+* DPV = Digital post til privat virksomhet
+
 ### Brannmuråpninger
 Tilleggsåpninger i brannmur er nødvendig for DPO, DPI og DPV.
 
