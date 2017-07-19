@@ -10,7 +10,7 @@ isHome: false
 
 > * NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test  
 > * NB2! Bruk sertifikatet merket som **Autentiseringssertifikatet**  
-> * NB3! Sertifikatet må ligge i en Java Key Store (JKS)  
+> * NB3! Sertifikatet **må** ligge i en Java Key Store (JKS)  
 > * NB4! Sertifikatet **må** være utstedt til deres organisasjonsnummer
 
 Integrasjonspunktet bruker virksomhetssertifikat til kryptering og signering av meldinger som går mellom integrasjonpunkter.
