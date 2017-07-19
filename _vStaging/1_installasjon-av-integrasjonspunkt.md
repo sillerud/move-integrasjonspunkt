@@ -7,7 +7,7 @@ isHome: false
 ---
 
 *Under arbeid, endringer vil forekommer i nærmeste fremtid*
-[testlink][../resources/integrasjonspunkt-local.properties]
+[testlink](../resources/integrasjonspunkt-local.properties)
 eInnsyn er en prosess der statelige virksomheter gjør metadata for korrespondanse tilgjengelig for offentligheten. Integrasjonspunktet fungerer som et bindeledd mellom eInnsynsklienten brukt av arkivarene og det sentrale eInnsynsystemet.
 
 For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følgende: 
