@@ -10,7 +10,7 @@ isHome: false
 
 1. Start med å opprette en mappe med navn integrasjonspunkt på c:\
 2. Last så ned [denne filen](../resources/integrasjonspunkt-local.properties) og lagre i overnevnte mappe
-3. Fyll inn verdier i integrasjonspunkt-local.properties 
+3. Fyll inn verdier i integrasjonspunkt-local.properties ( se tabell under ) 
 
 ### integrasjonspunkt-local.properties
 
@@ -45,7 +45,9 @@ http://localhost:<port-til-integrasjonspunkt>/noarkExchange?wsdl
 
 ***
 
-Har du fulgt installasjonsguiden helt hit skal du være ferdig med installasjon av integrasjonspunktet for einnsyn, gratulerer! Om du har spørsmål eller behøver hjelp, kontakt oss på <idporten@difi.no> 
+> Har du fulgt installasjonsguiden helt hit så skal du være ferdig med installasjon av integrasjonspunktet for einnsyn, gratulerer! Om du har spørsmål eller behøver hjelp, kontakt oss gjerne på <idporten@difi.no> 
+
+*Den neste hovedoverskriften gjelder ikke for eInnsyn, men for DPO, DPI, DPV*
 
 
 
