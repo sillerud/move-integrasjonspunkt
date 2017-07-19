@@ -29,6 +29,13 @@ Følgende verdier settes i integrasjonspunkt-local.properties
 | difi.move.nextbest.serviceBus.sasToken | *Se infobrev om einnsyn* | Token som må brukes for tilang til meldingsformidler | 
 | | | | 
 
+Når du er ferdig skal strukturen på området se slik ut:
+```
+c:/
+|-- integrasjonspunkt/
+   |-- integrasjonspunkt-local.properties
+```
+
 ### Start Integrasjonspunktet
 
 Integrasjonspunktet startes fra kommandolinjen med kommandoen (Kjør som administrator)
