@@ -77,6 +77,8 @@ Keytool finner du i
 
 (f.eks C:\Program Files\Java\jre1.8.0_101\bin)
 
+***
+
 ### Laste opp public virksomhetssertifikat
 
 NB! Zip sertifikatfila før du sender den.
