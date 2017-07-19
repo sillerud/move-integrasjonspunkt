@@ -1,12 +1,17 @@
+---
+title: Oppsett av eInnsyn 
+pageid: Oppsett_av_eInnsyn 
+layout: default
+description: Oppsett av eInnsyn 
+isHome: false
+---
 
-
-### einnsyn
-
-### Oppsett
+## Oppsett av eInnsyn
 
 1. Start med å opprette en mappe med navn integrasjonspunkt på c:\
 2. Last så ned [denne filen](../resources/integrasjonspunkt-local.properties) og lagre i overnevnte mappe
 3. Fyll inn verdier i integrasjonspunkt-local.properties 
+
 ### integrasjonspunkt-local.properties
 
 Følgende verdier settes i integrasjonspunkt-local.properties
@@ -23,4 +28,25 @@ Følgende verdier settes i integrasjonspunkt-local.properties
 | difi.move.nextbest.serviceBus.enable | true | Skru på bruk av eInnsynsmeldinger |
 | difi.move.nextbest.serviceBus.sasToken | *Se infobrev om einnsyn* | Token som må brukes for tilang til meldingsformidler | 
 | | | | 
+
+### Start Integrasjonspunktet
+
+Integrasjonspunktet startes fra kommandolinjen med kommandoen (Kjør som administrator)
+
+```powershell
+java -jar -Dspring.profiles.active=staging integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false 
+```
+
+Sjekk i nettleser når Integrasjonspunktet har startet, som gir response i form av en wsdl.
+
+```
+http://localhost:<port-til-integrasjonspunkt>/noarkExchange?wsdl
+```
+
+***
+
+Har du fulgt installasjonsguiden helt hit skal du være ferdig med installasjon av integrasjonspunktet for einnsyn, gratulerer! Om du har spørsmål eller behøver hjelp, kontakt oss på <idporten@difi.no> 
+
+
+
 
