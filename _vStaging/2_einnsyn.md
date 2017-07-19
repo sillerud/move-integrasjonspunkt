@@ -48,7 +48,6 @@ Sjekk i nettleser når Integrasjonspunktet har startet, som gir response i form 
 http://localhost:<port-til-integrasjonspunkt>/noarkExchange?wsdl
 ```
 
-***
 
 > Har du fulgt installasjonsguiden helt hit så skal du være ferdig med installasjon av integrasjonspunktet for einnsyn, gratulerer! Om du har spørsmål eller behøver hjelp, kontakt oss gjerne på <idporten@difi.no> 
 
