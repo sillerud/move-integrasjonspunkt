@@ -54,6 +54,4 @@ http://localhost:<port-til-integrasjonspunkt>/noarkExchange?wsdl
 
 *Den neste hovedoverskriften gjelder ikke for eInnsyn, men for DPI, DPO, DPV*
 
-
-
-
+***
