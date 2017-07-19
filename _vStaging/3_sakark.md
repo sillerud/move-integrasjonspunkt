@@ -72,8 +72,8 @@ difi.move.noarkSystem.domain\*         |Domene sakarkivsystemet kjører på     
                                        |                                                                                                              |
 difi.move.msh.endpointURL\*\*          |Path til MSH                                                                                                  |
                                        |                                                                                                              |
-difi.move.dpo.username              |Brukernavnet du får ved [opprettelse av AltInn systembruker](#opprette-bruker-til-altinn-formidlingstjeneste) |123456
-difi.move.dpo.password              |Passord du satte når du opprettet AltInn systembruker                                                         |changeit
+difi.move.dpo.username              |Brukernavnet du får ved [opprettelse av AltInn systembruker](#opprette-bruker-til-altinn-formidlingstjeneste) |
+difi.move.dpo.password              |Passord du satte når du opprettet AltInn systembruker                                                         |
 
 
 \* Autentisering mot sakarkivsystem benyttes av P360
