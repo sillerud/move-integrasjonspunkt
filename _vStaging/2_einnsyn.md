@@ -6,7 +6,7 @@ description: Oppsett av eInnsyn
 isHome: false
 ---
 
-1. Start med å opprette en mappe med navn integrasjonspunkt på c:\
+1. Start med å opprette en mappe med navn integrasjonspunkt på for eksempel c:\
 2. Last så ned [denne filen](../resources/integrasjonspunkt-local.properties) og lagre i overnevnte mappe
 3. Fyll inn verdier i integrasjonspunkt-local.properties ( se tabell under ) 
 
