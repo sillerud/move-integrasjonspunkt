@@ -24,27 +24,32 @@ For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følg
 
 ### 1. Brannmuråpninger for eInnsyn
 
+> Brannmuråpninger i TESTMILJØ
+
 Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) i TEST
 + beta-meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
-
-Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) i PROD
-+ meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
-
-
-Id-portens autentiseringstjeneste i TEST
-+ oidc-ver2.difi.no -> 146.192.252.152:443
-
-Id-portens autentiseringstjeneste i PROD
-+ oidc.difi.no -> 146.192.252.54:443
-
 
 Meldingsformidler eInnsyn
 + move-dpe.servicebus.windows.net -> *.cloudapp.net
 
+Id-portens autentiseringstjeneste i TEST
++ oidc-ver2.difi.no -> 146.192.252.152:443
+
 Logging i TEST
 + 93.94.10.18:8300
 
-Logging i PROD
+> Brannmuråpninger i PRODUKSJON
+
+Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) 
++ meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
+
+Meldingsformidler eInnsyn
++ move-dpe.servicebus.windows.net -> *.cloudapp.net
+
+Id-portens autentiseringstjeneste 
++ oidc.difi.no -> 146.192.252.54:443
+
+Logging 
 + 93.94.10.18:8400
 
 ### 2. Installere Java runtime environment (JRE)
