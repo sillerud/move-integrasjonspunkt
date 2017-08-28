@@ -13,37 +13,48 @@ isHome: false
 ### Brannmuråpninger
 Tilleggsåpninger i brannmur er nødvendig for DPO, DPI og DPV.
 
-Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) i TEST
+> Brannmuråpninger for TESTMILJØ
+
+Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) 
 + beta-meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
 
-Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) i PROD
-+ meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
-
-
-Id-portens autentiseringstjeneste i TEST
+Id-portens autentiseringstjeneste 
 + oidc-ver2.difi.no -> 146.192.252.152:443
 
-Id-portens autentiseringstjeneste i PROD
+Meldingsformidler DPO og DPV
++ www.altinn.no -> 79.171.86.33:443
+
+Meldingsformidler DPI 
++ qaoffentlig.meldingsformidler.digipost.no -> 146.192.168.18:443, 146.192.168.19:443
+
+Meldingsformidler KS SvarUt/SvarInn 
++ test.svarut.ks.no -> 193.161.160.165:443
+
+Logging 
++ 93.94.10.18:8300
+
+| | | 
+
+> Brannmuråpninger for PRODUKSJON
+
+Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) 
++ meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
+
+Id-portens autentiseringstjeneste 
 + oidc.difi.no -> 146.192.252.54:443
 
-Logging i TEST
-+ 93.94.10.18:8300
+Meldingsformidler DPO og DPV
++ www.altinn.no -> 79.171.86.33:443
+
+Meldingsformidler DPI
++ meldingsformidler.digipost.no -> 146.192.168.126:443, 146.192.168.80:443
+
+Meldingsformidler KS SvarUt/SvarInn 
++ svarut.ks.no -> 193.161.171.187:443
+93.94.10.45:443, 93.94.10.5:443
 
 Logging i PROD
 + 93.94.10.18:8400
-
-Meldingsformidler DPO og DVP
-+ www.altinn.no -> 79.171.86.33:443
-
-Meldingsformidler DPI i TEST
-+ qaoffentlig.meldingsformidler.digipost.no -> 146.192.168.18:443, 146.192.168.19:443
-
-Meldingsformidler KS SvarUt/SvarInn i TEST
-+ test.svarut.ks.no -> 193.161.160.165:443
-
-Meldingsformidler KS SvarUt/SvarInn i PROD
-+ svarut.ks.no -> 193.161.171.187:443
-93.94.10.45:443, 93.94.10.5:443
 
 ### Integrasjonspunkt-local.properties filen
 
