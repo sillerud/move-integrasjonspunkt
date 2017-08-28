@@ -13,23 +13,37 @@ isHome: false
 ### Brannmuråpninger
 Tilleggsåpninger i brannmur er nødvendig for DPO, DPI og DPV.
 
-Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.)
+Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) i TEST
 + beta-meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
 
-Id-portens autentiseringstjeneste
+Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) i PROD
++ meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
+
+
+Id-portens autentiseringstjeneste i TEST
 + oidc-ver2.difi.no -> 146.192.252.152:443
 
-Logging
+Id-portens autentiseringstjeneste i PROD
++ oidc.difi.no -> 146.192.252.54:443
+
+Logging i TEST
 + 93.94.10.18:8300
 
-Meldingsformidler DPO og DPV
-+ www.altinn.no -> 89.250.123.0:443
+Logging i PROD
++ 93.94.10.18:8400
 
-Meldingsformidler DPI
+Meldingsformidler DPO og DVP
++ www.altinn.no -> 79.171.86.33:443
+
+Meldingsformidler DPI i TEST
 + qaoffentlig.meldingsformidler.digipost.no -> 146.192.168.18:443, 146.192.168.19:443
 
-Meldingsformidler KS SvarUt/SvarInn
+Meldingsformidler KS SvarUt/SvarInn i TEST
 + test.svarut.ks.no -> 193.161.160.165:443
+
+Meldingsformidler KS SvarUt/SvarInn i PROD
++ svarut.ks.no -> 193.161.171.187:443
+93.94.10.45:443, 93.94.10.5:443
 
 ### Integrasjonspunkt-local.properties filen
 
@@ -118,9 +132,14 @@ Oppsett for ephorte, [P360](../resources/Oppsett360.docx), WebSak
 ### Start Integrasjonspunktet
 
 Integrasjonspunktet startes fra kommandolinjen med kommandoen (Kjør som administrator)
-
+i TEST
 ```powershell
 java -jar -Dspring.profiles.active=staging integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false 
+```
+
+i PROD
+```powershell
+java -jar integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false 
 ```
 
 Sjekk i nettleser når Integrasjonspunktet har startet, som gir response i form av en wsdl.
