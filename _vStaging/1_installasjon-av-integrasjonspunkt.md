@@ -6,8 +6,6 @@ description: Beskrivelse av oppsett av integrasjonspunktet.
 isHome: false
 ---
 
-*Under arbeid, endringer vil forekommer i nærmeste fremtid*
-
 Einnsyn er en prosess der statelige virksomheter gjør metadata for korrespondanse tilgjengelig for offentligheten. Integrasjonspunktet fungerer som et bindeledd mellom eInnsynsklienten brukt av arkivarene og det sentrale eInnsynsystemet.
 
 For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følgende: 
@@ -26,16 +24,16 @@ For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følg
 
 > Brannmuråpninger i TESTMILJØ
 
-Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) i TEST
+Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.) 
 + beta-meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
 
 Meldingsformidler eInnsyn
 + move-dpe.servicebus.windows.net -> *.cloudapp.net
 
-Id-portens autentiseringstjeneste i TEST
+Id-portens autentiseringstjeneste 
 + oidc-ver2.difi.no -> 146.192.252.152:443
 
-Logging i TEST
+Logging 
 + 93.94.10.18:8300
 
 > Brannmuråpninger i PRODUKSJON
