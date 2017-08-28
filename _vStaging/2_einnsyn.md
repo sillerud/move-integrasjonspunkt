@@ -38,8 +38,14 @@ c:/
 
 Integrasjonspunktet startes fra kommandolinjen med kommandoen (Kjør som administrator)
 
+> TEST
 ```powershell
 java -jar -Dspring.profiles.active=staging integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false 
+```
+
+> PROD
+```powershell
+java -jar integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false 
 ```
 
 Sjekk i nettleser når Integrasjonspunktet har startet, som gir response i form av en wsdl.
