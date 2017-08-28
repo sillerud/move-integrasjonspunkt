@@ -53,7 +53,7 @@ Meldingsformidler KS SvarUt/SvarInn
 + svarut.ks.no -> 193.161.171.187:443
 93.94.10.45:443, 93.94.10.5:443
 
-Logging i PROD
+Logging 
 + 93.94.10.18:8400
 
 ### Integrasjonspunkt-local.properties filen
