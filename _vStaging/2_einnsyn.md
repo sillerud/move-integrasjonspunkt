@@ -15,6 +15,7 @@ isHome: false
 Følgende verdier settes i integrasjonspunkt-local.properties
 
 **NB:** Benytt skråstrek (/) eller dobbel omvendt skråstrek (\\\\) som resursdeler når dere angir filbaner.
+**NB:** I produksjon så trenger en ikke sasToken, då kan denne linjen bortkommenteres.
 
 | Properties | Eksempel | Beskrivelse | 
 | --- | --- | --- |
