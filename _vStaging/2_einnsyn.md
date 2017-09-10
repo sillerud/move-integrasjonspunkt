@@ -15,7 +15,6 @@ isHome: false
 Følgende verdier settes i integrasjonspunkt-local.properties
 
 **NB:** Benytt skråstrek (/) eller dobbel omvendt skråstrek (\\\\) som resursdeler når dere angir filbaner.
-**NB:** I produksjon så trenger en ikke sasToken, då kan denne linjen bortkommenteres.
 
 | Properties | Eksempel | Beskrivelse | 
 | --- | --- | --- |
@@ -24,8 +23,6 @@ Følgende verdier settes i integrasjonspunkt-local.properties
 | difi.move.org.keystore.alias  | alias | Alias til virksomhetssertifikatet som brukes i integrasjonspunktet(case sensitivt) | 
 | difi.move.org.keystore.password | changeit | Passord til keystore | 
 | difi.move.org.keystore.path | difi.move.org.keystore.path=file:c:/integrasjonspunkt/keystore.jks | Path til .jks fil | 
-| difi.move.nextbest.serviceBus.enable | true | Skru på bruk av eInnsynsmeldinger |
-| difi.move.nextbest.serviceBus.sasToken | *Se infobrev om einnsyn* | Token som må brukes for tilang til meldingsformidler | 
 | | | | 
 
 Når du er ferdig skal strukturen på området se slik ut:
