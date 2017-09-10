@@ -9,11 +9,6 @@ difi.move.org.keystore.alias=
 difi.move.org.keystore.password=
 difi.move.org.keystore.path=file:
 
-## eInnsyn
-##--------
-difi.move.nextbest.serviceBus.enable=true
-difi.move.nextbest.serviceBus.sasToken=
-
 
 ## Digital post mellom offentlige virksomehter (Settes kun dersom man bruker DPO. Fjern utkommentering (#))
 ##--------------------------------------------
