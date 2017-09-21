@@ -41,6 +41,7 @@ Dersom du har p12 sertifikat
     - Tools
     - Change Keystore type
      - Velg: JKS.
+     - Fil -> Lagre som -> velg namn og lagre som jks. feks "keystore.jks"
   
 **Endre passord på sertifikat eller keystore:**
 
