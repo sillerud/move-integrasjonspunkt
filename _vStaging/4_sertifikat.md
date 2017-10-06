@@ -94,9 +94,9 @@ Public key (.cer fil) på e-post til [idporten@difi.no](mailto:idporten@difi.no)
 **eksportere public key fra keystore explorer**
 1. Åpne opp JKS-keystoren i keystore explorer. 
 2. Høgreklikk på valgt sertifikat og velg "export->Certificate" eller "certificate chain" i menyen.
-    - Om du velger Certificate Chain så må du huke av for "head only" i det neste vinduet.
-    - Huk også av for export format "X.509"
-3. Huk av for PEM format.
+    - Om du velger Certificate Chain så må du markere for "head only" i det neste vinduet.
+    - Marker også av for export format "X.509"
+3. Marker for PEM format.
 4. Naviger til valgt mappe og lagre som .cer fil.
 
 **public key kan eksporteres fra keystore med kommandoen**
