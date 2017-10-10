@@ -42,7 +42,7 @@ Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.)
 + meldingsutveksling.difi.no -> 93.94.10.30:443, 93.94.10.45:443, 93.94.10.5:443
 
 Meldingsformidler eInnsyn
-+ move-dpe.servicebus.windows.net -> *.cloudapp.net
++ move-dpe-prod.servicebus.windows.net -> *.cloudapp.net
 
 Id-portens autentiseringstjeneste 
 + oidc.difi.no -> 146.192.252.54:443
