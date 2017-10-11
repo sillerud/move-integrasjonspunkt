@@ -43,6 +43,7 @@ Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.)
 
 Meldingsformidler eInnsyn
 + move-dpe.servicebus.windows.net -> *.cloudapp.net
+
 Om du bruker Proxy må du bruke denne i stedet, men du treng bare en.
 + move-dpe-prod.servicebus.windows.net -> *.cloudapp.net
 
