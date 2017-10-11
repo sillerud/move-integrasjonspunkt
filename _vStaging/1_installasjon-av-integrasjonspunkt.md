@@ -72,11 +72,11 @@ Dersom JCE mangler vil integrasjonspunket stoppe under oppstart og skrive logmel
 
 ### 4. Virksomhetssertifikat
 
->*NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test
+> * NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test
 
->*NB2! Produksjonsmiljøet krever virksomhetssertifikat for produksjon. 
+> * NB2! Produksjonsmiljøet krever virksomhetssertifikat for produksjon. 
 
->*NB3! Bruk sertifikatet merkt som **Autentiseringssertifikatet**
+> * NB3! Bruk sertifikatet merkt som **Autentiseringssertifikatet**
 
 **Å gjøre:**
 1. Anskaffe virksomhetssertifikat
