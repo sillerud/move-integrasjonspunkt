@@ -20,6 +20,7 @@ Sentrale tjenester(Adresseoppslag, sentral konfigurasjon mm.)
 
 Id-portens autentiseringstjeneste 
 + oidc-ver2.difi.no -> 146.192.252.152:443
++ oidc-ver1.difi.no -> 146.192.252.121:443
 
 Meldingsformidler DPO og DPV
 + www.altinn.no -> 79.171.86.33:443
