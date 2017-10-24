@@ -32,6 +32,7 @@ Meldingsformidler eInnsyn
 
 Id-portens autentiseringstjeneste 
 + oidc-ver2.difi.no -> 146.192.252.152:443
++ oidc-ver1.difi.no -> 146.192.252.121:443
 
 Logging 
 + 93.94.10.18:8300
