@@ -34,7 +34,7 @@ c:/
 
 ### Start Integrasjonspunktet
 
-Integrasjonspunktet startes fra kommandolinjen med kommandoen (Kjør som administrator)
+Integrasjonspunktet startes fra kommandolinjen med følgende kommandoer for henholdsvis test og produksjon. For å starte integrasjonspunktet kreves visse rettigheter, [les mer om dette her](). Eller så kan en eventuelt starte kommandovinduet som administrator og dermed også ha rettigheter til å starte det.
 
 > TEST
 ```powershell
