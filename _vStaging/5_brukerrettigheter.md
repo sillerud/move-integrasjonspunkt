@@ -7,11 +7,10 @@ isHome: false
 hiddenInToc: true
 ---
 
-## Minstekrav til brukerrettigheter
 
 Når en skal starte integrasjonspunktet så kreves det visse rettigheter på denne brukeren for at programmet skal kunne fungere. 
 
-**Opprette Lokal bruker type user: **
+**Opprette Lokal bruker type user:**
 
 %servernavn%\integrasjonspunkt
  
