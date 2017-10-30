@@ -14,10 +14,11 @@ Opprette Lokal bruker type user:
 %servernavn%\integrasjonspunkt
  
 *Sette rettar for brukar i local security policy (deaktivere påloggingsmulighet):*
--Deny log on locally
--Deny log on thru remote desktop service 
--Deny access to this computer from the network 
--Log on as a batch job (for å kunne kjøre taskscheduler)
+
+- Deny log on locally
+- Deny log on thru remote desktop service 
+- Deny access to this computer from the network 
+- Log on as a batch job (for å kunne kjøre taskscheduler)
  
 Bruker må ha tilgang på mappen der integrasjonspunktfilene ligger 
 *Egenskaper på mappen* 
@@ -31,7 +32,7 @@ user: %servernavn%\integrasjonspunkt
 - Run whether user is logged on or not
  
 *Trigger:*
--At startup
+- At startup
 Action:
 Start a program
 java -jar integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false
