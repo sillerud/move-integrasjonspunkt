@@ -143,7 +143,7 @@ Oppsett for ephorte, [P360](../resources/Oppsett360.docx), WebSak
 
 ### Start Integrasjonspunktet
 
-Integrasjonspunktet startes fra kommandolinjen med kommandoen (Kjør som administrator)
+Integrasjonspunktet startes fra kommandolinjen med følgende kommandoer for henholdsvis test og produksjon. For å starte integrasjonspunktet kreves visse minimum brukerrettigheter, [les mer om dette her](http://difi.github.io/move-integrasjonspunkt/vStaging/#/5_brukerrettigheter). Eller så kan en eventuelt starte kommandovinduet som administrator og dermed også ha rettigheter til å starte det.
 
 > TEST
 ```powershell
