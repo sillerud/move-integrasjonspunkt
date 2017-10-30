@@ -4,13 +4,15 @@ pageid: brukerrettigheter
 layout: default
 description: Minstekrav til brukerrettigheter 
 isHome: false
-inToc: false
+hiddenInToc: true
 ---
 
 ## Minstekrav til brukerrettigheter
 
 Når en skal starte integrasjonspunktet så kreves det visse rettigheter på denne brukeren for at programmet skal kunne fungere. 
-Opprette Lokal bruker type user: 
+
+*Opprette Lokal bruker type user: *
+
 %servernavn%\integrasjonspunkt
  
 *Sette rettar for brukar i local security policy (deaktivere påloggingsmulighet):*
@@ -21,6 +23,7 @@ Opprette Lokal bruker type user:
 - Log on as a batch job (for å kunne kjøre taskscheduler)
  
 Bruker må ha tilgang på mappen der integrasjonspunktfilene ligger 
+
 *Egenskaper på mappen* 
   Security:
     - Legg til integrasjonspunkBrukaren med modify rettigheter
