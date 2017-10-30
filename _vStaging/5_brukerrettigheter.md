@@ -11,11 +11,11 @@ hiddenInToc: true
 
 Når en skal starte integrasjonspunktet så kreves det visse rettigheter på denne brukeren for at programmet skal kunne fungere. 
 
-*Opprette Lokal bruker type user: *
+**Opprette Lokal bruker type user: **
 
 %servernavn%\integrasjonspunkt
  
-*Sette rettar for brukar i local security policy (deaktivere påloggingsmulighet):*
+**Sette rettar for brukar i local security policy (deaktivere påloggingsmulighet):**
 
 - Deny log on locally
 - Deny log on thru remote desktop service 
@@ -24,19 +24,23 @@ Når en skal starte integrasjonspunktet så kreves det visse rettigheter på den
  
 Bruker må ha tilgang på mappen der integrasjonspunktfilene ligger 
 
-*Egenskaper på mappen* 
+**Egenskaper på mappen**
   Security:
     - Legg til integrasjonspunkBrukaren med modify rettigheter
   
 Kjører commandoen i "Task Scheduler"
 
-*general:*
+**general:**
 
 user: %servernavn%\integrasjonspunkt
 - Run whether user is logged on or not
  
-*Trigger:*
+**Trigger:**
 - At startup
-Action:
-Start a program
+
+Action: Start a program
+
+``` powershell
 java -jar integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false
+```
+
