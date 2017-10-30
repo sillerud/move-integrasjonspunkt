@@ -31,6 +31,7 @@ Bruker må ha tilgang på mappen der integrasjonspunktfilene ligger
 Kjører commandoen i "Task Scheduler"
 
 *general:*
+
 user: %servernavn%\integrasjonspunkt
 - Run whether user is logged on or not
  
