@@ -18,7 +18,7 @@ Bruk av Windows certificate store krever minimum versjon 1.7.74... av integrasjo
 
 Følgende verdier settes i integrasjonspunkt-local.properties
 
-**NB:** Benytt skråstrek (/) eller dobbel omvendt skråstrek (\\\\) som resursdeler når dere angir filbaner.
+**NB:** Benytt skråstrek (/) eller dobbel omvendt skråstrek (\\\\) som ressursdeler når dere angir filbaner.
 
 | Properties | Eksempel Java Keystore(JKS) |Windows certificate store(WCS)| Beskrivelse | 
 | --- | --- | --- | --- |
