@@ -50,4 +50,4 @@ Start in (optional):
   "disk:\mappenavn» til integrasjonspunktet"
 ```
 
-
+![Taskscheduler](../resources/taskscheduler.PNG)
