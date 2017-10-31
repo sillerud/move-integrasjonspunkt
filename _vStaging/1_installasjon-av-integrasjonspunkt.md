@@ -35,7 +35,7 @@ Id-portens autentiseringstjeneste
 + oidc-ver1.difi.no -> 146.192.252.121:443
 
 Logging 
-+ 93.94.10.18:5343
++ 93.94.10.18:8300/5343
 
 > Brannmuråpninger i PRODUKSJON
 
@@ -52,7 +52,7 @@ Id-portens autentiseringstjeneste
 + oidc.difi.no -> 146.192.252.54:443
 
 Logging 
-+ 93.94.10.18:5443
++ 93.94.10.18:8400/5443
 
 ### 2. Installere Java runtime environment (JRE)
 
