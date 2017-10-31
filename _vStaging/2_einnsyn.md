@@ -10,6 +10,8 @@ isHome: false
 2. Last så ned [denne filen](../resources/integrasjonspunkt-local.properties) og lagre i overnevnte mappe
 3. Fyll inn verdier i integrasjonspunkt-local.properties ( se tabell under ) 
 
+> **MERK** Du må velge om du vil bruke java keystore eller Windows certificate store. Du må dermed kommentere bort linjer du ikke trenger i integrasjonspunkt-local.properties filen du laster ned. Dette står videre forklart som kommentarer i selve filen.
+
 ### integrasjonspunkt-local.properties
 
 Følgende verdier settes i integrasjonspunkt-local.properties
@@ -33,6 +35,8 @@ c:/
    |-- integrasjonspunkt-local.properties
    |-- integrasjonspunkt[versjon].jar
 ```
+
+**Integrasjonspunkt[versjon].jar** filen finner du øverst i denne installasjonsveiledningen.
 
 ### Start Integrasjonspunktet
 
