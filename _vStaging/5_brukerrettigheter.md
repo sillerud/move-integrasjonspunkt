@@ -35,11 +35,19 @@ user: %servernavn%\integrasjonspunkt
 - Run whether user is logged on or not
  
 **Trigger:**
-- At startup
+* At startup
+- Edit action
+- Program/script: JAVA
 
-Action: Start a program
 
+add argument (optional):
 ``` powershell
 java -jar integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false
 ```
+
+Start in (optional):
+``` powershell
+  "disk:\mappenavn» til integrasjonspunktet"
+```
+
 
