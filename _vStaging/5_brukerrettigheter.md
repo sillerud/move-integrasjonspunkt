@@ -21,11 +21,11 @@ Når en skal starte integrasjonspunktet så kreves det visse rettigheter på den
 - Deny access to this computer from the network 
 - Log on as a batch job (for å kunne kjøre taskscheduler)
  
-Bruker må ha tilgang på mappen der integrasjonspunktfilene ligger 
+**Bruker må ha tilgang på mappen der integrasjonspunktfilene ligger**
 
-**Egenskaper på mappen**
-  Security:
-    - Legg til integrasjonspunkBrukaren med modify rettigheter
+Egenskaper på mappen
+  * Security:
+    * Legg til integrasjonspunkBrukaren med modify rettigheter
   
 ## Kjøre kommandoen i "Task Scheduler"
 
