@@ -38,12 +38,9 @@ user: %servernavn%\integrasjonspunkt
 * At startup
    * Edit action
    * Program/script: JAVA
+   * add argument (optional):
+        * java -jar integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false
 
-
-add argument (optional):
-``` powershell
-java -jar integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false
-```
 
 Start in (optional):
 ``` powershell
