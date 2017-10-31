@@ -18,7 +18,7 @@ Følgende verdier settes i integrasjonspunkt-local.properties
 
 | Properties | Eksempel Java Keystore(JKS) |Windows certificate store(WCS)| Beskrivelse | 
 | --- | --- | --- | --- |
-| server.port | 9093 | Portnummer integrasjonspunktet skal kjøre på (default 9093)  | 
+| server.port | 9093 | 9093 | Portnummer integrasjonspunktet skal kjøre på (default 9093)  | 
 | difi.move.org.number | 123456789 | 123456789 |Organisasjonsnummer til din organisasjon (9 siffer) | 
 | difi.move.org.keystore.alias  | alias | Egendefinert navn | alias=navnet på virksomhetssertifikatet som ligger i JKS(case sensitivt) | 
 | difi.move.org.keystore.password | changeit | *tom* | Passord til java keystore. WCS = sett som blank | 
