@@ -36,8 +36,8 @@ user: %servernavn%\integrasjonspunkt
  
 **Trigger:**
 * At startup
-- Edit action
-- Program/script: JAVA
+   * Edit action
+   * Program/script: JAVA
 
 
 add argument (optional):
