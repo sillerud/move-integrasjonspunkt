@@ -40,11 +40,8 @@ user: %servernavn%\integrasjonspunkt
    * Program/script: JAVA
    * add argument (optional):
         * java -jar integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false
+   * Start in (optional):
+        * "disk:\mappenavn» til integrasjonspunktet"
 
-
-Start in (optional):
-``` powershell
-  "disk:\mappenavn» til integrasjonspunktet"
-```
 
 ![Taskscheduler](../resources/taskscheduler.PNG)
