@@ -32,7 +32,7 @@ Meldingsformidler KS SvarUt/SvarInn
 + test.svarut.ks.no -> 193.161.160.165:443
 
 Logging 
-+ 93.94.10.18:5343
++ 93.94.10.18:8300/5343
 
 | | | 
 
@@ -55,7 +55,7 @@ Meldingsformidler KS SvarUt/SvarInn
 93.94.10.45:443, 93.94.10.5:443
 
 Logging 
-+ 93.94.10.18:5443
++ 93.94.10.18:8400/5443
 
 ### Integrasjonspunkt-local.properties filen
 
