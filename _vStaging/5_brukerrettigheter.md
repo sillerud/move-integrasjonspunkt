@@ -27,7 +27,7 @@ Bruker må ha tilgang på mappen der integrasjonspunktfilene ligger
   Security:
     - Legg til integrasjonspunkBrukaren med modify rettigheter
   
-Kjører commandoen i "Task Scheduler"
+## Kjøre kommandoen i "Task Scheduler"
 
 **general:**
 
