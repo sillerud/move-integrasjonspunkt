@@ -27,7 +27,7 @@ Følgende verdier settes i integrasjonspunkt-local.properties
 | difi.move.org.keystore.alias  | alias | Egendefinert navn | alias=navnet på virksomhetssertifikatet som ligger i JKS(case sensitivt) | 
 | difi.move.org.keystore.password | changeit | *tom* | Passord til java keystore. WCS = sett som blank | 
 | difi.move.org.keystore.path | difi.move.org.keystore.path=file:c:/integrasjonspunkt/keystore.jks | *tom* |Path til .jks fil. WCS= sett som blank | 
-| difi.move.org.keystore.type | *tom* | WindowsMY| Forteller Java at en skal bruke WCS | 
+| difi.move.org.keystore.type | *tom* | Windows-MY| Forteller Java at en skal bruke WCS | 
 | | | | |
 
 Når du er ferdig skal strukturen på området se slik ut:
