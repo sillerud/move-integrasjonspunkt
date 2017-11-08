@@ -26,7 +26,7 @@ Følgende verdier settes i integrasjonspunkt-local.properties
 | difi.move.org.number | 123456789 | 123456789 |Organisasjonsnummer til din organisasjon (9 siffer) | 
 | difi.move.org.keystore.alias  | alias | Egendefinert navn | alias=navnet på virksomhetssertifikatet som ligger i JKS(case sensitivt) | 
 | difi.move.org.keystore.password | changeit | *tom* | Passord til java keystore. WCS = sett som blank | 
-| difi.move.org.keystore.path | difi.move.org.keystore.path=file:c:/integrasjonspunkt/keystore.jks | *tom* |Path til .jks fil. WCS= sett som blank | 
+| difi.move.org.keystore.path | difi.move.org.keystore.path=file:c:/integrasjonspunkt/keystore.jks | NONE |Path til .jks fil. WCS= sett som blank | 
 | difi.move.org.keystore.type | *tom* | Windows-MY| Forteller Java at en skal bruke WCS | 
 | | | | |
 
