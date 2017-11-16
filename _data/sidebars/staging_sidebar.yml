@@ -1,7 +1,6 @@
 entries:
 - title: Sidebar
   product: Staging
-  version: 1.0
   folders:
 
   - title:
@@ -20,18 +19,10 @@ entries:
   - title: Getting Started
     output: web, pdf
     folderitems:
-    - title: Product 1 home
+    - title: Staging generelt
       url: /staging.html
       output: web
 
     - title: Brannmursåpninger
       url: /brannmur.html
-      output: web, pdf
-
-    - title: Sample 2
-      url: /p1_sample2.html
-      output: web, pdf
-
-    - title: Sample 3
-      url: /p1_sample3.html
       output: web, pdf
