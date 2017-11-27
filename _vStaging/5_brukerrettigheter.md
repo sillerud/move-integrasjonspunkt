@@ -39,7 +39,7 @@ user: %servernavn%\integrasjonspunkt
    * Edit action
    * Program/script: JAVA
    * add argument (optional):
-        * java -jar integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false
+        * -jar integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false
    * Start in (optional):
         * "disk:\mappenavn» til integrasjonspunktet"
 
