@@ -45,3 +45,33 @@ user: %servernavn%\integrasjonspunkt
 
 
 ![Taskscheduler](../resources/taskscheduler.PNG)
+
+## Alternativt for bruk av proxy og Windows certificate store
+
+> **MERK** Dette er ikkje testa ut, endringer vil forekomme i denne delen av veiledninga. (29.11)
+
+Alternativt kan en legge inn virksomhetssertifikatet på lokal maskin i stedet for bruker. Det krever noen endringer for å få windows certificate store til å fungere på denne måten, en må også bruke task scheduler for dette. Her er det støtte for å bruke proxy ved å legge til litt ekstra i oppstartsargumentet. 
+
+**general:**
+
+1. endre bruker eller gruppe / change user or groups
+2. søk etter LOKAL eller LOCAL (avhengig av språk på server)  og trykk "kontroller navn"
+3. du vil då få treff på "LOKAL TJENESTE" eller "LOCAL SERVICE"
+4. trykk ok
+
+![local_machine](../resources/lokal_wcs.PNG)
+
+**Trigger:**
+* At startup
+   * Edit action
+   * Program/script: JAVA
+   * add argument (optional):
+        * -Djavax.net.ssl.trustStoreType=Windows-ROOT -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8888 - Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=8888 -jar integrasjonspunkt%versjonsnr%.jar --app.logger.enableSSL=false
+   * Start in (optional):
+        * "disk:\mappenavn» til integrasjonspunktet"
+
+I proxy kommandoen må en selvsagt bytte ut IP-adresser og porter fra dette eksempelet.
+
+![startup_proxy_wcs](../resources/proxy_wcs.PNG)
+
+
