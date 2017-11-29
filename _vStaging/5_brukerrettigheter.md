@@ -50,7 +50,7 @@ user: %servernavn%\integrasjonspunkt
 
 > **MERK** Dette er ikkje testa ut, endringer vil forekomme i denne delen av veiledninga. (29.11)
 
-Alternativt kan en legge inn virksomhetssertifikatet på lokal maskin i stedet for bruker. Det krever noen endringer for å få windows certificate store til å fungere på denne måten, en må også bruke task scheduler for dette. Her er det støtte for å bruke proxy ved å legge til litt ekstra i oppstartsargumentet. 
+Alternativt kan en legge inn virksomhetssertifikatet på lokal maskin i stedet for på bruker. Det krever noen justeringer for å få windows certificate store til å fungere på denne måten, en må også bruke task scheduler for dette. Her er det støtte for å bruke proxy ved å legge til litt ekstra i oppstartsargumentet. Det følgende eksempelet vil være for å bruke proxy, men en kan gjøre det samme ved å bytte ut oppstartsargumentet med tilsvarende som kan sees litt lenger opp på denne siden.
 
 **general:**
 
