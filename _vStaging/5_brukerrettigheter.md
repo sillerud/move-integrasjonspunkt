@@ -54,7 +54,7 @@ Alternativt kan en legge inn virksomhetssertifikatet på lokal maskin i stedet f
 
 **general:**
 
-1. endre bruker eller gruppe / change user or groups
+1. Trykk på "endre bruker eller gruppe" / "change user or groups"
 2. søk etter LOKAL eller LOCAL (avhengig av språk på server)  og trykk "kontroller navn"
 3. du vil då få treff på "LOKAL TJENESTE" eller "LOCAL SERVICE"
 4. trykk ok
