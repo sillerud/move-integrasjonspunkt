@@ -70,7 +70,7 @@ Alternativt kan en legge inn virksomhetssertifikatet på lokal maskin i stedet f
    * Start in (optional):
         * "disk:\mappenavn» til integrasjonspunktet"
 
-I proxy kommandoen må en selvsagt bytte ut IP-adresser og porter fra dette eksempelet.
+I proxy kommandoen må en selvsagt bytte ut IP-adresser, porter og versjonsnummer fra dette eksempelet.
 
 ![startup_proxy_wcs](../resources/proxy_wcs.PNG)
 
