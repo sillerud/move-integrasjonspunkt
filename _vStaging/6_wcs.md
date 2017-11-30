@@ -34,13 +34,13 @@ Steg 2 og 3: eksporter nøkkelpar
 ![eksporter nøkkelpar](../resources/1_export_pair.PNG)
 
 Steg 4: Keystore passord
-![passord1](../resources/1_export_pair2.PNG)
+![passord1](../resources/2_export_pair2.PNG)
 
 Steg 5 og 6: Privatnøkkel passord og velg filbane. 
-![passord2](../resources/1_export_pair3.PNG)
+![passord2](../resources/2_export_pair3.PNG)
 
 Steg 7: Nøkkelpar eksportert
-![nøkkel eksportert](../resources/1_export_pair4.PNG)
+![nøkkel eksportert](../resources/2_export_pair4.PNG)
 
 ***
 
