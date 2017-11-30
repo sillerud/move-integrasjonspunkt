@@ -27,6 +27,25 @@ Først må en eksportere nøkkelparet fra .p12 keystoren. Dette delen kan du ski
 6. velg plassering for det nye sertifikatet og angi namn. Lagre det som .p12 fil. Trykk ok.
 7. Nøkkelpar er nå eksportert.
 
+Skjermbilder følger:
+
+Steg 2 og 3: eksporter nøkkelpar
+![eksporter nøkkelpar](..resources/1_export_pair)
+
+Steg 4: Keystore passord
+![passord1](..resources/1_export_pair2)
+
+Steg 5: Privatnøkkel passord 
+![passord2](..resources/1_export_pair3)
+
+
+![](..resources/)
+![](..resources/)
+![](..resources/)
+![](..resources/)
+![](..resources/)
+
+
 ***
 
 ## Installere sertifikat i Windows Certificate Store
