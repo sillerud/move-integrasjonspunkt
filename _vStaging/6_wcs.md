@@ -78,6 +78,7 @@ Det neste som må gjøres er å installere sertifikatet. Enten på "gjeldende br
 11. Nå vil du se det nye sertifikatet i listen over sertifikater du har importert.
 
 **Skjermbilder finner du her**
+
 <details>
 	<summary>
 		Vis skjermbilder
