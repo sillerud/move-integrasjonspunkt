@@ -27,7 +27,7 @@ Først må en eksportere nøkkelparet fra .p12 keystoren. Dette delen kan du ski
 6. velg plassering for det nye sertifikatet og angi namn. Lagre det som .p12 fil. Trykk ok.
 7. Nøkkelpar er nå eksportert.
 
-Skjermbilder følger:
+**Skjermbilder følger:**
 
 Steg 2 og 3: eksporter nøkkelpar
 
@@ -63,11 +63,12 @@ Det neste som må gjøres er å installere sertifikatet. Enten på "gjeldende br
 10. Import var vellykket. Trykk ok.
 11. Nå vil du se det nye sertifikatet i listen over sertifikater du har importert.
 
-Skjermbilder følger:
+**Skjermbilder følger:**
 
 Steg 2: Legg til snapin-modul
 ![legginn_snapin](../resources/5_sert_bruker.PNG)
 
-![](../resources/)
+Steg
+![](../resources/5_sert_bruker2.PNG)
 ![](../resources/)
 ![](../resources/)
