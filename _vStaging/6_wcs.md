@@ -70,5 +70,6 @@ Steg 2: Legg til snapin-modul
 
 Steg
 ![](../resources/5_sert_bruker2.PNG)
+
 ![](../resources/)
 ![](../resources/)
