@@ -78,13 +78,13 @@ Det neste som må gjøres er å installere sertifikatet. Enten på "gjeldende br
 11. Nå vil du se det nye sertifikatet i listen over sertifikater du har importert.
 
 **Skjermbilder finner du her**
-
 <details>
 	<summary>
 		Vis skjermbilder
 	</summary>
 	
 Steg 2 og 3: Legg til snapin-modul
+
 ![legginn_snapin](../resources/5_sert_bruker.PNG)
 
 Steg 4: Velge hvilken snapin-modul som skal brukes
