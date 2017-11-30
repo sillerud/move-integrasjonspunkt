@@ -37,10 +37,6 @@ Først må en eksportere nøkkelparet fra .p12 keystoren. Dette delen kan du ski
 7. Nøkkelpar er nå eksportert.
 
 **Skjermbilder finner du her**
-<details>
-	<summary>
-		Vis skjermbilder
-	</summary>
 	
 Steg 2 og 3: eksporter nøkkelpar
 ![eksporter nøkkelpar](../resources/1_export_pair.png)
@@ -54,7 +50,6 @@ Steg 5 og 6: Privatnøkkel passord og velg filbane.
 Steg 7: Nøkkelpar eksportert
 ![nøkkel eksportert](../resources/2_export_pair4.PNG)
 
-</details>
 
 ***
 
@@ -78,10 +73,6 @@ Det neste som må gjøres er å installere sertifikatet. Enten på "gjeldende br
 11. Nå vil du se det nye sertifikatet i listen over sertifikater du har importert.
 
 **Skjermbilder finner du her**
-<details>
-	<summary>
-		Vis skjermbilder
-	</summary>
 	
 Steg 2 og 3: Legg til snapin-modul
 
@@ -117,6 +108,5 @@ Steg 11: Sertifikatet er importert.
 
 ![sertifikat_importert](../resources/5_sert_bruker9.PNG)
 
-</details>
 
 ***
