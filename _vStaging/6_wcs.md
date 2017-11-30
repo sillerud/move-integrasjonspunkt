@@ -1,8 +1,8 @@
 ---
-title: Bruk av Windows Certificate Store
+title: Oppsett av Windows Certificate Store
 pageid: Windows_Certificate_Store
 layout: default
-description: Bruk av Windows Certificate Store
+description: Oppsett av Windows Certificate Store
 isHome: false
 hiddenInToc: true
 ---
