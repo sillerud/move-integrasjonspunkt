@@ -23,8 +23,8 @@ Det neste som må gjøres er å installere sertifikatet. Enten på "gjeldende br
 2. fil -> legg til/fjern snapin-modul
 3. I venstre del av menyen (Tilgjengelige snapin-moduler) bla ned til "Sertifikater og trykk "legg til"
 4. Her er det to valg. Enten å installere sertifikat på "min brukerkonto"(gjeldende bruker), eller å installere sertifikat på "lokal maskin". Om du skal bruke proxy må du velge "lokal maskin". 
--  velg "min brukerkonto" og trykk fullført. Trykk så ok.
-- velg "lokal maskin" og trykk fullført. Trykk så ok.
+	- velg "min brukerkonto" og trykk fullført. Trykk så ok.
+	- velg "lokal maskin" og trykk fullført. Trykk så ok.
 5. Naviger til ønsket mappe. For eksempel Personlig -> Sertifikater.
 6. Høyreklikk på den hvite bakgrunnen og velg: "alle oppgaver" 
 	- importer
