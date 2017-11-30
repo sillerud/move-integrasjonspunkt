@@ -27,8 +27,12 @@ Først må en eksportere nøkkelparet fra .p12 keystoren. Dette delen kan du ski
 6. velg plassering for det nye sertifikatet og angi namn. Lagre det som .p12 fil. Trykk ok.
 7. Nøkkelpar er nå eksportert.
 
-**Skjermbilder følger:**
-
+**Skjermbilder finner du her**
+<details>
+	<summary>
+		Vis skjermbilder
+	</summary>
+	
 Steg 2 og 3: eksporter nøkkelpar
 ![eksporter nøkkelpar](../resources/1_export_pair.png)
 
@@ -40,6 +44,8 @@ Steg 5 og 6: Privatnøkkel passord og velg filbane.
 
 Steg 7: Nøkkelpar eksportert
 ![nøkkel eksportert](../resources/2_export_pair4.PNG)
+
+</details>
 
 ***
 
