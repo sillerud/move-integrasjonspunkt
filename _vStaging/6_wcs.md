@@ -17,8 +17,10 @@ Alias tilsvarer egendefinert namn (friendly name) som kan ses på listen over br
 
 ![properties-friendlyname](../resources/prop_namn.PNG)
 
+***
 
-> **NB!** Selv om du bruker Windows Certificate Store så må du fortsatt [laste opp virksomhetssertifikatet](../#laste-opp-public-virksomhetssertifikat)
+> **NB!** Selv om du bruker Windows Certificate Store så må du fortsatt [laste opp virksomhetssertifikatet](http://difi.github.io/move-integrasjonspunkt/vStaging/#laste-opp-public-virksomhetssertifikat)
+
 ***
 
 ## Eksportere nøkkelparet frå .p12 keystore
