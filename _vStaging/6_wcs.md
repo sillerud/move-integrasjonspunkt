@@ -67,9 +67,18 @@ Det neste som må gjøres er å installere sertifikatet. Enten på "gjeldende br
 Steg 2: Legg til snapin-modul
 ![legginn_snapin](../resources/5_sert_bruker.PNG)
 
-Steg
-![](../resources/5_sert_bruker2.PNG)
+Steg 4: Velge hvilken snapin-modul som skal brukes
+![min brukerkonto](../resources/5_sert_bruker2.PNG)
 
+Steg 5: velge hvor sertifikatet skal installeres
+![installasjonspath](../resources/5_sert_bruker3.PNG)
+
+Steg 6: importer .p12-fil
+![importer_fil](../resources/)
+
+Steg 7: 
+![](../resources/)
+![](../resources/)
 ![](../resources/)
 ![](../resources/)
 
