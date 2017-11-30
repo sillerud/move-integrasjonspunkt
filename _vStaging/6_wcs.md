@@ -2,6 +2,18 @@
 
 Her vil det komme installasjonsveiledning for bruk av windows certificate store (30.11)
 
+## Innstillinger i integrasjonspunktet-local.properties-fil
+
+For å bruke Windows certificate store i stedet for Java keystore, så må en legge inn noen andre innstillinger i integrasjonspunkt-local.properties filen. Last ned denne filen og kommenter bort eller slett "alternativ 1: java innstillinger". Kan gjerne rydde opp filen slik at du kun har de linjene du trenger. Se skjermbildet under.
+
+![propertiesfil-wcs](../resources/prop_prop.PNG)
+
+Alias tilsvarer egendefinert namn (friendly name) som kan ses på listen over brukersertifikater. Eller følg veiledning under for å navigere fram til det. Følg steg 1-5 så vil du få opp et bilde som ser ut som dette:
+
+![properties-friendlyname](../resources/prop_namn.PNG)
+
+***
+
 ## Eksportere nøkkelparet frå .p12 keystore
 
 Først må en eksportere nøkkelparet fra .p12 keystoren. Dette delen kan du skippe om du allerede har eksportert nøkkelparet (NB! Nøkkelpar != public nøkkel) 
@@ -14,6 +26,8 @@ Først må en eksportere nøkkelparet fra .p12 keystoren. Dette delen kan du ski
 5. fyll inn passord på privatnøkkelen (ofte samme passord om du bruker original p12-fil)
 6. velg plassering for det nye sertifikatet og angi namn. Lagre det som .p12 fil. Trykk ok.
 7. Nøkkelpar er nå eksportert.
+
+***
 
 ## Installere sertifikat i Windows Certificate Store
 
