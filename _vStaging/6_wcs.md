@@ -74,7 +74,7 @@ Steg 5: velge hvor sertifikatet skal installeres
 ![installasjonspath](../resources/5_sert_bruker3.PNG)
 
 Steg 6: importer .p12-fil
-![importer_fil](../resources/)
+![importer_fil](../resources/5_sert_bruker4.PNG)
 
 Steg 7: 
 ![](../resources/)
