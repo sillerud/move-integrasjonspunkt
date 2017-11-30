@@ -19,7 +19,7 @@ Alias tilsvarer egendefinert namn (friendly name) som kan ses på listen over br
 Først må en eksportere nøkkelparet fra .p12 keystoren. Dette delen kan du skippe om du allerede har eksportert nøkkelparet (NB! Nøkkelpar != public nøkkel) 
 
 1. åpne sertifikat p12.fil i keystore explorer
-2. eksporter "key pair"
+2. Høgreklikk på sertifikatet og velg "eksporter" -> "key pair"
 3. export
 	- key pair
 4. fyll inn passord på keystoren
