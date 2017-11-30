@@ -12,7 +12,7 @@ isHome: false
 
 > **MERK** Du må velge om du vil bruke java keystore eller Windows certificate store. Du må dermed kommentere bort linjer du ikke trenger i integrasjonspunkt-local.properties filen du laster ned. Dette står videre forklart som kommentarer i selve filen.
 
-Bruk av Windows certificate store(WCS) krever minimum versjon 1.7.74... av integrasjonspunktet. Mer detaljert veiledning angåande WCS [finner du her](difi.github.io/move-integrasjonspunkt/vStaging/#/6_wcs) 
+Bruk av Windows certificate store(WCS) krever minimum versjon 1.7.74... av integrasjonspunktet. Mer detaljert veiledning angåande WCS [finner du her](http://difi.github.io/move-integrasjonspunkt/vStaging/#/6_wcs) 
 
 ### integrasjonspunkt-local.properties
 
