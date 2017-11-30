@@ -4,7 +4,7 @@ Her vil det komme installasjonsveiledning for bruk av windows certificate store 
 
 ## Innstillinger i integrasjonspunktet-local.properties-fil
 
-For å bruke Windows certificate store i stedet for Java keystore, så må en legge inn noen andre innstillinger i integrasjonspunkt-local.properties filen. [Last ned denne filen](../resources/integrasjonspunkt-local.properties) og kommenter bort eller slett "alternativ 1: java innstillinger". Kan gjerne rydde opp filen slik at du kun har de linjene du trenger. Se skjermbildet under.
+For å bruke Windows certificate store i stedet for Java keystore, så må en legge inn noen andre innstillinger i integrasjonspunkt-local.properties filen. [Last ned denne filen](../resources/integrasjonspunkt-local.properties) og kommenter bort eller slett "alternativ 1: Java keystore". Kan gjerne rydde opp filen slik at du kun har de linjene du trenger. Se skjermbildet under.
 
 ![propertiesfil-wcs](../resources/prop_prop.PNG)
 
