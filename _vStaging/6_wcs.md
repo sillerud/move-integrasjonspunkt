@@ -74,21 +74,27 @@ Steg 5: velge hvor sertifikatet skal installeres
 ![installasjonspath](../resources/5_sert_bruker3.PNG)
 
 Steg 6: importer .p12-fil
+
 ![importer_fil](../resources/5_sert_bruker4.PNG)
 
 Steg 7: finn nøkkelpar-fila 
+
 ![velgfil](../resources/5_sert_bruker5.PNG)
 
 Steg 8: Passordet til privatnøkkelen
+
 ![privatnøkkel pw](../resources/5_sert_bruker6.PNG)
 
 Steg 9: Velge sertifikatlager
+
 ![sertifikatlager](../resources/5_sert_bruker7.PNG)
 
 Steg 10: fullfør import
+
 ![Fullfør import](../resources/5_sert_bruker8.PNG)
 
 Steg 11: Sertifikatet er importert. 
+
 ![sertifikat_importert](../resources/5_sert_bruker9.PNG)
 
 ***
