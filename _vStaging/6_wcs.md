@@ -1,6 +1,11 @@
-
-
-Her vil det komme installasjonsveiledning for bruk av windows certificate store (30.11)
+---
+title: Bruk av Windows Certificate Store
+pageid: Windows_Certificate_Store
+layout: default
+description: Bruk av Windows Certificate Store
+isHome: false
+hiddenInToc: true
+---
 
 ## Innstillinger i integrasjonspunktet-local.properties-fil
 
