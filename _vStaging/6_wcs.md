@@ -67,6 +67,7 @@ Det neste som må gjøres er å installere sertifikatet. Enten på "gjeldende br
 	<summary>
 		Vis skjermbilder
 	</summary>
+	
 Steg 2 og 3: Legg til snapin-modul
 ![legginn_snapin](../resources/5_sert_bruker.PNG)
 
