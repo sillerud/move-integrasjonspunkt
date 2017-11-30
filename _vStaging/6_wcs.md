@@ -30,16 +30,16 @@ Først må en eksportere nøkkelparet fra .p12 keystoren. Dette delen kan du ski
 Skjermbilder følger:
 
 Steg 2 og 3: eksporter nøkkelpar
-![eksporter nøkkelpar](..resources/1_export_pair.PNG)
+![eksporter nøkkelpar](../resources/1_export_pair.PNG)
 
 Steg 4: Keystore passord
-![passord1](..resources/1_export_pair2.PNG)
+![passord1](../resources/1_export_pair2.PNG)
 
 Steg 5 og 6: Privatnøkkel passord og velg filbane. 
-![passord2](..resources/1_export_pair3.PNG)
+![passord2](../resources/1_export_pair3.PNG)
 
 Steg 7: Nøkkelpar eksportert
-![nøkkel eksportert](..resources/)
+![nøkkel eksportert](../resources/1_export_pair4.PNG)
 
 ***
 
@@ -65,8 +65,8 @@ Det neste som må gjøres er å installere sertifikatet. Enten på "gjeldende br
 Skjermbilder følger:
 
 Steg 2: Legg til snapin-modul
-![legginn_snapin](..resources/5_sert_bruker.PNG)
+![legginn_snapin](../resources/5_sert_bruker.PNG)
 
-![](..resources/)
-![](..resources/)
-![](..resources/)
+![](../resources/)
+![](../resources/)
+![](../resources/)
