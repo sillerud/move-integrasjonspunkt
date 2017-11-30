@@ -30,6 +30,7 @@ Først må en eksportere nøkkelparet fra .p12 keystoren. Dette delen kan du ski
 Skjermbilder følger:
 
 Steg 2 og 3: eksporter nøkkelpar
+
 ![eksporter nøkkelpar](../resources/1_export_pair.PNG)
 
 Steg 4: Keystore passord
