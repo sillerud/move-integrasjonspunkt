@@ -1,8 +1,8 @@
 ---
-title: Minstekrav til brukerrettigheter
+title: Minstekrav til brukerrettigheter og task scheduler oppsett
 pageid: brukerrettigheter
 layout: default
-description: Minstekrav til brukerrettigheter 
+description: Minstekrav til brukerrettigheter og task scheduler oppsett
 isHome: false
 hiddenInToc: true
 ---
