@@ -31,7 +31,7 @@ Skjermbilder følger:
 
 Steg 2 og 3: eksporter nøkkelpar
 
-![eksporter nøkkelpar](../resources/1_export_pair.PNG)
+![eksporter nøkkelpar](../resources/1_export_pair.png)
 
 Steg 4: Keystore passord
 ![passord1](../resources/2_export_pair2.PNG)
