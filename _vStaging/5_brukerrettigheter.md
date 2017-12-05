@@ -55,8 +55,8 @@ Alternativt kan en legge inn virksomhetssertifikatet på lokal maskin i stedet f
 **general:**
 
 1. Trykk på "endre bruker eller gruppe" / "change user or groups"
-2. søk etter %servernamn%/integrasjonspunkt (eller anna ønska bruker)
-3. trykk ok
+2. søk etter %servernamn%\integrasjonspunkt (eller anna ønska bruker) og trykk kontroller navn
+3. trykk ok to ganger
 4. Bekreft med passord for brukerkontoen
 
 ![local_machine](../resources/lokalbruker_wcs.png)
