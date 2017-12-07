@@ -7,7 +7,7 @@ Dokumentasjonen på programvaren du trenger ligger [på github](https://github.c
 3. Endre navn på .exe fila og xml-filene til de navnene du ønsker. For eksempel ip-service.exe og ip-service.xml
 4. Legg begge disse filene i integrasjonspunktmappa di.
 5. Endre versjonsnummeret på integrasjonspunkt-%versjonsnr%.jar til å være lik din versjon
-6. For å installere tjenesten gjør du følgende:
+* For å installere tjenesten gjør du følgende:
   - åpne kommandovindu som administrator og naviger til integrasjonspunktmappa. Kjør så følgende kommando
   - ip-service.exe install
   - ip-service.exe start
