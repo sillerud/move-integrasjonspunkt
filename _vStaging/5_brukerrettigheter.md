@@ -72,13 +72,16 @@ Loggene for denne tjenesten vil i utgangspunktet bli skrevet til feks ```c:\inte
 
 Om du gjør endringer i versjon / ip-service.xml fil så må du reinstallere tjenesten. Det gjør du ved å åpne kommandovindu som administrator og navigere til integrasjonspunktmappa. Kjør så følgende kommandoer.
 
+```
 - integrasjonspunkt-service.exe stop
 - integrasjonspunkt-service.exe uninstall
 - integrasjonspunkt-service.exe install
 - integrasjonspunkt-service.exe start
+```
 
-Da er tjenesten reinstallert og starter opp på nytt.
+Da er tjenesten reinstallert og restartet.
 
+***
 
 ## Alternativt for bruk av proxy og Windows certificate store
 
