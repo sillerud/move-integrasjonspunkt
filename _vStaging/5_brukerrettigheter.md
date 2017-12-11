@@ -61,8 +61,10 @@ Dokumentasjonen på programvaren du trenger ligger [på github](https://github.c
 5. Endre versjonsnummeret på integrasjonspunkt-%versjonsnr%.jar til å være lik din versjon
 * For å installere tjenesten gjør du følgende:
   - åpne kommandovindu som administrator og naviger til integrasjonspunktmappa. Kjør så følgende kommando
-  - integrasjonspunkt-service.exe install
-  - integrasjonspunkt-service.exe start
+  ```
+  integrasjonspunkt-service.exe install
+  integrasjonspunkt-service.exe start
+  ```
 
 I denne config-fila er det lagt inn automatisk loggrotering ved 10MB størrelse og 8 filer vil bli beholdt. Dette kan endres til ønsket størrelse ved å endre ```<sizeThreshold>```variabelen.  Om du ikke ønsker loggrotering kan du fjerne hele ```<logmode>``` fra integrasjonspunkt-service.xml
 
@@ -73,10 +75,10 @@ Loggene for denne tjenesten vil i utgangspunktet bli skrevet til feks ```c:\inte
 Om du gjør endringer i versjon / ip-service.xml fil så må du reinstallere tjenesten. Det gjør du ved å åpne kommandovindu som administrator og navigere til integrasjonspunktmappa. Kjør så følgende kommandoer.
 
 ```
-- integrasjonspunkt-service.exe stop
-- integrasjonspunkt-service.exe uninstall
-- integrasjonspunkt-service.exe install
-- integrasjonspunkt-service.exe start
+integrasjonspunkt-service.exe stop
+integrasjonspunkt-service.exe uninstall
+integrasjonspunkt-service.exe install
+integrasjonspunkt-service.exe start
 ```
 
 Da er tjenesten reinstallert og restartet.
