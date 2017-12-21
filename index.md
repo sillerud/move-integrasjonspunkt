@@ -37,4 +37,5 @@ For å ta ibruk integrasjonspunktet må du gjennomføre listen under
 2. Ansaffe virksomhetssertifikat for test og produksjon
 3. Skru på ekspederingskanal for BestEdu i Sak-/Arkivsystemet (Gjelder ikke for eInnsyn)
 4. Gjøre lokalt oppsett for integrasjonpunktet
+5. Sørg for å holde server i Sync med NTP
 

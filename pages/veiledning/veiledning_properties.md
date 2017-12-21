@@ -93,14 +93,16 @@ difi.move.fiks.ut.password      |password      |Passord generert under konfigura
 
 Kan endres
 
-Propertie                         |Eksempel      |Beskrivelse                                                                                                                  |
-----------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------|
+
+Propertie                       |Eksempel      |Beskrivelse                                     |
+--------------------------------|--------------|------------------------------------------------|
 difi.move.fiks.inn.mailOnError    |true          |Dersom import til Sak-/Arkivsystem feiler grunnet manglende verdier kan det uatomatisk sendes mail med meldingen fra SvarInn |
-difi.move.fiks.inn.mailSubject    |Import feilet |Overskrive defaultmeldingen i mail                                                                                           |
-                                  |              ||
+difi.move.fiks.inn.mailSubject    |Import feilet |Overskrive defaultmeldingen i mail |
 difi.move.fiks.keystore.alias*    |              ||
 difi.move.fiks.keystore.path*     |              ||
 difi.move.fiks.keystore.password* |              ||
+
+
 
 \* Default brukes samme keystore oppsett som under difi.move.org.keystoe
 Dersom annet sertifikat brukes må dette eksporteres og lastes opp under konfigurasjon av SvarInn
@@ -169,6 +171,15 @@ Dersom du ønsker kalle BestEdus importtjeneste med SSL, og bukre selvsignert se
 keytool -importcert -file mittSelvsignerteSertifikat.crt -alias alias -keystore $JDK_HOME/jre/lib/security/cacerts
 ```
 
+
+## Proxy
+
+Propertie                        |Eksempel       |Beskrivelse       |
+---------------------------------|---------------|------------------|
+Dhttp.proxyHost |http://localhost/proxy|
+Dhttp.proxyPort |1234|
+Dhttps.proxyHost |https://localhost/proxy|
+Dhttps.proxyPort |4321|
 
 
 ## Status

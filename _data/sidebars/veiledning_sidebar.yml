@@ -22,21 +22,25 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Get started
+    - title: Komme igang
       url: /index.html
       output: web, pdf
       type: homepage
 
-    - title: Generelt
-      url: /veiledning_generelt.html
-      output: web, pdf
-
-    - title: Properties
-      url: /veiledning_properties.html
+    - title: Java
+      url: /veiledning_java.html
       output: web, pdf
 
     - title: Virksomhetssrtifikat
       url: /veiledning_virksomhetssertifikat.html
+      output: web, pdf
+
+    - title: Virksomhetssrtifikat
+      url: /veiledning_brannmur.html
+      output: web, pdf
+
+    - title: Properties
+      url: /veiledning_properties.html
       output: web, pdf
 
     - title: Support
