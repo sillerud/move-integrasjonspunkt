@@ -4,3 +4,8 @@ Dette er ein installasjonguide til oppsett av integrasjonspunkt ute hos virksomh
 
 #Online Dokumentasjon#
 [ONLINE DOKUMENTASJON FINNER DU HER](http://difi.github.io/move-integrasjonspunkt/)
+
+#Run with docker 
+```
+docker-compose build --no-cache && docker-compose up
+```
