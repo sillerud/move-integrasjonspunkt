@@ -5,19 +5,6 @@ entries:
   product: Integrasjonspunkt
   folders:
 
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage.html
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
-
   - title: Generelt
     output: web, pdf
     folderitems:
