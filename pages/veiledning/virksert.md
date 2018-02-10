@@ -12,7 +12,7 @@ folder: veiledning
 
 Per i dag så benytter vi Java Key Store (JKS). Vi jobber med en virtuell HSM-løsning som alternativ til JKS. Vi har valgt å pensjonere Windows Certificate Store løsningen fordi den ikke støtter alle former for eFormidling. Om du allerede bruker WCS og trenger støtte, ta kontakt med <a href="mailto:idporten@difi.no">idporten@difi.no</a>. 
 
-Hvordan du legger inn sertifikatet i JKS finner du nedenfor. Etter at du har lagt sertifikatet i keystoren må det [sendes til Difi for opplasting.](..)
+Hvordan du legger inn sertifikatet i JKS finner du nedenfor. Etter at du har lagt sertifikatet i keystoren må det sendes til Difi på denne adressen <a href="mailto:idporten@difi.no">idporten@difi.no</a> slik at vi kan laste det opp.
 
 > * NB! Testmiljø krever **test virksomhetssertifikat**. Produksjonsertifikat vil ikke virke i test  
 > * NB2! I produksjon **må** en ha produksjon **virksomhetssertifikat**. 
@@ -27,7 +27,7 @@ Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfi
 
 I dette kapittelet finner du informasjon om hvordan du konverterer en .p12-keystore (filformatet mottatt ved bestilling av virksomhetssertifikat) til en java key store.
 
-Når du har fått sertifikatet, må det legges inn på serveren du kjører integrasjonspunket. Noter deg lokasjonen for sertifikatet, samt brukernavn og passord. Dette skal senere legges inn i integrasjonspunkt-local.properties filen som er en del av [neste steg av installasjonen.](..)
+Når du har fått sertifikatet, må det legges inn på serveren du kjører integrasjonspunket. Noter deg lokasjonen for sertifikatet, samt brukernavn og passord. Dette skal senere legges inn i integrasjonspunkt-local.properties filen som er en del av [neste steg av installasjonen.](http://difi.github.io/move-integrasjonspunkt/properties_config.html)
 
 
 **NB!** Passord på keystore og sertifikat **MÅ** være like
