@@ -2,7 +2,7 @@
 title: Forutsetninger for installasjon
 description: Forutsetninger for installasjon
 summary: "Forutsetninger for installasjon"
-permalink: Forutsetninger.html
+permalink: forutsetninger.html
 
 layout: page
 sidebar: main_sidebar
