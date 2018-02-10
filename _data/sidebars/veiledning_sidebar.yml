@@ -46,5 +46,8 @@ entries:
     - title: Support
       url: /veiledning_sakark.html
       output: web, pdf
-
+      
+  - title: Forutsetninger for installasjon
+      url: /Forutsetninger.html
+      output: web, pdf
   - 
