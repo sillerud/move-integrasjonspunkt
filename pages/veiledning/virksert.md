@@ -3,7 +3,7 @@ title: Virksomhetssertifikat
 description: Virksomhetssertifikat
 summary: "Håndtering av virksomhetssertifikatet"
 sidebar: veiledning_sidebar
-permalink: Virksomhetssertifikat.html
+permalink: virksomhetssertifikat.html
 
 folder: veiledning
 ---
