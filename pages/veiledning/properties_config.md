@@ -3,9 +3,8 @@ title: Konfigurering av integrasjonspunkt-local.properties
 description: Konfigurering av integrasjonspunkt-local.properties-filen.
 summary: "Konfigurering av integrasjonspunkt-local.properties-filen."
 permalink: properties_config.html
-
-layout: page
-sidebar: main_sidebar
+sidebar: veiledning_sidebar
+folder: veiledning
 ---
 
 Denne delen av veiledningen er delt opp slik at du først finner litt generell informasjon før du deretter finner eksempler på integrasjonspunkt-local.properties oppsett spesifikt for den tjenesten du skal ta i bruk. 
