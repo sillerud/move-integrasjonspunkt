@@ -47,7 +47,7 @@ entries:
       url: /veiledning_sakark.html
       output: web, pdf
       
-  - title: Forutsetninger for installasjon
+    - title: Forutsetninger for installasjon
       url: /forutsetninger.html
       output: web, pdf
-  - 
+  
