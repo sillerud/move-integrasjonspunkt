@@ -26,21 +26,28 @@ entries:
       url: /index.html
       output: web, pdf
       type: homepage
-  
-    - title: Properties
-      url: /veiledning_properties.html
-      output: web, pdf
 
-    - title: Support
-      url: /veiledning_sakark.html
-      output: web, pdf
-      
     - title: Forutsetninger for installasjon
       url: /forutsetninger.html
       output: web, pdf
     
     - title: Virksomhetssertifikat
       url: /virksomhetssertifikat.html
+      output: web, pdf
+      
+    - title: Kjøre integrasjonspunktet
+      url: /ip_run.html
+      output: web, pdf
+      
+     - title: Properties
+      url: /properties_config.html
+      output: web, pdf
+      
+      
+      
+      
+    - title: Support
+      url: /veiledning_sakark.html
       output: web, pdf
       
   
