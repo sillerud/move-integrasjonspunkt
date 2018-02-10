@@ -35,19 +35,19 @@ Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp
 <button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: DPE</button>
 <div id="demo" class="collapse">
   {% include custom/firewall_staging/staging_generell.html %} 
-  {% include custom/staging_dpe.html %}
+  {% include custom/firewall_staging/staging_dpe.html %}
 </div>
 
 <button data-toggle="collapse" data-target="#demo2">Brannmuråpninger testmiljø: DPO og DPV</button>
 <div id="demo2" class="collapse">
  {% include custom/firewall_staging/staging_generell.html %} 
-  {% include custom/staging_dpo.html %}
+  {% include custom/firewall_staging/staging_dpo.html %}
 </div>
 
 <button data-toggle="collapse" data-target="#demo3">Brannmuråpninger testmiljø: DPI</button>
 <div id="demo3" class="collapse">
   {% include custom/firewall_staging/staging_generell.html %} 
-  {% include custom/staging_dpi.html %}
+  {% include custom/firewall_staging/staging_dpi.html %}
 </div>
 
 ### Brannmuråpninger i produksjon
