@@ -17,7 +17,7 @@ For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følg
 + Tilgjengelig minne må være minimum 3 ganger større enn størrelsen på meldinger ønsket sendt.
 + Nødvendige brannmuråpninger
 + Java 8 med JCE installert
-+ Virksomhetssertifikat utstedt av Buypass eller Commfides. [Les mer](http://difi.github.io/move-integrasjonspunkt/vStaging/#/4_sertifikat)
++ Virksomhetssertifikat utstedt av Buypass eller Commfides. [Les mer](http://difi.github.io/move-integrasjonspunkt/virksomhetssertifikat.html)
 + BestEdu ekspederingskanal skrudd på i sak-/arkivsystem
 + Tips: Installer integrasjonspunktet og eInnsynsklient på samme server.
 
@@ -104,7 +104,7 @@ Dersom JCE mangler vil integrasjonspunket stoppe under oppstart og skrive logmel
 
 **Hvordan?**
 
-[VEILEDNING: Les alt om håndtering av virksomhetssertifikat her](..)
+[VEILEDNING: Les alt om håndtering av virksomhetssertifikat her](http://difi.github.io/move-integrasjonspunkt/virksomhetssertifikat.html)
 
 Integrasjonspunktet bruker virksomhetssertifikat til kryptering og signering av meldinger som går mellom integrasjonpunkter.
 Virksomhetssertifikat som kan benyttes leveres av [Commfides](https://www.commfides.com/e-ID/Bestill-Commfides-Virksomhetssertifikat.html) og [Buypass](http://www.buypass.no/bedrift/produkter-og-tjenester/buypass-virksomhetssertifikat)
