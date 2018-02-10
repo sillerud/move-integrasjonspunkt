@@ -43,9 +43,6 @@ entries:
       url: /properties_config.html
       output: web, pdf
       
-      
-      
-      
     - title: Support
       url: /veiledning_sakark.html
       output: web, pdf
