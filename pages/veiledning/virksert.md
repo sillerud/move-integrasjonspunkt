@@ -110,4 +110,4 @@ Public key (.cer fil) på e-post til [idporten@difi.no](mailto:idporten@difi.no)
 keytool -export -keystore [MY_KEYSTORE.jks] -alias [ALIAS] -file [FILENAME.cer]
 ```
 
-Spørsmål rundt integrasjonspunktet installasjon eller forslag til forbedringer av installasjonsbeskrivelsen kan sendes til vår [supportmail](mailto:idporten@difi.no)
+Spørsmål rundt integrasjonspunktet installasjon eller forslag til forbedringer av installasjonsbeskrivelsen kan sendes til <a href="mailto:idporten@difi.no">idporten@difi.no</a>
