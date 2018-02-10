@@ -40,11 +40,11 @@ entries:
       output: web, pdf
       
      - title: Properties
-      url: /properties_config.html
-      output: web, pdf
+       url: /properties_config.html
+       output: web, pdf
       
-    - title: Support
-      url: /veiledning_sakark.html
-      output: web, pdf
+     - title: Support
+       url: /veiledning_sakark.html
+       output: web, pdf
       
   
