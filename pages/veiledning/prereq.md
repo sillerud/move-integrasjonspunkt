@@ -44,11 +44,12 @@ Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp
 </div>
 
 
-//<button data-toggle="collapse" data-target="#demo3">Brannmuråpninger testmiljø: DPI</button>
-//<div id="demo3" class="collapse">
-// {% include custom/firewall_staging/staging_generell.html %} 
-//  {% include custom/firewall_staging/staging_dpi.html %}
-//</div>
+<!--<button data-toggle="collapse" data-target="#demo3">Brannmuråpninger testmiljø: DPI</button>
+<div id="demo3" class="collapse">
+ {% include custom/firewall_staging/staging_generell.html %} 
+  {% include custom/firewall_staging/staging_dpi.html %}
+</div>
+-->
 
 ### Brannmuråpninger i produksjon
 
