@@ -1,18 +1,19 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
+
 entries:
 - title: sidebar
   product: Integrasjonspunkt
   folders:
 
- - title: Generelt
-    output: web, pdf
-    folderitems:
+  - title: Generelt
+     output: web, pdf
+     folderitems:
 
-    - title: Komme igang
-      url: /index.html
-      output: web, pdf
-      type: homepage
+     - title: Komme igang
+       url: /index.html
+       output: web, pdf
+       type: homepage
 
     - title: Forutsetninger for installasjon
       url: /forutsetninger.html
