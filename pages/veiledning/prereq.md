@@ -31,7 +31,7 @@ Tjenesteleverandør velger selv tidskilde, denne bør være lokalisert internt i
 
 Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp noen brannmuråpninger. I akkordion lenger nede så må du åpne både generelle og spesifikke for den tjenesten du skal installere.
 
-<button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: DPE</button>
+<button data-toggle="collapse" data-target="#demo">Brannmuråpninger testmiljø: eInnsyn</button>
 <div id="demo" class="collapse">
   {% include custom/firewall_staging/staging_generell.html %} 
   {% include custom/firewall_staging/staging_dpe.html %}
@@ -43,15 +43,16 @@ Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp
   {% include custom/firewall_staging/staging_dpo.html %}
 </div>
 
-<button data-toggle="collapse" data-target="#demo3">Brannmuråpninger testmiljø: DPI</button>
-<div id="demo3" class="collapse">
- {% include custom/firewall_staging/staging_generell.html %} 
-  {% include custom/firewall_staging/staging_dpi.html %}
-</div>
+
+//<button data-toggle="collapse" data-target="#demo3">Brannmuråpninger testmiljø: DPI</button>
+//<div id="demo3" class="collapse">
+// {% include custom/firewall_staging/staging_generell.html %} 
+//  {% include custom/firewall_staging/staging_dpi.html %}
+//</div>
 
 ### Brannmuråpninger i produksjon
 
-<button data-toggle="collapse" data-target="#demo4">Brannmuråpninger produksjonsmiljø: DPE</button>
+<button data-toggle="collapse" data-target="#demo4">Brannmuråpninger produksjonsmiljø: Einnsyn</button>
 <div id="demo4" class="collapse">
   {% include custom/firewall_prod/prod_generell.html %} 
   {% include custom/firewall_prod/prod_dpe.html %}
