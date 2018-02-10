@@ -49,6 +49,7 @@ Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp
   {% include custom/firewall_staging/staging_dpi.html %}
 </div>
 
+<br>
 
 ### Brannmuråpninger i produksjon
 
