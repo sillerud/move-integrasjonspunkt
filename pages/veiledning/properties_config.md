@@ -11,7 +11,7 @@ Denne delen av veiledningen er delt opp slik at du først finner litt generell i
 
 ### integrasjonspunkt-local.properties
 
-Her laster du ned [integrasjonspunkt-local.properties-fil for JKS.](..) Per i dag så benytter vi Java Key Store (JKS). Vi jobber med en virtuell HSM-løsning som alternativ til JKS. Vi har valgt å pensjonere Windows Certificate Store løsningen fordi den ikke støtter alle former for eFormidling. Om du allerede bruker WCS og trenger støtte, ta kontakt med <a href="mailto:idporten@difi.no">idporten@difi.no</a>. 
+Her laster du ned [integrasjonspunkt-local.properties-filen](..) Per i dag så benytter vi Java Key Store (JKS). Vi jobber med en virtuell HSM-løsning som alternativ til JKS. Vi har valgt å pensjonere Windows Certificate Store løsningen fordi den ikke støtter alle former for eFormidling. Om du allerede bruker WCS og trenger støtte, ta kontakt med <a href="mailto:idporten@difi.no">idporten@difi.no</a>. 
 
 1. Start med å opprette en mappe med navn integrasjonspunkt på for eksempel c:\
 2. Last så ned integrasjonspunkt-local.properties filen. den kan lastes ned her: [properties-fil for JKS](..) og lagre i overnevnte mappe
@@ -78,7 +78,7 @@ Datasystem registrert
 ![Datasystem registrert](../resources/altinnDatasystemRegistrert.PNG)
 
 
-Informasjon om hvordan du logger på AltInn portal finner du [her](https://www.altinn.no/no/Portalhjelp/Innlogging/).
+Informasjon om hvordan du logger på AltInn portal finner du <a href="her">https://www.altinn.no/no/Portalhjelp/Innlogging/</a>.
 
 </div>
 
