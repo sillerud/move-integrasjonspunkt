@@ -48,6 +48,6 @@ entries:
       output: web, pdf
       
   - title: Forutsetninger for installasjon
-      url: /Forutsetninger.html
+      url: /forutsetninger.html
       output: web, pdf
   - 
