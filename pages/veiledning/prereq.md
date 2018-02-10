@@ -3,9 +3,8 @@ title: Forutsetninger for installasjon
 description: Forutsetninger for installasjon
 summary: "Forutsetninger for installasjon"
 permalink: forutsetninger.html
-
-layout: page
-sidebar: main_sidebar
+sidebar: veiledning_sidebar
+folder: veiledning
 ---
 
 Einnsyn er en prosess der statelige virksomheter gjør metadata for korrespondanse tilgjengelig for offentligheten. Integrasjonspunktet fungerer som et bindeledd mellom eInnsynsklienten brukt av arkivarene og det sentrale eInnsynsystemet.
