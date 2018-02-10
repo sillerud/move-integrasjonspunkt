@@ -2,10 +2,9 @@
 title: Kjøre integrasjonspunktet
 description: Hvordan man kjører integrasjonspunktet.
 summary: "Hvordan man kjører integrasjonspunktet."
+sidebar: veiledning_sidebar
 permalink: ip_run.html
-
-layout: page
-sidebar: main_sidebar
+folder: veiledning
 ---
 
 Det finnes flere måter å kjøre integrasjonspunktet på. Den vi anbefaler for enkel start/stopp i tillegg til tilgangsstyring er å installere integrasjonspunktet som en tjeneste. Her vil vi vise tre forskjellige måter å kjøre integrasjonspunktet på.
