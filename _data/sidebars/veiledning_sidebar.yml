@@ -7,8 +7,8 @@ entries:
   folders:
 
   - title: Generelt
-     output: web, pdf
-     folderitems:
+    output: web, pdf
+    folderitems:
 
      - title: Komme igang
        url: /index.html
