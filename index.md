@@ -1,24 +1,13 @@
 ---
 title: Installasjonsveiledning for integrasjonpunktet
 keywords: sample homepage
-tags: [integrasjonspjnkt]
+tags: [integrasjonspunkt]
 sidebar: veiledning_sidebar
 permalink: index.html
 summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
 ---
 
-## Installasjonsveiledning
-
-
-
-
- Tilgjengelig minne må være minimum 3 ganger større enn størrelsen på meldinger ønsket sendt.
-+ Nødvendige brannmuråpninger
-+ Java 8 med JCE installert
-+ Virksomhetssertifikat utstedt av Buypass eller Commfides. [Les mer](http://difi.github.io/move-integrasjonspunkt/vStaging/#/4_sertifikat)
-+ BestEdu ekspederingskanal skrudd på i sak-/arkivsystem
-+ Tips: Installer integrasjonspunktet og eInnsynsklient på samme server.     
-
+   
 
 ### Bakgrunn 
 
