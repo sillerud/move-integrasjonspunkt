@@ -11,10 +11,10 @@ Denne delen av veiledningen er delt opp slik at du først finner litt generell i
 
 ### integrasjonspunkt-local.properties
 
-Her laster du ned [integrasjonspunkt-local.properties-filen](..) Per i dag så benytter vi Java Key Store (JKS). Vi jobber med en virtuell HSM-løsning som alternativ til JKS. Vi har valgt å pensjonere Windows Certificate Store løsningen fordi den ikke støtter alle former for eFormidling. Om du allerede bruker WCS og trenger støtte, ta kontakt med <a href="mailto:idporten@difi.no">idporten@difi.no</a>. 
+Her laster du ned [integrasjonspunkt-local.properties-filen](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/integrasjonspunkt_local.properties) Per i dag så benytter vi Java Key Store (JKS). Vi jobber med en virtuell HSM-løsning som alternativ til JKS. Vi har valgt å pensjonere Windows Certificate Store løsningen fordi den ikke støtter alle former for eFormidling. Om du allerede bruker WCS og trenger støtte, ta kontakt med <a href="mailto:idporten@difi.no">idporten@difi.no</a>. 
 
 1. Start med å opprette en mappe med navn integrasjonspunkt på for eksempel c:\
-2. Last så ned integrasjonspunkt-local.properties filen. den kan lastes ned <a href="../resources/integrasjonspunkt_local.properties" download> og lagre i overnevnte mappe
+2. Last så ned integrasjonspunkt-local.properties filen. den kan lastes ned [her](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/integrasjonspunkt_local.properties) og lagre i overnevnte mappe
 3. last ned integrasjonspunkt[versjonsnummer].jar filen. Den finner du [her](..)
 
 Når du er ferdig skal strukturen på området se slik ut:
