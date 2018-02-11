@@ -58,7 +58,7 @@ Når en virksomhet sender digital post til virksomheter kan virksomheten sende b
   {% include custom/properties/jks_generell.html %} 
   <p> Brukernamnet og passordet for difi.move.dpv.username og difi.move.dpv.password er tjenesteeier påloggingen mot Altinn. [Mer info her](..)</p>
   {% include custom/properties/dpv.html %}
-
+</div>
 
 **Opprette bruker til Altinn formidlingstjeneste**
 
@@ -75,10 +75,8 @@ Registrere datasystem
 
 
 Datasystem registrert
-![Datasystem registrert](../resources/altinnDatasystemRegistrert.PNG)
-
+![Datasystem registrert](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/altinnDatasystemRegistrert.PNG)
 
 Informasjon om hvordan du logger på AltInn portal finner du <a href="her">https://www.altinn.no/no/Portalhjelp/Innlogging/</a>.
 
-</div>
 
