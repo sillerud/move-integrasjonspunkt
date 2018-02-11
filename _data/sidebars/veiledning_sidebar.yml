@@ -23,12 +23,12 @@ entries:
          url: /virksomhetssertifikat.html
          output: web, pdf
       
-       - title: Kjøre integrasjonspunktet
-         url: /ip_run.html
-         output: web, pdf
-      
        - title: Properties
          url: /properties_config.html
+         output: web, pdf
+      
+       - title: Oppstart av integrasjonspunktet
+         url: /ip_run.html
          output: web, pdf
       
        - title: Support
