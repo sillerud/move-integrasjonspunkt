@@ -71,7 +71,7 @@ Under opprettelse av datasystem velger du passord og får tildelt brukerid (ID),
 Eksempel:
 
 Registrere datasystem
-![Registrere datasystem i AltInn](../resources/altinnDatasystemRegistrer.PNG)
+![Registrere datasystem i AltInn](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/altinnDatasystemRegistrer.PNG)
 
 
 Datasystem registrert
