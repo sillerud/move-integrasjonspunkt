@@ -72,10 +72,12 @@ Eksempel:
 Registrere datasystem
 ![](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/images/altinnDatasystemRegistrer.PNG "registere datasystem i altinn")
 
-<img src="https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/altinnDatasystemRegistrer.PNG" alt="Registere datasystem i Altinn">
+<img src="https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/images/altinnDatasystemRegistrer.PNG" alt="Registere datasystem i Altinn">
 
 Datasystem registrert
 ![Datasystem registrert](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/images/altinnDatasystemRegistrert.PNG)
+
+___
 
 Informasjon om hvordan du logger på AltInn portal finner du <a href="her">https://www.altinn.no/no/Portalhjelp/Innlogging/</a>.
 
