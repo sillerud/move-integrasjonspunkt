@@ -73,6 +73,7 @@ Eksempel:
 Registrere datasystem
 ![Registrere datasystem i AltInn](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/altinnDatasystemRegistrer.PNG)
 
+<img src="https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/altinnDatasystemRegistrer.PNG" alt="Registere datasystem i Altinn">
 
 Datasystem registrert
 ![Datasystem registrert](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/altinnDatasystemRegistrert.PNG)
