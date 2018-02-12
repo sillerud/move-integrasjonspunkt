@@ -47,15 +47,15 @@ For å ta ibruk integrasjonspunktet må du gjennomføre listen under
 </div>
 
 <script type="text/javascript" src="js/nexusproxyclient.js">
-	// $(function() {
-	// 	var proxyUrl = "http://nexusproxy.azurewebsites.net/latest?env=staging&callback=?";
-	// 	$.getJSON( proxyUrl)
-	// 		.done(function( data ) { 
-	// 		$( "#downloadurl" ).attr("data-url", data.downloadUri);
-	// 		$( "#titleField").text(data.baseVersion)
-	// 		$( "#sha1Field").text( " Sha1: "+ data.sha1);
-	// 		})
-	// 	});
+	$(function() {
+		var proxyUrl = "http://nexusproxy.azurewebsites.net/latest?env=staging&callback=?";
+		$.getJSON( proxyUrl)
+			.done(function( data ) { 
+			$( "#downloadurl" ).attr("data-url", data.downloadUri);
+			$( "#titleField").text(data.baseVersion)
+			$( "#sha1Field").text( " Sha1: "+ data.sha1);
+			})
+		});
 </script>
 
 
