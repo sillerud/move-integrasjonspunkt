@@ -59,7 +59,7 @@ Når en virksomhet sender digital post til virksomheter kan virksomheten sende b
   {% include custom/properties/dpv.html %}
 </div>
 
-**Opprette bruker til Altinn formidlingstjeneste**
+### Opprette bruker til Altinn formidlingstjeneste
 
 Integrasjonspunktet kjører som [datasystem](https://www.altinn.no/no/Portalhjelp/Datasystemer/) mot AltInn's meldingsformidler. Integrasjonspunktet må registeres som et datasystem AltInn's portal. Informasjon om hvordan dette gjøres finnes [her](https://www.altinn.no/no/Portalhjelp/Datasystemer/Registrere-datasystem/).
 
