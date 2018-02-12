@@ -34,7 +34,6 @@ Eksempler på konfigurering finner du lenger nede under hver enkelt tjeneste.
 
 ### eInnsyn 
 
-Skriv inn tekst om dette
 
 <button data-toggle="collapse" data-target="#demo1">Trykk her</button>
 <div id="demo1" class="collapse">
