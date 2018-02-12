@@ -33,7 +33,7 @@ For å ta ibruk integrasjonspunktet må du gjennomføre listen under
 ## Nedlasting staging
 
 <div class="body">										
-	<div class="button custom" data-button-type="0" data-url="{{ site.downloadUrl }}" role="button" tabindex="0" id="downloadurl">
+	<div class="button custom" data-button-type="0" data-url="{{ downloadUrl }}" role="button" tabindex="0" id="downloadurl">
 		<div class="logo">
 			<img alt="logo" src="//www.difi.no/modules/contrib/difi_ckeditor_widgets/plugins/difibutton/icons/difibutton.png">
 		</div>
@@ -46,16 +46,16 @@ For å ta ibruk integrasjonspunktet må du gjennomføre listen under
 	</div>
 </div>
 
-<script type="text/javascript" src="{{site.url}}/js/nexusproxyclient.js">
-	$(function() {
-		var proxyUrl = "http://nexusproxy.azurewebsites.net/latest?env=staging&callback=?";
-		$.getJSON( proxyUrl)
-			.done(function( data ) { 
-			$( "#downloadurl" ).attr("data-url", data.downloadUri);
-			$( "#titleField").text(data.baseVersion)
-			$( "#sha1Field").text( " Sha1: "+ data.sha1);
-			})
-		});
+<script type="text/javascript" src="js/nexusproxyclient.js">
+	// $(function() {
+	// 	var proxyUrl = "http://nexusproxy.azurewebsites.net/latest?env=staging&callback=?";
+	// 	$.getJSON( proxyUrl)
+	// 		.done(function( data ) { 
+	// 		$( "#downloadurl" ).attr("data-url", data.downloadUri);
+	// 		$( "#titleField").text(data.baseVersion)
+	// 		$( "#sha1Field").text( " Sha1: "+ data.sha1);
+	// 		})
+	// 	});
 </script>
 
 
