@@ -109,7 +109,7 @@ description: "Installasjonsveiledning for integrasjonspunktet"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-url: https://difi.github.io/move-integrasjonspunkt
+url: https://difi.github.io
 
 plugins:
   - jekyll-redirect-from
