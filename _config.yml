@@ -110,3 +110,6 @@ description: "Installasjonsveiledning for integrasjonspunktet"
 
 # needed for sitemap.xml file only
 url: http://idratherbewriting.com
+
+plugins:
+  - jekyll-redirect-from
