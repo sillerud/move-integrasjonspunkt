@@ -72,7 +72,7 @@ Eksempel:
 Registrere datasystem
 ![](/move-integrasjonspunkt/images/altinnDatasystemRegistrer.PNG "registere datasystem i altinn")
 
-<img src="https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/images/altinnDatasystemRegistrer.PNG" alt="Registere datasystem i Altinn">
+
 
 Datasystem registrert
 ![Datasystem registrert](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/images/altinnDatasystemRegistrert.PNG)
