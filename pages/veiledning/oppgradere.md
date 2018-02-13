@@ -1,0 +1,69 @@
+---
+title: Oppgradere integrasjonspunktet til ny versjon
+description: Hvordan man oppgraderer integrasjonspunktet til ny versjon.
+summary: "Hvordan man oppgraderer integrasjonspunktet til ny versjon."
+sidebar: veiledning_sidebar
+permalink: ip_upgrade.html
+folder: veiledning
+---
+
+## Oppgradere til ny versjon 
+
+For å oppgradere til ny versjon må den siste versjonen av integrasjonspunkt[versjonsnr].jar filen lastes ned. Denne må så legges i integrasjonspunkt-mappen og oppstartskommando/tjeneste må endres til å peke på dette versjonsnummeret.
+
+### [Siste versjon lastes ned her](..)
+
+### Alt 1: Reinstallere en integrasjonspunkt tjeneste
+Last ned den siste versjon av integrasjonspunkt[versjonsnr].jar filen og legg den i integrasjonspunkt-mappen. Om du har integrasjonspunkt installert som en tjeneste så må du endre versjonsnummer i integrasjonspunkt-service.xml-filen og dermed reinstallere tjenesten.
+
+I integrasjonspunkt-service.xml-filen er det denne linjen som må oppdateres med korrekt(nytt) versjonsnummer: ```<argument>integrasjonspunkt-1.7.81-20171214.155020-3.jar</argument>```.
+
+Når du gjør endringer i versjon / ip-service.xml fil så må du reinstallere tjenesten. Det gjør du ved å åpne kommandovindu som administrator og navigere til integrasjonspunktmappa. Kjør så følgende kommandoer.
+
+```
+integrasjonspunkt-service.exe stop
+integrasjonspunkt-service.exe uninstall
+integrasjonspunkt-service.exe install
+integrasjonspunkt-service.exe start
+```
+
+Da er tjenesten reinstallert og restartet.
+
+___
+
+### Alt 2: oppgradere integrasjonspunkt som er kjørt fra kommandovindu
+
+Last ned den siste versjon av integrasjonspunkt[versjonsnr].jar filen og legg den i integrasjonspunkt-mappen. Dermed må du bytte ut versjonsnummeret i din oppstartskommando. 
+
+> TEST
+```powershell
+java -jar -Dspring.profiles.active=staging integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false 
+```
+
+> PROD
+```powershell
+java -jar integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false 
+```
+
+Sjekk i nettleser når Integrasjonspunktet har startet, som gir response i form av en wsdl.
+
+```
+http://localhost:<port-til-integrasjonspunkt>/noarkExchange?wsdl
+```
+
+___ 
+
+### Alt 3: Oppgradere integrasjonspunkt som kjører via task scheduler
+
+Last ned den siste versjon av integrasjonspunkt[versjonsnr].jar filen og legg den i integrasjonspunkt-mappen. Dermed må du bytte ut versjonsnummeret i din task. Under argument (optional) 
+
+**Trigger:**
+* At startup
+   * Edit action
+   * Program/script: JAVA
+   * add argument (optional):
+        * -jar integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false
+   * Start in (optional):
+        * "disk:\mappenavn» til integrasjonspunktet"
+
+		
