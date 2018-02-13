@@ -62,7 +62,7 @@ Last ned den siste versjon av integrasjonspunkt[versjonsnr].jar filen og legg de
    * Edit action
    * Program/script: JAVA
    * add argument (optional):
-        * -jar integrasjonspunkt-%versjonsnr%.jar --app.logger.enableSSL=false
+        * -jar **integrasjonspunkt-%versjonsnr%.jar** --app.logger.enableSSL=false
    * Start in (optional):
         * "disk:\mappenavn» til integrasjonspunktet"
 
