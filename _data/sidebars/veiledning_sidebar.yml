@@ -34,3 +34,7 @@ entries:
        - title: Support
          url: /veiledning_sakark.html
          output: web, pdf
+         
+       - title: Oppgradere til ny versjon
+         url: /ip_upgrade.html
+         output: web, pdf
