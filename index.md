@@ -29,7 +29,7 @@ For å ta ibruk integrasjonspunktet må du gjennomføre listen under
 4. Gjøre lokalt oppsett for integrasjonpunktet
 5. Sørg for å holde server i Sync med NTP
 
-
+<!--
 ## Nedlasting staging
 
 <div class="body">										
@@ -58,5 +58,5 @@ For å ta ibruk integrasjonspunktet må du gjennomføre listen under
 		});
 </script>
 
-
+-->
 
