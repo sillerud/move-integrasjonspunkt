@@ -8,7 +8,7 @@ summary: These brief instructions will help you get started quickly with the the
 redirect_from: "/vStaging/"
 ---
 
-   
+## [Siste versjon av integrasjonspunktet kan lastes ned her](https://beta-meldingsutveksling.difi.no/service/local/artifact/maven/redirect?r=staging&g=no.difi.meldingsutveksling&a=integrasjonspunkt&v=1.7.81-SNAPSHOT))
 
 ### Bakgrunn 
 
