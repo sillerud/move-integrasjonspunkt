@@ -4,13 +4,13 @@ import com.google.common.collect.Lists;
 import no.altinn.schemas.serviceengine.formsengine._2009._10.TransportType;
 import no.altinn.schemas.services.serviceengine.correspondence._2010._10.AttachmentsV2;
 import no.altinn.schemas.services.serviceengine.correspondence._2010._10.ExternalContentV2;
-import no.altinn.schemas.services.serviceengine.correspondence._2010._10.MyInsertCorrespondenceV2;
+import no.altinn.schemas.services.serviceengine.correspondence._2010._10.InsertCorrespondenceV2;
 import no.altinn.schemas.services.serviceengine.correspondence._2010._10.ObjectFactory;
-import no.altinn.schemas.services.serviceengine.correspondence._2014._10.CorrespondenceStatusFilterV2;
+import no.altinn.schemas.services.serviceengine.correspondence._2016._02.CorrespondenceStatusFilterV3;
 import no.altinn.schemas.services.serviceengine.notification._2009._10.*;
 import no.altinn.schemas.services.serviceengine.subscription._2009._10.AttachmentFunctionType;
-import no.altinn.services.serviceengine.correspondence._2009._10.GetCorrespondenceStatusDetailsV2;
-import no.altinn.services.serviceengine.correspondence._2009._10.InsertCorrespondenceV2;
+import no.altinn.services.serviceengine.correspondence._2017._02.GetCorrespondenceStatusDetailsAECV3;
+import no.altinn.services.serviceengine.correspondence._2017._02.InsertCorrespondenceAECV2;
 import no.altinn.services.serviceengine.reporteeelementlist._2010._10.BinaryAttachmentExternalBEV2List;
 import no.altinn.services.serviceengine.reporteeelementlist._2010._10.BinaryAttachmentV2;
 import no.difi.meldingsutveksling.core.EDUCore;
@@ -56,8 +56,8 @@ public class CorrespondenceAgencyMessageFactory {
 
     private CorrespondenceAgencyMessageFactory() {
     }
-
-    public static InsertCorrespondenceV2 create(CorrespondenceAgencyConfiguration config,
+    
+    public static InsertCorrespondenceAECV2 create(CorrespondenceAgencyConfiguration config,
                                                 DpvConversationResource cr,
                                                 MessagePersister persister) throws NextMoveException {
 
@@ -86,7 +86,7 @@ public class CorrespondenceAgencyMessageFactory {
                 cr.getMessageContent(), attachmentExternalBEV2List);
     }
 
-    public static InsertCorrespondenceV2 create(CorrespondenceAgencyConfiguration config, EDUCore edu) {
+    public static InsertCorrespondenceAECV2 create(CorrespondenceAgencyConfiguration config, EDUCore edu) {
 
         no.altinn.services.serviceengine.reporteeelementlist._2010._10.ObjectFactory reporteeFactory = new no.altinn.services.serviceengine.reporteeelementlist._2010._10.ObjectFactory();
         BinaryAttachmentExternalBEV2List attachmentExternalBEV2List = new BinaryAttachmentExternalBEV2List();
@@ -107,25 +107,25 @@ public class CorrespondenceAgencyMessageFactory {
         return create(config, edu.getId(), edu.getReceiver().getIdentifier(), title, content, attachmentExternalBEV2List);
     }
 
-    public static InsertCorrespondenceV2 create(CorrespondenceAgencyConfiguration config,
+    public static InsertCorrespondenceAECV2 create(CorrespondenceAgencyConfiguration config,
                                                 String conversationId,
                                                 String receiverIdentifier,
                                                 String messageTitle,
                                                 String messageContent,
                                                 BinaryAttachmentExternalBEV2List attachments) {
 
-        MyInsertCorrespondenceV2 correspondence = new MyInsertCorrespondenceV2();
+        InsertCorrespondenceV2 correspondence = new InsertCorrespondenceV2();
         ObjectFactory objectFactory = new ObjectFactory();
 
-        correspondence.setReportee(objectFactory.createMyInsertCorrespondenceV2Reportee(receiverIdentifier));
+        correspondence.setReportee(objectFactory.createInsertCorrespondenceV2Reportee(receiverIdentifier));
         // Service code, default 4255
         correspondence.setServiceCode(getServiceCode(config));
         // Service edition, default 10
         correspondence.setServiceEdition(getServiceEditionCode(config));
         // Should the user be allowed to forward the message from portal
-        correspondence.setAllowForwarding(objectFactory.createMyInsertCorrespondenceV2AllowForwarding(false));
+        correspondence.setAllowForwarding(objectFactory.createInsertCorrespondenceV2AllowForwarding(false));
         // Name of the message sender, always "Avsender"
-        correspondence.setMessageSender(objectFactory.createMyInsertCorrespondenceV2MessageSender(config.getSender()));
+        correspondence.setMessageSender(objectFactory.createInsertCorrespondenceV2MessageSender(config.getSender()));
         // The date and time the message should be visible in the Portal
         correspondence.setVisibleDateTime(toXmlGregorianCalendar(ZonedDateTime.now()));
         correspondence.setDueDateTime(toXmlGregorianCalendar(ZonedDateTime.now().plusDays(7)));
@@ -138,7 +138,7 @@ public class CorrespondenceAgencyMessageFactory {
 
         // The date and time the message can be deleted by the user
         correspondence.setAllowSystemDeleteDateTime(
-                objectFactory.createMyInsertCorrespondenceV2AllowSystemDeleteDateTime(
+                objectFactory.createInsertCorrespondenceV2AllowSystemDeleteDateTime(
                         toXmlGregorianCalendar(getAllowSystemDeleteDateTime())));
 
 
@@ -146,23 +146,22 @@ public class CorrespondenceAgencyMessageFactory {
         AttachmentsV2 attachmentsV2 = new AttachmentsV2();
         attachmentsV2.setBinaryAttachments(objectFactory.createAttachmentsV2BinaryAttachments(attachments));
         externalContentV2.setAttachments(objectFactory.createExternalContentV2Attachments(attachmentsV2));
-        correspondence.setContent(objectFactory.createMyInsertCorrespondenceV2Content(externalContentV2));
+        correspondence.setContent(objectFactory.createInsertCorrespondenceV2Content(externalContentV2));
 
         List<Notification2009> notificationList = createNotifications(config);
 
         NotificationBEList notifications = new NotificationBEList();
         List<Notification2009> notification = notifications.getNotification();
         notification.addAll(notificationList);
-        correspondence.setNotifications(objectFactory.createMyInsertCorrespondenceV2Notifications(notifications));
+        correspondence.setNotifications(objectFactory.createInsertCorrespondenceV2Notifications(notifications));
 
-        no.altinn.services.serviceengine.correspondence._2009._10.ObjectFactory correspondenceObjectFactory = new no.altinn.services.serviceengine.correspondence._2009._10.ObjectFactory();
-        final InsertCorrespondenceV2 myInsertCorrespondenceV2 = correspondenceObjectFactory.createInsertCorrespondenceV2();
-        myInsertCorrespondenceV2.setCorrespondence(correspondence);
-        myInsertCorrespondenceV2.setSystemUserCode(config.getSystemUserCode());
+        no.altinn.services.serviceengine.correspondence._2017._02.ObjectFactory corresondenceObjectFactory = new no.altinn.services.serviceengine.correspondence._2017._02.ObjectFactory();
+        InsertCorrespondenceAECV2 insertCorrespondenceAECV2 = corresondenceObjectFactory.createInsertCorrespondenceAECV2();
+        insertCorrespondenceAECV2.setCorrespondence(correspondence);
         // Reference set by the message sender
-        myInsertCorrespondenceV2.setExternalShipmentReference(conversationId);
+        insertCorrespondenceAECV2.setExternalShipmentReference(conversationId);
 
-        return myInsertCorrespondenceV2;
+        return insertCorrespondenceAECV2;
     }
 
     private static List<Notification2009> createNotifications(CorrespondenceAgencyConfiguration config) {
@@ -214,17 +213,16 @@ public class CorrespondenceAgencyMessageFactory {
         return ZonedDateTime.now().plusMinutes(5);
     }
 
-    public static GetCorrespondenceStatusDetailsV2 createReceiptRequest(Conversation conversation) {
 
-        no.altinn.services.serviceengine.correspondence._2009._10.ObjectFactory of = new no.altinn.services
-                .serviceengine.correspondence._2009._10.ObjectFactory();
-        GetCorrespondenceStatusDetailsV2 statusRequest = of.createGetCorrespondenceStatusDetailsV2();
+    public static GetCorrespondenceStatusDetailsAECV3 createReceiptRequest(Conversation conversation) {
 
-        CorrespondenceStatusFilterV2 filter = new CorrespondenceStatusFilterV2();
-        no.altinn.schemas.services.serviceengine.correspondence._2014._10.ObjectFactory filterOF = new no.altinn
-                .schemas.services.serviceengine.correspondence._2014._10.ObjectFactory();
-        JAXBElement<String> sendersReference = filterOF.createCorrespondenceStatusFilterV2SendersReference
-                (conversation.getConversationId());
+        no.altinn.services.serviceengine.correspondence._2017._02.ObjectFactory of = new no.altinn.services.serviceengine.correspondence._2017._02.ObjectFactory();
+
+        GetCorrespondenceStatusDetailsAECV3 statusRequest = of.createGetCorrespondenceStatusDetailsAECV3();
+
+        CorrespondenceStatusFilterV3 filter = new CorrespondenceStatusFilterV3();
+        no.altinn.schemas.services.serviceengine.correspondence._2016._02.ObjectFactory of201602 = new no.altinn.schemas.services.serviceengine.correspondence._2016._02.ObjectFactory();
+        JAXBElement<String> sendersReference = of201602.createCorrespondenceStatusFilterV3SendersReference(conversation.getConversationId());
         filter.setSendersReference(sendersReference);
         filter.setServiceCode("4255");
         filter.setServiceEditionCode(10);
@@ -237,14 +235,14 @@ public class CorrespondenceAgencyMessageFactory {
         String serviceCodeProp= postConfig.getExternalServiceCode();
         String serviceCode= !isNullOrEmpty(serviceCodeProp) ? serviceCodeProp : "4255";
         ObjectFactory objectFactory = new ObjectFactory();
-        return objectFactory.createMyInsertCorrespondenceV2ServiceCode(serviceCode);
+        return objectFactory.createInsertCorrespondenceV2ServiceCode(serviceCode);
     }
 
     private static JAXBElement<String> getServiceEditionCode(CorrespondenceAgencyConfiguration postConfig) {
         String serviceEditionProp = postConfig.getExternalServiceEditionCode();
         String serviceEdition = !isNullOrEmpty(serviceEditionProp) ? serviceEditionProp : "10";
         ObjectFactory objectFactory = new ObjectFactory();
-        return objectFactory.createMyInsertCorrespondenceV2ServiceEdition(serviceEdition);
+        return objectFactory.createInsertCorrespondenceV2ServiceEdition(serviceEdition);
     }
 
     private static TextToken createTextToken(int num, String value) {

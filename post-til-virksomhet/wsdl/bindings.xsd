@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings version="2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+               xmlns:annox="http://annox.dev.java.net"
+               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+               jaxb:extensionBindingPrefixes="xjc annox">
+
+
+    <jaxb:bindings schemaLocation="CorrespondenceAgencyExternalAEC.wsdl" >
+        <jaxb:bindings node="/wsdl:definitions/wsdl:types/xsd:schema[@targetNamespace='http://schemas.altinn.no/services/ServiceEngine/Notification/2009/10']/xsd:complexType[@name='Notification']">
+            <jaxb:class name="Notification2009"></jaxb:class>
+        </jaxb:bindings>
+    </jaxb:bindings>
+
+</jaxb:bindings>

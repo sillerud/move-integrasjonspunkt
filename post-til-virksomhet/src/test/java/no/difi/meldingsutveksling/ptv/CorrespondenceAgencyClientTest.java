@@ -3,11 +3,11 @@ package no.difi.meldingsutveksling.ptv;
 import no.altinn.schemas.serviceengine.formsengine._2009._10.TransportType;
 import no.altinn.schemas.services.serviceengine.correspondence._2010._10.AttachmentsV2;
 import no.altinn.schemas.services.serviceengine.correspondence._2010._10.ExternalContentV2;
-import no.altinn.schemas.services.serviceengine.correspondence._2010._10.MyInsertCorrespondenceV2;
+import no.altinn.schemas.services.serviceengine.correspondence._2010._10.InsertCorrespondenceV2;
 import no.altinn.schemas.services.serviceengine.correspondence._2010._10.ObjectFactory;
 import no.altinn.schemas.services.serviceengine.notification._2009._10.*;
 import no.altinn.schemas.services.serviceengine.subscription._2009._10.AttachmentFunctionType;
-import no.altinn.services.serviceengine.correspondence._2009._10.InsertCorrespondenceV2;
+import no.altinn.services.serviceengine.correspondence._2017._02.InsertCorrespondenceAECV2;
 import no.altinn.services.serviceengine.reporteeelementlist._2010._10.BinaryAttachmentExternalBEV2List;
 import no.altinn.services.serviceengine.reporteeelementlist._2010._10.BinaryAttachmentV2;
 import org.apache.commons.io.FileUtils;
@@ -31,7 +31,7 @@ public class CorrespondenceAgencyClientTest {
             usage(args);
             System.exit(1);
         }
-        final InsertCorrespondenceV2 insertCorrespondenceV2 = createInsertCorrespondenceV2();
+        InsertCorrespondenceAECV2 insertCorrespondenceV2 = createInsertCorrespondenceV2();
         final CorrespondenceAgencyClient correspondenceAgencyClient = new CorrespondenceAgencyClient(null, null);
         final CorrespondenceRequest request = new CorrespondenceRequest.Builder().withUsername(args[0]).withPassword(args[1]).withPayload(insertCorrespondenceV2).build();
         correspondenceAgencyClient.sendCorrespondence(request);
@@ -41,16 +41,16 @@ public class CorrespondenceAgencyClientTest {
         System.out.format("Usage: %s %s [username] [password]", "java", CorrespondenceAgencyClientTest.class.getName());
     }
 
-    private static InsertCorrespondenceV2 createInsertCorrespondenceV2() {
+    private static InsertCorrespondenceAECV2 createInsertCorrespondenceV2() {
         ObjectFactory objectFactory = new ObjectFactory();
 
         String systemUserCode = "AAS_TEST";
         String externalReference = "12345678";
-        MyInsertCorrespondenceV2 correspondence = new MyInsertCorrespondenceV2();
+        InsertCorrespondenceV2 correspondence = new InsertCorrespondenceV2();
 
-        correspondence.setServiceCode(objectFactory.createMyInsertCorrespondenceV2ServiceCode("4255"));
-        correspondence.setServiceEdition(objectFactory.createMyInsertCorrespondenceV2ServiceEdition("4"));
-        correspondence.setReportee(objectFactory.createMyInsertCorrespondenceV2Reportee("910926551"));
+        correspondence.setServiceCode(objectFactory.createInsertCorrespondenceV2ServiceCode("4255"));
+        correspondence.setServiceEdition(objectFactory.createInsertCorrespondenceV2ServiceEdition("4"));
+        correspondence.setReportee(objectFactory.createInsertCorrespondenceV2Reportee("910926551"));
 
         ExternalContentV2 externalContentV2 = new ExternalContentV2();
         externalContentV2.setLanguageCode(objectFactory.createExternalContentV2LanguageCode("1044"));
@@ -81,11 +81,11 @@ public class CorrespondenceAgencyClientTest {
         attachmentExternalBEV2List.getBinaryAttachmentV2().add(binaryAttachmentV2);
         attachmentsV2.setBinaryAttachments(objectFactory.createAttachmentsV2BinaryAttachments(attachmentExternalBEV2List));
         externalContentV2.setAttachments(objectFactory.createExternalContentV2Attachments(attachmentsV2));
-        correspondence.setContent(objectFactory.createMyInsertCorrespondenceV2Content(externalContentV2));
+        correspondence.setContent(objectFactory.createInsertCorrespondenceV2Content(externalContentV2));
 
         XMLGregorianCalendar date = fiveMinutesFromNow();
         correspondence.setVisibleDateTime(date);
-        correspondence.setAllowSystemDeleteDateTime(objectFactory.createMyInsertCorrespondenceV2AllowSystemDeleteDateTime(date));
+        correspondence.setAllowSystemDeleteDateTime(objectFactory.createInsertCorrespondenceV2AllowSystemDeleteDateTime(date));
 
         NotificationBEList notifications = new NotificationBEList();
         Notification2009 notification = new Notification2009();
@@ -106,19 +106,18 @@ public class CorrespondenceAgencyClientTest {
 
         notification.setReceiverEndPoints(receiverEndpoints);
 
-        correspondence.setAllowForwarding(objectFactory.createMyInsertCorrespondenceV2AllowForwarding(false));
-        correspondence.setMessageSender(objectFactory.createMyInsertCorrespondenceV2MessageSender("Avsender"));
+        correspondence.setAllowForwarding(objectFactory.createInsertCorrespondenceV2AllowForwarding(false));
+        correspondence.setMessageSender(objectFactory.createInsertCorrespondenceV2MessageSender("Avsender"));
 
         notifications.getNotification().add(notification);
-        correspondence.setNotifications(objectFactory.createMyInsertCorrespondenceV2Notifications(notifications));
+        correspondence.setNotifications(objectFactory.createInsertCorrespondenceV2Notifications(notifications));
 
-        no.altinn.services.serviceengine.correspondence._2009._10.ObjectFactory correspondenceObjectFactory = new no.altinn.services.serviceengine.correspondence._2009._10.ObjectFactory();
-        final InsertCorrespondenceV2 myInsertCorrespondenceV2 = correspondenceObjectFactory.createInsertCorrespondenceV2();
-        myInsertCorrespondenceV2.setCorrespondence(correspondence);
-        myInsertCorrespondenceV2.setSystemUserCode(systemUserCode);
-        myInsertCorrespondenceV2.setExternalShipmentReference("12345678");
+        no.altinn.services.serviceengine.correspondence._2017._02.ObjectFactory of = new no.altinn.services.serviceengine.correspondence._2017._02.ObjectFactory();
+        InsertCorrespondenceAECV2 insertCorrespondenceAECV2 = of.createInsertCorrespondenceAECV2();
+        insertCorrespondenceAECV2.setCorrespondence(correspondence);
+        insertCorrespondenceAECV2.setExternalShipmentReference("12345678");
 
-        return myInsertCorrespondenceV2;
+        return insertCorrespondenceAECV2;
     }
 
     private static TextToken createTextToken(int num, String value) {

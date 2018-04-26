@@ -4,8 +4,6 @@ public class CorrespondenceAgencyConfiguration {
 
     private String externalServiceEditionCode;
     private String externalServiceCode;
-    private String password;
-    private String systemUserCode;
     private boolean notifyEmail;
     private boolean notifySms;
     private String notificationText;
@@ -22,14 +20,6 @@ public class CorrespondenceAgencyConfiguration {
 
     public String getExternalServiceCode() {
         return externalServiceCode;
-    }
-
-    public String getSystemUserCode() {
-        return systemUserCode;
-    }
-
-    public String getPassword() {
-        return password;
     }
 
     public boolean isNotifyEmail() {
@@ -71,16 +61,6 @@ public class CorrespondenceAgencyConfiguration {
 
         public Builder withExternalServiceEditionCode(String externalServiceEditionCode) {
             correspondenceAgencyConfiguration.externalServiceEditionCode = externalServiceEditionCode;
-            return this;
-        }
-
-        public Builder withSystemUserCode(String systemUserCode) {
-            correspondenceAgencyConfiguration.systemUserCode = systemUserCode;
-            return this;
-        }
-
-        public Builder withPassword(String password) {
-            correspondenceAgencyConfiguration.password = password;
             return this;
         }
 

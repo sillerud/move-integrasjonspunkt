@@ -1,6 +1,6 @@
 package no.difi.meldingsutveksling.noarkexchange.putmessage;
 
-import no.altinn.services.serviceengine.correspondence._2009._10.InsertCorrespondenceV2;
+import no.altinn.services.serviceengine.correspondence._2017._02.InsertCorrespondenceAECV2;
 import no.difi.meldingsutveksling.core.EDUCore;
 import no.difi.meldingsutveksling.core.EDUCoreConverter;
 import no.difi.meldingsutveksling.core.EDUCoreFactory;
@@ -30,7 +30,7 @@ public class PostVirksomhetMessageStrategy implements MessageStrategy {
 
     @Override
     public PutMessageResponseType send(EDUCore message) {
-        final InsertCorrespondenceV2 correspondence = CorrespondenceAgencyMessageFactory.create(config, message);
+        InsertCorrespondenceAECV2 correspondence = CorrespondenceAgencyMessageFactory.create(config, message);
         CorrespondenceAgencyClient client = new CorrespondenceAgencyClient(markerFrom(message), config);
         final CorrespondenceRequest request = new CorrespondenceRequest.Builder()
                 .withUsername(config.getSystemUserCode())

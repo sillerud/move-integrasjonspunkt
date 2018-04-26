@@ -28,8 +28,6 @@ public class PostVirksomhetStrategyFactory implements MessageStrategyFactory {
         CorrespondenceAgencyConfiguration.Builder builder = new CorrespondenceAgencyConfiguration.Builder()
                 .withExternalServiceCode(properties.getDpv().getExternalServiceCode())
                 .withExternalServiceEditionCode(properties.getDpv().getExternalServiceEditionCode())
-                .withPassword(properties.getDpv().getPassword())
-                .withSystemUserCode(properties.getDpv().getUsername())
                 .withSender(infoRecord.getOrganizationName())
                 .withNotifyEmail(properties.getDpv().isNotifyEmail())
                 .withNotifySms(properties.getDpv().isNotifySms());

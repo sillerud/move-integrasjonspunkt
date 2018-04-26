@@ -50,7 +50,7 @@ public class CorrespondenceAgencyClient {
         newSoapMessageFactory.setSoapVersion(SoapVersion.SOAP_12);
         WebServiceTemplate template = new WebServiceTemplate(newSoapMessageFactory);
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-        String contextPath = "no.altinn.services.serviceengine.correspondence._2009._10";
+        String contextPath = "no.altinn.services.serviceengine.correspondence._2017._02";
         marshaller.setContextPath(contextPath);
         template.setMarshaller(marshaller);
         template.setUnmarshaller(marshaller);
@@ -59,7 +59,7 @@ public class CorrespondenceAgencyClient {
         interceptors[1] = SoapFaultInterceptorLogger.withLogMarkers(logstashMarker);
         template.setInterceptors(interceptors);
 
-        final String soapAction = "http://www.altinn.no/services/ServiceEngine/Correspondence/2009/10/ICorrespondenceAgencyExternal/InsertCorrespondenceV2";
+        final String soapAction = "http://www.altinn.no/services/ServiceEngine/Correspondence/2017/02/ICorrespondenceAgencyExternalAEC/InsertCorrespondenceAECV2";
         template.setMessageSender(createMessageSender());
         final URI actionURI;
         try {
@@ -76,7 +76,7 @@ public class CorrespondenceAgencyClient {
         newSoapMessageFactory.setSoapVersion(SoapVersion.SOAP_12);
         WebServiceTemplate template = new WebServiceTemplate(newSoapMessageFactory);
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-        String contextPath = "no.altinn.services.serviceengine.correspondence._2009._10";
+        String contextPath = "no.altinn.services.serviceengine.correspondence._2017._02";
         marshaller.setContextPath(contextPath);
         template.setMarshaller(marshaller);
         template.setUnmarshaller(marshaller);
@@ -85,7 +85,7 @@ public class CorrespondenceAgencyClient {
         interceptors[1] = SoapFaultInterceptorLogger.withLogMarkers(logstashMarker);
         template.setInterceptors(interceptors);
 
-        final String soapAction = "http://www.altinn.no/services/ServiceEngine/Correspondence/2009/10/ICorrespondenceAgencyExternal/GetCorrespondenceStatusDetailsV2";
+        final String soapAction = "http://www.altinn.no/services/ServiceEngine/Correspondence/2017/02/ICorrespondenceAgencyExternalAEC/GetCorrespondenceStatusDetailsAECV3";
         template.setMessageSender(createMessageSender());
         final URI actionURI;
         try {

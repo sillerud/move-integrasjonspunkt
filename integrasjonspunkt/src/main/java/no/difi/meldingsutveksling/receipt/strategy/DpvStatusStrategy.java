@@ -2,8 +2,8 @@ package no.difi.meldingsutveksling.receipt.strategy;
 
 import no.altinn.schemas.services.serviceengine.correspondence._2014._10.StatusChangeV2;
 import no.altinn.schemas.services.serviceengine.correspondence._2014._10.StatusV2;
-import no.altinn.services.serviceengine.correspondence._2009._10.GetCorrespondenceStatusDetailsV2;
-import no.altinn.services.serviceengine.correspondence._2009._10.GetCorrespondenceStatusDetailsV2Response;
+import no.altinn.services.serviceengine.correspondence._2017._02.GetCorrespondenceStatusDetailsAECV3;
+import no.altinn.services.serviceengine.correspondence._2017._02.GetCorrespondenceStatusDetailsAECV3Response;
 import no.difi.meldingsutveksling.ServiceIdentifier;
 import no.difi.meldingsutveksling.config.IntegrasjonspunktProperties;
 import no.difi.meldingsutveksling.ptv.CorrespondenceAgencyClient;
@@ -40,17 +40,14 @@ public class DpvStatusStrategy implements StatusStrategy {
         CorrespondenceAgencyConfiguration config = new CorrespondenceAgencyConfiguration.Builder()
                 .withExternalServiceCode(properties.getDpv().getExternalServiceCode())
                 .withExternalServiceEditionCode(properties.getDpv().getExternalServiceEditionCode())
-                .withPassword(properties.getDpv().getPassword())
-                .withSystemUserCode(properties.getDpv().getUsername())
                 .withEndpointUrl(properties.getDpv().getEndpointUrl().toString())
                 .build();
 
         final CorrespondenceAgencyClient client = new CorrespondenceAgencyClient(markerFrom(conversation), config);
-        GetCorrespondenceStatusDetailsV2 receiptRequest = CorrespondenceAgencyMessageFactory.createReceiptRequest(conversation);
-        final CorrespondenceRequest request = new CorrespondenceRequest.Builder().withUsername(config
-                .getSystemUserCode()).withPassword(config.getPassword()).withPayload(receiptRequest).build();
+        GetCorrespondenceStatusDetailsAECV3 receiptRequest = CorrespondenceAgencyMessageFactory.createReceiptRequest(conversation);
+        final CorrespondenceRequest request = new CorrespondenceRequest.Builder().withPayload(receiptRequest).build();
 
-        GetCorrespondenceStatusDetailsV2Response result = (GetCorrespondenceStatusDetailsV2Response) client
+        GetCorrespondenceStatusDetailsAECV3Response result = (GetCorrespondenceStatusDetailsAECV3Response) client
                 .sendStatusRequest(request);
         if (result == null) {
             // Error is picked up by soap fault interceptor
@@ -58,7 +55,7 @@ public class DpvStatusStrategy implements StatusStrategy {
         }
 
         // TODO: need to find a way to search for CorrespondenceIDs (in response( as ConversationID is not unqiue
-        List<StatusV2> statusList = result.getGetCorrespondenceStatusDetailsV2Result().getValue().getStatusList().getValue().getStatusV2();
+        List<StatusV2> statusList = result.getGetCorrespondenceStatusDetailsAECV3Result().getValue().getCorrespondenceStatusInformation().getValue().getCorrespondenceStatusDetailsList().getValue().getStatusV2();
         Optional<StatusV2> op = statusList.stream().findFirst();
         if (op.isPresent()) {
             List<StatusChangeV2> statusChanges = op.get().getStatusChanges().getValue().getStatusChangeV2();

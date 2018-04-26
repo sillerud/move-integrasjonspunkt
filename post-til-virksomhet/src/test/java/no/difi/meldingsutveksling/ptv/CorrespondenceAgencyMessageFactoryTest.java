@@ -1,6 +1,6 @@
 package no.difi.meldingsutveksling.ptv;
 
-import no.altinn.services.serviceengine.correspondence._2009._10.InsertCorrespondenceV2;
+import no.altinn.services.serviceengine.correspondence._2017._02.InsertCorrespondenceAECV2;
 import no.difi.meldingsutveksling.ServiceIdentifier;
 import no.difi.meldingsutveksling.core.EDUCore;
 import no.difi.meldingsutveksling.core.EDUCoreFactory;
@@ -79,8 +79,7 @@ public class CorrespondenceAgencyMessageFactoryTest {
         assertFields(CorrespondenceAgencyMessageFactory.create(postConfig, eduCore));
     }
 
-    private void assertFields(InsertCorrespondenceV2 c) {
-        assertEquals("AAS_TEST", c.getSystemUserCode());
+    private void assertFields(InsertCorrespondenceAECV2 c) {
         assertEquals("4255", c.getCorrespondence().getServiceCode().getValue());
         assertEquals("10", c.getCorrespondence().getServiceEdition().getValue());
         assertEquals("910075918", c.getCorrespondence().getReportee().getValue());

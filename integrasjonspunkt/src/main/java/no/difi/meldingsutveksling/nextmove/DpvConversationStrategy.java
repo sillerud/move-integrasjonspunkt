@@ -1,6 +1,6 @@
 package no.difi.meldingsutveksling.nextmove;
 
-import no.altinn.services.serviceengine.correspondence._2009._10.InsertCorrespondenceV2;
+import no.altinn.services.serviceengine.correspondence._2017._02.InsertCorrespondenceAECV2;
 import no.difi.meldingsutveksling.config.IntegrasjonspunktProperties;
 import no.difi.meldingsutveksling.nextmove.logging.ConversationResourceMarkers;
 import no.difi.meldingsutveksling.nextmove.message.MessagePersister;
@@ -35,13 +35,10 @@ public class DpvConversationStrategy implements ConversationStrategy {
 
         PostVirksomhetStrategyFactory dpvFactory = PostVirksomhetStrategyFactory.newInstance(props, null, sr);
         CorrespondenceAgencyConfiguration config = dpvFactory.getConfig();
-        InsertCorrespondenceV2 message;
-        message = CorrespondenceAgencyMessageFactory.create(config, cr, messagePersister);
+        InsertCorrespondenceAECV2 message = CorrespondenceAgencyMessageFactory.create(config, cr, messagePersister);
 
         CorrespondenceAgencyClient client = new CorrespondenceAgencyClient(ConversationResourceMarkers.markerFrom(cr), config);
         final CorrespondenceRequest request = new CorrespondenceRequest.Builder()
-                .withUsername(config.getSystemUserCode())
-                .withPassword(config.getPassword())
                 .withPayload(message).build();
 
         if (client.sendCorrespondence(request) == null) {
