@@ -54,9 +54,11 @@ public class CorrespondenceAgencyClient {
         marshaller.setContextPath(contextPath);
         template.setMarshaller(marshaller);
         template.setUnmarshaller(marshaller);
-        ClientInterceptor[] interceptors = new ClientInterceptor[2];
-        interceptors[0] = createSecurityInterceptors(request.getUsername(), request.getPassword());
-        interceptors[1] = SoapFaultInterceptorLogger.withLogMarkers(logstashMarker);
+        ClientInterceptor[] interceptors = new ClientInterceptor[] {
+                SoapFaultInterceptorLogger.withLogMarkers(logstashMarker),
+                createSecurityInterceptor()
+        };
+
         template.setInterceptors(interceptors);
 
         final String soapAction = "http://www.altinn.no/services/ServiceEngine/Correspondence/2017/02/ICorrespondenceAgencyExternalAEC/InsertCorrespondenceAECV2";
@@ -67,7 +69,7 @@ public class CorrespondenceAgencyClient {
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
-        return template.marshalSendAndReceive(this.endpointUrl, request.getCorrespondence(), new ActionCallback(actionURI, new
+        return template.marshalSendAndReceive(this.endpointUrl, request.getPayload(), new ActionCallback(actionURI, new
                 Addressing10()));
     }
 
@@ -80,9 +82,8 @@ public class CorrespondenceAgencyClient {
         marshaller.setContextPath(contextPath);
         template.setMarshaller(marshaller);
         template.setUnmarshaller(marshaller);
-        ClientInterceptor[] interceptors = new ClientInterceptor[2];
-        interceptors[0] = createSecurityInterceptors(request.getUsername(), request.getPassword());
-        interceptors[1] = SoapFaultInterceptorLogger.withLogMarkers(logstashMarker);
+        ClientInterceptor[] interceptors = new ClientInterceptor[1];
+        interceptors[0] = SoapFaultInterceptorLogger.withLogMarkers(logstashMarker);
         template.setInterceptors(interceptors);
 
         final String soapAction = "http://www.altinn.no/services/ServiceEngine/Correspondence/2017/02/ICorrespondenceAgencyExternalAEC/GetCorrespondenceStatusDetailsAECV3";
@@ -93,7 +94,7 @@ public class CorrespondenceAgencyClient {
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
-        return template.marshalSendAndReceive(this.endpointUrl, request.getCorrespondence(), new ActionCallback(actionURI, new
+        return template.marshalSendAndReceive(this.endpointUrl, request.getPayload(), new ActionCallback(actionURI, new
                 Addressing10()));
     }
 
@@ -125,21 +126,12 @@ public class CorrespondenceAgencyClient {
         return messageSender;
     }
 
-    private ClientInterceptor createSecurityInterceptors(String username, String password) {
+    private ClientInterceptor createSecurityInterceptor() {
+        Wss4jSecurityInterceptor interceptor = new Wss4jSecurityInterceptor();
 
-        final Wss4jSecurityInterceptor securityInterceptor = new Wss4jSecurityInterceptor();
-
-        securityInterceptor.setSecurementActions("UsernameToken");
-        securityInterceptor.setSecurementUsername(username);
-        securityInterceptor.setSecurementPassword(password);
-        securityInterceptor.setSecurementPasswordType("PasswordText");
-        securityInterceptor.setSecurementUsernameTokenNonce(true);
-        securityInterceptor.setSecurementUsernameTokenCreated(true);
-        securityInterceptor.setValidateResponse(false);
-//        securityInterceptor.setSecurementUsernameTokenElements("Nonce Created"); // from the old decpreated WSS4JSecurityInterceptor. Not sure if the above is wor
-
-        return securityInterceptor;
+        return interceptor;
     }
+
 
 
 }

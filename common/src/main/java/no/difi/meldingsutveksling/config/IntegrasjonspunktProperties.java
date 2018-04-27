@@ -118,17 +118,15 @@ public class IntegrasjonspunktProperties {
     }
 
     @Data
-    @ToString(exclude = "password")
     public static class PostVirksomheter {
 
-        private String username;
-        private String password;
         private URL endpointUrl;
         private String externalServiceCode;
         private String externalServiceEditionCode;
         private boolean notifyEmail;
         private boolean notifySms;
         private String notificationText;
+        private KeyStoreProperties keystore;
 
     }
 

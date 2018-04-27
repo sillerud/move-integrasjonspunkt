@@ -60,7 +60,6 @@ public class CorrespondenceAgencyMessageFactoryTest {
         putMessageJaxbContext = JAXBContext.newInstance(PutMessageRequestType.class);
 
         postConfig = mock(CorrespondenceAgencyConfiguration.class);
-        when(postConfig.getSystemUserCode()).thenReturn("AAS_TEST");
         when(postConfig.isNotifyEmail()).thenReturn(true);
         when(postConfig.getSender()).thenReturn("foo");
 

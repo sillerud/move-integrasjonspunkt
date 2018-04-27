@@ -32,10 +32,7 @@ public class PostVirksomhetMessageStrategy implements MessageStrategy {
     public PutMessageResponseType send(EDUCore message) {
         InsertCorrespondenceAECV2 correspondence = CorrespondenceAgencyMessageFactory.create(config, message);
         CorrespondenceAgencyClient client = new CorrespondenceAgencyClient(markerFrom(message), config);
-        final CorrespondenceRequest request = new CorrespondenceRequest.Builder()
-                .withUsername(config.getSystemUserCode())
-                .withPassword(config.getPassword())
-                .withPayload(correspondence).build();
+        final CorrespondenceRequest request = CorrespondenceRequest.of(correspondence, config.getKeyStore());
 
         if (client.sendCorrespondence(request) == null) {
             return PutMessageResponseFactory.createErrorResponse(StatusMessage.DPV_REQUEST_MISSING_VALUES);

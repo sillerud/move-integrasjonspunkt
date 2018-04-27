@@ -1,11 +1,15 @@
 package no.difi.meldingsutveksling.receipt.strategy;
 
+import lombok.extern.slf4j.Slf4j;
 import no.altinn.schemas.services.serviceengine.correspondence._2014._10.StatusChangeV2;
 import no.altinn.schemas.services.serviceengine.correspondence._2014._10.StatusV2;
 import no.altinn.services.serviceengine.correspondence._2017._02.GetCorrespondenceStatusDetailsAECV3;
 import no.altinn.services.serviceengine.correspondence._2017._02.GetCorrespondenceStatusDetailsAECV3Response;
+import no.difi.meldingsutveksling.KeystoreProvider;
 import no.difi.meldingsutveksling.ServiceIdentifier;
 import no.difi.meldingsutveksling.config.IntegrasjonspunktProperties;
+import no.difi.meldingsutveksling.domain.MeldingsUtvekslingRuntimeException;
+import no.difi.meldingsutveksling.lang.KeystoreProviderException;
 import no.difi.meldingsutveksling.ptv.CorrespondenceAgencyClient;
 import no.difi.meldingsutveksling.ptv.CorrespondenceAgencyConfiguration;
 import no.difi.meldingsutveksling.ptv.CorrespondenceAgencyMessageFactory;
@@ -14,6 +18,7 @@ import no.difi.meldingsutveksling.receipt.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.security.KeyStore;
 import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.Optional;
@@ -21,6 +26,7 @@ import java.util.Optional;
 import static no.difi.meldingsutveksling.receipt.ConversationMarker.markerFrom;
 
 @Component
+@Slf4j
 public class DpvStatusStrategy implements StatusStrategy {
 
     private static final ServiceIdentifier serviceIdentifier = ServiceIdentifier.DPV;
@@ -37,15 +43,24 @@ public class DpvStatusStrategy implements StatusStrategy {
     @Override
     public void checkStatus(Conversation conversation) {
 
-        CorrespondenceAgencyConfiguration config = new CorrespondenceAgencyConfiguration.Builder()
-                .withExternalServiceCode(properties.getDpv().getExternalServiceCode())
-                .withExternalServiceEditionCode(properties.getDpv().getExternalServiceEditionCode())
-                .withEndpointUrl(properties.getDpv().getEndpointUrl().toString())
+        KeyStore keyStore;
+        try {
+            keyStore = KeystoreProvider.loadKeyStore(properties.getDpv().getKeystore());
+        } catch (KeystoreProviderException e) {
+            log.error("Error loading DPV keystore", e);
+            throw new MeldingsUtvekslingRuntimeException(e);
+        }
+
+        CorrespondenceAgencyConfiguration config = CorrespondenceAgencyConfiguration.builder()
+                .externalServiceCode(properties.getDpv().getExternalServiceCode())
+                .externalServiceEditionCode(properties.getDpv().getExternalServiceEditionCode())
+                .endpointUrl(properties.getDpv().getEndpointUrl().toString())
+                .keyStore(keyStore)
                 .build();
 
         final CorrespondenceAgencyClient client = new CorrespondenceAgencyClient(markerFrom(conversation), config);
         GetCorrespondenceStatusDetailsAECV3 receiptRequest = CorrespondenceAgencyMessageFactory.createReceiptRequest(conversation);
-        final CorrespondenceRequest request = new CorrespondenceRequest.Builder().withPayload(receiptRequest).build();
+        final CorrespondenceRequest request = CorrespondenceRequest.of(receiptRequest, keyStore);
 
         GetCorrespondenceStatusDetailsAECV3Response result = (GetCorrespondenceStatusDetailsAECV3Response) client
                 .sendStatusRequest(request);
