@@ -74,6 +74,8 @@ Registrere datasystem
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/altinnDatasystemRegistrer.PNG "registere datasystem i altinn")
 
 
+Datasystem registrert:
+
 
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/altinnDatasystemRegistrert.PNG "datasystem registrert")
 
