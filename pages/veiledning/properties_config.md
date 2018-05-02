@@ -76,7 +76,7 @@ Registrere datasystem
 
 
 Datasystem registrert
-![Datasystem registrert](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/images/altinnDatasystemRegistrert.PNG)
+![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/altinnDatasystemRegistrert.PNG "datasystem registrert")
 
 ___
 
