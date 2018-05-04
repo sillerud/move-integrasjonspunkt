@@ -8,7 +8,7 @@ summary: These brief instructions will help you get started quickly with the the
 redirect_from: "/vStaging/"
 ---
 
-## [Siste versjon av integrasjonspunktet kan lastes ned her (1.7.84)](https://beta-meldingsutveksling.difi.no/service/local/repositories/releases/content/no/difi/meldingsutveksling/integrasjonspunkt/1.7.84/integrasjonspunkt-1.7.84.jar)
+## [Siste versjon av integrasjonspunktet kan lastes ned her (1.7.85)](https://beta-meldingsutveksling.difi.no/service/local/repositories/releases/content/no/difi/meldingsutveksling/integrasjonspunkt/1.7.85/integrasjonspunkt-1.7.85.jar)
 
 ### Bakgrunn 
 
