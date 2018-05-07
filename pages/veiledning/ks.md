@@ -9,7 +9,10 @@ folder: veiledning
 
 # Konfigurering av DPF – Kobling av eFormidling til KS-FIKS 
 
-> NB! Denne delen av veiledningen er basert på dokumentasjon vi fikk fra Fylkesmannen I Nordland. Vi har heller ingen mulighet til å teste dette selv. Om denne følges så skal en kunne opprette brukernamn og passord til SvarUt og SvarInn. Begge skal legges så inn i integrasjonspunkt-local.properties-filen. Ved spørsmål rundt KS SvarUt eller SvarInn ta kontakt med KS på e-post: <a href="mailto:svarut@ks.no">svarut@ks.no</a>
+> NB! Denne delen av veiledningen er basert på dokumentasjon delt av Fylkesmannen i Nordland. Det er viktig at dere følger den i detalj for å få opprette brukernavn og passord til SvarUt og SvarInn.  Dette er input til konfigurering av lokalt integrasjonspunkt, og legges inn i integrasjonspunkt-local.properties-filen.
+Ta kontakt på <a href="mailto:idporten@difi.no">idporten@difi.no</a> dersom dere har spørsmål til dokumentasjon eller trenger støtte underveis.
+
+Ved spørsmål rundt KS SvarUt eller SvarInn ta kontakt med KS på e-post: <a href="mailto:svarut@ks.no">svarut@ks.no</a>
 
 ### Dette er punktene man må gå gjennom for å opprette kobling fra sak-arkivsystemet til KS-FIKS: 
 
