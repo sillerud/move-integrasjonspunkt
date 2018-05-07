@@ -61,29 +61,29 @@ NB: Alle eksemplene og skjermbildene er hentet fra oppsettet til FM Nordland. De
 
 1. Start med «konfigurasjon» (konfigurerer SvarUt-funksjonene) 
 
-Klikk på «overordnet organisasjon» og legg inn fakturaopplysninger: 
+**Klikk på «overordnet organisasjon» og legg inn fakturaopplysninger:**
 
 ![bilde2](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/02_FIKS.png?raw=true)
  
-Klikk så på «underordnet» organisasjonsnivå  
+**Klikk så på «underordnet» organisasjonsnivå**
  
 ![bilde3](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/03_FIKS.png?raw=true) 
  
 De menypunktene som du ser markert med grønn hake skal du klikke deg gjennom og fylle ut: 
-- ReturAdresse/forside: Legg inn organisasjonsnummer og adresse. Forsidetekst må ikke fylles ut. 
-- Altinn: Velg «ingen varsling» 
+- **ReturAdresse/forside: Legg inn organisasjonsnummer og adresse. Forsidetekst må ikke fylles ut. 
+- Altinn: Velg «ingen varsling»** 
  
 ![bilde4](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/04_FIKS.png?raw=true)
  
-- Print: Velg «manuell print» 
+- **Print: Velg «manuell print»** 
 
 ![bilde5](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/05_FIKS.png?raw=true)
  
-- Servicepassord: Dette er passord nr. 1 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!  
+- **Servicepassord: Dette er passord nr. 1 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!**
  
 ![bilde6](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/06_FIKS.png?raw=true) 
  
-- Tilganger: Her kan administrator legge til flere brukere som skal ha administratorrettigheter i SvarUt-forvaltning. Sett i så fall hake i alle tilganger. 
+- **Tilganger: Her kan administrator legge til flere brukere som skal ha administratorrettigheter i SvarUt-forvaltning. Sett i så fall hake i alle tilganger.** 
 
 ![bilde7](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/07_FIKS.png?raw=true)
  
@@ -91,20 +91,20 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
  
 ### Fortsett med konfigurering av «mottakersystem» (konfigurerer SvarInn-funksjonene) 
 
-Klikk på «mottakersystem» og organisasjonen din 
+**Klikk på «mottakersystem» og organisasjonen din** 
  
 ![bilde8](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/08_FIKS.png?raw=true) 
  
-- Service: Dette er passord nr. 2 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!  
+- **Service: Dette er passord nr. 2 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!**  
  
 ![bilde9](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/09_FIKS.png?raw=true)
  
-- Administrasjon: Skal være utfylt på forhånd. Sjekk at e-postadressene er lagt inn rett. De brukes til varsel om driftsproblemer eller hvis KS vil varsle dere om noe de fanger opp som avvik. 
+- **Administrasjon: Skal være utfylt på forhånd. Sjekk at e-postadressene er lagt inn rett. De brukes til varsel om driftsproblemer eller hvis KS vil varsle dere om noe de fanger opp som avvik.** 
 
 ![bilde10](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/10_FIKS.png?raw=true)
  
-- Tilganger: Også her kan det legges til andre brukere. 
-- Organisasjoner: Her legger du inn organisasjonsnummer til virksomheten og eventuelle underenheter. Dette sørger for at elektronisk SvarUt-post sendt til organisasjonsnummer til en underenhet også blir importert til sak/arkiv systemet. Hvis man ikke gjør dette vil slik post fortsette å komme til Altinn. Oversikt over underenhetene og organisasjonsnumre finner du i Altinn. 
+- **Tilganger: Også her kan det legges til andre brukere.
+- Organisasjoner: Her legger du inn organisasjonsnummer til virksomheten og eventuelle underenheter. Dette sørger for at elektronisk SvarUt-post sendt til organisasjonsnummer til en underenhet også blir importert til sak/arkiv systemet. Hvis man ikke gjør dette vil slik post fortsette å komme til Altinn. Oversikt over underenhetene og organisasjonsnumre finner du i Altinn.**
 
 Man må vente med å legge inn organisasjonsnumrene til konfigurasjon av integrasjonspunktet er utført, fordi SvarUt vil prøve å sende til integrasjonen når numrene er lagt inn. De kan bare legges inn av administrator som har gyldig post/arkiv-rolle for alle organisasjonsnumrene.  
  
