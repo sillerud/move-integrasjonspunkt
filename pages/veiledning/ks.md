@@ -17,7 +17,7 @@ I Altinn må dere delegere post/arkiv rolle til de som skal ha tilgang til KS Sv
  
 > For informasjon om delegering av post/arkiv-rolle i Altinn, kontakt med <a href="mailto:servicedesk@altinn.no">servicedesk@altinn.no</a>
 
-#### Knytte virksomheten til KS-FIKS.  
+### Knytte virksomheten til KS-FIKS.  
 For å kunne konfigurere KS SvarUt-forvaltning må avtale med KS være på plass. Nedenfor får du informasjon om stegene en må igjennom ved konfigurering av KS SvarUt. 
 
 - Konfigurasjon for mottak: SvarInn 
