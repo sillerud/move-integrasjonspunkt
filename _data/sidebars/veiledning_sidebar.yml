@@ -26,6 +26,7 @@ entries:
        - title: Properties
          url: /properties_config.html
          output: web, pdf
+         folderitems:
          
            - title: Konfigurere DPF(KS FIKS) 
              url: /ksfiks.html
