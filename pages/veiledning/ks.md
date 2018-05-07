@@ -22,7 +22,7 @@ I Altinn må dere delegere post/arkiv rolle til de som skal ha tilgang til KS Sv
 For informasjon om delegering av post/arkiv-rolle i Altinn, kontakt med <a href="mailto:servicedesk@altinn.no">servicedesk@altinn.no</a>
 
 ### Knytte virksomheten til KS-FIKS.  
-For å kunne konfigurere KS SvarUt-forvaltning må avtale med KS være på plass. Nedenfor får du informasjon om stegene en må igjennom ved konfigurering av KS SvarUt. 
+For å kunne konfigurere KS SvarUt-forvaltning må avtale med KS være på plass. [Slik komme du i gang med avtalen - se steg 2](https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling). Nedenfor får du informasjon om stegene en må igjennom ved konfigurering av KS SvarUt. 
 
 - Konfigurasjon for mottak: SvarInn 
   - legg inn alle organisasjonsnumre til virksomheten, også underenheter 
@@ -45,7 +45,6 @@ for digital forsendelse i sak/arkiv system som gjør det mulig å sende elektron
 KS, Difi og KMD er blitt enige om at alle statlige virksomheter nå kan koble seg til KS-FIKS.  
 Avtalen må fylles ut, signeres og sendes i retur til KS. Administrator må oppgis. Denne personen vil bli lagt inn med tilgang til forvaltningsgrensesnittet KS SvarUt-forvalting. [Hvordan komme i gang med svarut](http://www.ks.no/fagomrader/utvikling/digitalisering/svarut/komme-i-gang-med-svarut/)  
 
- 
 Skal administrator ha mulighet til manuell nedlastning av SvarUt-sendinger, må vedkommende ha post/arkiv-rolle i Altinn for virksomheten.  
 
 **For å kunne opprette integrasjonen til KS-FIKS må 2 sett med brukernavn og passord opprettes; et for SvarInn og et for SvarUt. Disse må legges inn i integrasjonspunkt-local.properties-filen.** [Se her for nærmere informasjon.](https://difi.github.io/moveintegrasjonspunkt/properties_config.html#digital-post-til-virksomheter) 
