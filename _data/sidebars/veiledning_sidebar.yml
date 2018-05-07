@@ -27,9 +27,9 @@ entries:
          url: /properties_config.html
          output: web, pdf
          
-          - title: Konfigurere DPF(KS FIKS) 
-            url: /ksfiks.html
-            output: web, pdf
+           - title: Konfigurere DPF(KS FIKS) 
+             url: /ksfiks.html
+             output: web, pdf
       
        - title: Oppstart av integrasjonspunktet
          url: /ip_run.html
