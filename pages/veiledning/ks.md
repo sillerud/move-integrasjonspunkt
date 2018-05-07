@@ -1,5 +1,5 @@
 ---
-title: Konfigurere DPF
+title: Konfigurere for kommunikasjon med kommunesektorens FIKS plattform (DPF)
 description: Hvordan man opprette svarinn og svarut-bruker
 summary: "Hvordan man opprette svarinn og svarut-bruker"
 sidebar: veiledning_sidebar
