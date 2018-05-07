@@ -38,3 +38,7 @@ entries:
        - title: Oppgradere til ny versjon
          url: /ip_upgrade.html
          output: web, pdf
+         
+       - title: Konfigurere DPF(KS FIKS) 
+         url: /ksfiks.html
+         output: web, pdf
