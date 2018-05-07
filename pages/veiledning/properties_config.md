@@ -59,7 +59,7 @@ Når en virksomhet sender digital post til virksomheter kan virksomheten sende b
   {% include custom/properties/dpv.html %}
 </div>
 
-### Opprette bruker til Altinn formidlingstjeneste
+### Opprette bruker til Altinn formidlingstjeneste (DPO)
 
 (Gjelder bare for digital post til offentlige virksomheter)
 Integrasjonspunktet kjører som [datasystem](https://www.altinn.no/no/Portalhjelp/Datasystemer/) mot AltInn's meldingsformidler. Integrasjonspunktet må registeres som et datasystem AltInn's portal. Informasjon om hvordan dette gjøres finnes [her](https://www.altinn.no/no/Portalhjelp/Datasystemer/Registrere-datasystem/).
@@ -83,4 +83,8 @@ ___
 
 Informasjon om hvordan du logger på AltInn portal finner du <a href="her">https://www.altinn.no/no/Portalhjelp/Innlogging/</a>.
 
+### Opprette bruker til KS FIKS (DPF)
 
+[Se egen side i veiledningen](https://difi.github.io/move-integrasjonspunkt/ksfiks.html)
+
+--- 
