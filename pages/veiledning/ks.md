@@ -44,7 +44,7 @@ Avtalen må fylles ut, signeres og sendes i retur til KS. Administrator må oppg
  
 Skal administrator ha mulighet til manuell nedlastning av SvarUt-sendinger, må vedkommende ha post/arkiv-rolle i Altinn for virksomheten.  
 
-**For å kunne opprette integrasjonen til KS-FIKS må 2 sett med brukernavn og passord opprettes; et for SvarInn og et for SvarUt. Disse må legges inn i integrasjonspunkt-local.properties-filen. ** [Se her for nærmere informasjon.](https://difi.github.io/moveintegrasjonspunkt/properties_config.html#digital-post-til-virksomheter) 
+**For å kunne opprette integrasjonen til KS-FIKS må 2 sett med brukernavn og passord opprettes; et for SvarInn og et for SvarUt. Disse må legges inn i integrasjonspunkt-local.properties-filen.** [Se her for nærmere informasjon.](https://difi.github.io/moveintegrasjonspunkt/properties_config.html#digital-post-til-virksomheter) 
  
 Etter integrasjonen er etablert vil SvarUt sendinger komme frem til sak/arkiv systemet. 
  
