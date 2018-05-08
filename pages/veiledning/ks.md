@@ -102,7 +102,7 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
  
 **velg så "service" for å få opp bildet under**
 
-- **Service: Dette er passord nr. 2 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!**  Her må en også laste opp den offentlige-nøkkelen på virksomhetssertifikatet som har vore brukt til integrasjonspunktet.
+- **Service: Dette er passord nr. 2 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!**  Her må en også laste opp den offentlige-nøkkelen til et virksomhetssertifikatet, det kan godt være den samme som integrasjonspunktet bruker.
  
 ![bilde9](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/09_FIKS2.PNG?raw=true)
  
