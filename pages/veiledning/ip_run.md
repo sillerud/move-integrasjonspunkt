@@ -9,6 +9,13 @@ folder: veiledning
 
 Det finnes flere måter å kjøre integrasjonspunktet på. Den vi anbefaler for enkel start/stopp i tillegg til tilgangsstyring er å installere integrasjonspunktet som en tjeneste. Her vil vi vise tre forskjellige måter å kjøre integrasjonspunktet på.
 
+### Justere minnebruk (nyttig for eformidling)
+
+For å justere hvor mye minne integrasjonspunktet kan bruke så kan dette gjøres ved å endre oppstartkommandoen. Dette kan være veldig nyttig ved forsendelser via eFormidling (dpo,dpv,dpi,dpf) for å være sikker på at applikasjonen har nok minne til å sende større filer. 1GB minne burde holde lenge, men det kan variere.
+
+Du må legge inn ``` -Xmx1024m``` i oppstartskommandoen for å sette feks 1024 MB. Antallet kan justeres til ønsket mengde. For å gjøre dette på en service så må en legge inn enda et argument i integrasjonspunkt-service.xml-filen. feks slik: ```<argument>-Xmx2048m</argument>```. Sørg for at det er innen for ```<service>...</service>```.
+
+
 ## Alt 1: Kjøre integrasjonspunktet som en tjeneste
 
 Integrasjonspunktet kan også installeres som en tjeneste på server. For å gjøre dette kan en laste ned en tredjepartsprogramvare og sette opp en egen liten config-fil.
