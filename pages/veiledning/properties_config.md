@@ -98,23 +98,26 @@ Informasjon om hvordan du logger på AltInn portal finner du <a href="her">https
 Det er ikke nødvendig å fylle ut kundenummer.
 7.	Klikk på **Avsendernivå** (ligger under organisasjonsnivået i meny til venstre)
   
-  a.	Avsendernavn: Noter 
+a.	Avsendernavn: Noter 
   
-  b.	Servicepassord: Generer og noter. Dette er passord nr 1 og gjelder SvarUt.
+b.	Servicepassord: Generer og noter. Dette er passord nr 1 og gjelder SvarUt.
   
 Avsendernavn og Servicepassord er brukernavn og passord, som du benytter når du konfigurerer lokalt integrasjonspunkt.
 8.	Klikk på **Mottakersystem** (i menyen på toppen, deretter på organisasjonen din i meny på venstre side)
   
-  a.	Generer passord nr 2, dette gjeld SvarInn (ref fullstendig dokumentasjon for detaljer)
+a.	Generer passord nr 2, dette gjeld SvarInn (ref fullstendig dokumentasjon for detaljer)
   
-  b.	Last opp offentlig nøkkel til virksomhetssertifikat
+b.	Last opp offentlig nøkkel til virksomhetssertifikat
   
 9.	Konfigurer lokalt integrasjonspunkt, ved å legge inn brukernavn og passord fra 7. og 8. 
 Meld til Difi at dere har konfigurert lokalt integrasjonspunkt for DPF, be om tilgang til tjenesten. Difi gir tilgang.
+
 10.	**Administrasjon** 
   
   a.	Avslutt med å følge opp det som er omtalt under kapittel Administrasjon. 
+  
 Dette gjøres etter at Difi har åpnet tilgang til tjenesten. (Viktig å vere heilt klar på kva som skal skje først og sist)
+
 11.	**Verifiser at tjenesten fungerer**
 Vi har god erfaring med å gjøre dette ved å utveksle meldinger med parter man har tett dialog med. 
 Etter verifisering, meld til <a href="idporten@difi.no">idporten@difi.no</a> at tjenesten DPF i eFormidling fungerer tilfredsstillende.
