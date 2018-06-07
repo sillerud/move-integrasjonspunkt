@@ -86,33 +86,33 @@ Informasjon om hvordan du logger på AltInn portal finner du <a href="her">https
 ### Opprette bruker til KS FIKS (DPF)
 
 1.	Fortell Difi at du vil kommunisere med kommuner og andre som benytter KS sin FIKS-plattform.
--	Ref steg 1 av 6 -  https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling
+   -	Ref steg 1 av 6 -  https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling
 2.	Difi kontakter KS og ber om at aktuelle avtaledokument blir tilsendt aktuell kontaktperson hos deg.
 3.	Du sørger for at avtalen blir signert i din virksomhet, skanner og sender tilbake til svarut@ks.no
--	Viss du informerer idporten@difi.no at avtale med KS er signert, kan vi følge framdrift i saken. 
+   -	Viss du informerer idporten@difi.no at avtale med KS er signert, kan vi følge framdrift i saken. 
 4.	Lokal administrator* oppgir fullt fødselsnummer til KS for å få opprettet bruker i FIKS.
--	Ring eller send sms til 906 53 432, Steinar Brun. 
+   -	Ring eller send sms til 906 53 432, Steinar Brun. 
 5.	Du mottar påloggingsinfo, logger inn i https://svarut@ks.no. Klikk på Konfigurasjon.
-6.	Klikk på Organisasjonsnivået (øverste linje i meny til venstre)
-a.	Faktura: innholdet i feltet «Referanse» vil bli «Deres ref» i faktura fra KS
+6.	Klikk på **Organisasjonsnivået** (øverste linje i meny til venstre)
+   a.	Faktura: innholdet i feltet «Referanse» vil bli «Deres ref» i faktura fra KS
 Det er ikke nødvendig å fylle ut kundenummer.
-7.	Klikk på Avsendernivå (ligger under organisasjonsnivået i meny til venstre)
-a.	Avsendernavn: Noter 
-b.	Servicepassord: Generer og noter. Dette er passord nr 1 og gjelder SvarUt.
+7.	Klikk på **Avsendernivå** (ligger under organisasjonsnivået i meny til venstre)
+   a.	Avsendernavn: Noter 
+   b.	Servicepassord: Generer og noter. Dette er passord nr 1 og gjelder SvarUt.
 Avsendernavn og Servicepassord er brukernavn og passord, som du benytter når du konfigurerer lokalt integrasjonspunkt.
-8.	Klikk på Mottakersystem (i menyen på toppen, deretter på organisasjonen din i meny på venstre side)
-a.	Generer passord nr 2, dette gjeld SvarInn (ref fullstendig dokumentasjon for detaljer)
-b.	Last opp offentlig nøkkel til virksomhetssertifikat
+8.	Klikk på **Mottakersystem** (i menyen på toppen, deretter på organisasjonen din i meny på venstre side)
+   a.	Generer passord nr 2, dette gjeld SvarInn (ref fullstendig dokumentasjon for detaljer)
+   b.	Last opp offentlig nøkkel til virksomhetssertifikat
 9.	Konfigurer lokalt integrasjonspunkt, ved å legge inn brukernavn og passor fra 7. og 8. 
 Meld til Difi at dere har konfigurert lokalt integrasjonspunkt for DPF, be om tilgang til tjenesten. Difi gir tilgang.
-10.	Administrasjon 
-a.	Avslutt med å følge opp det som er omtalt under kapittel Administrasjon. 
+10.	**Administrasjon** 
+   a.	Avslutt med å følge opp det som er omtalt under kapittel Administrasjon. 
 Dette gjøres etter at Difi har åpnet tilgang til tjenesten. (Viktig å vere heilt klar på kva som skal skje først og sist)
-11.	Verifiser at tjenesten fungerer
+11.	**Verifiser at tjenesten fungerer**
 Vi har god erfaring med å gjøre dette ved å utveksle meldinger med parter man har tett dialog med. 
 Etter verifisering, meld til idporten@difi.no at tjenesten DPF i eFormidling fungerer tilfredsstillende.
 
 
-[Se full veiledning her](https://difi.github.io/move-integrasjonspunkt/ksfiks.html)
+> [Se full veiledning her](https://difi.github.io/move-integrasjonspunkt/ksfiks.html)
 
 --- 
