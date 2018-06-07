@@ -33,9 +33,9 @@ For å kunne konfigurere KS SvarUt-forvaltning må avtale med KS være på plass
  
 ### Hva er KS-FIKS og hvorfor er det så viktig i eFormidling? 
 
-KS-FIKS sørger for at virksomheter mottar elektronisk post sendt med SvarUt i sak/arkiv systemet.
+eFormidling kommuniserer med FIKS og sørger for at du mottar elektronisk post sendt med SvarUt i ditt sak-/arkiv system.
 
-KS-FIKS sørger også for at meldinger fra sak/arkiv system kan mottas av SvarInn-brukere i sitt sak/arkiv system. 
+eFormidling kommuniserer med FIKS slik at mottakere som benytter SvarInn tjeneste mottar elektronisk post fra deg i sitt sak-/arkiv system.
 
 Post til virksomheter fra sak/arkiv system består til slutt av Digital post til offentlige virksomheter, Digital post til virksomheter(DPV), kommuner og fylkeskommuner (KS-FIKS). Sammen med digital postkasse til innbyggere (kommer til eFormidling ila sommeren 2018) har man så en helhetlig løsning 
 for digital forsendelse i sak/arkiv system som gjør det mulig å sende elektronisk til innbyggere og virksomheter. 
