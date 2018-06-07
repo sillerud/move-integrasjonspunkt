@@ -104,7 +104,6 @@ Avsendernavn og Servicepassord er brukernavn og passord, som du benytter når du
 
 8.	Klikk på **Mottakersystem** (i menyen på toppen, deretter på organisasjonen din i meny på venstre side)  
    - Generer passord nr 2, dette gjeld SvarInn (ref fullstendig dokumentasjon for detaljer)
-  
    - Last opp offentlig nøkkel til virksomhetssertifikat
   
 9.	Konfigurer lokalt integrasjonspunkt, ved å legge inn brukernavn og passord fra 7. og 8. 
