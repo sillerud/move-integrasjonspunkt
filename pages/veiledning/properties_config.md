@@ -108,6 +108,7 @@ Avsendernavn og Servicepassord er brukernavn og passord, som du benytter når du
    - Last opp offentlig nøkkel til virksomhetssertifikat
   
 9.	Konfigurer lokalt integrasjonspunkt, ved å legge inn brukernavn og passord fra 7. og 8. 
+
 Meld til Difi at dere har konfigurert lokalt integrasjonspunkt for DPF, be om tilgang til tjenesten. Difi gir tilgang.
 
 10.	**Administrasjon** 
@@ -116,6 +117,7 @@ Meld til Difi at dere har konfigurert lokalt integrasjonspunkt for DPF, be om ti
 Dette gjøres etter at Difi har åpnet tilgang til tjenesten. (Viktig å vere heilt klar på kva som skal skje først og sist)
 
 11.	**Verifiser at tjenesten fungerer**
+
 Vi har god erfaring med å gjøre dette ved å utveksle meldinger med parter man har tett dialog med. 
 Etter verifisering, meld til <a href="idporten@difi.no">idporten@difi.no</a> at tjenesten DPF i eFormidling fungerer tilfredsstillende.
 
