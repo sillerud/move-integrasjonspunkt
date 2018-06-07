@@ -100,7 +100,7 @@ Det er ikke nødvendig å fylle ut kundenummer.
    - Avsendernavn: Noter 
    - Servicepassord: Generer og noter. Dette er passord nr 1 og gjelder SvarUt.
   
-   Avsendernavn og Servicepassord er brukernavn og passord, som du benytter når du konfigurerer lokalt integrasjonspunkt.
+      Avsendernavn og Servicepassord er brukernavn og passord, som du benytter når du konfigurerer lokalt integrasjonspunkt.
 
 8.	Klikk på **Mottakersystem** (i menyen på toppen, deretter på organisasjonen din i meny på venstre side)  
    - Generer passord nr 2, dette gjeld SvarInn (ref fullstendig dokumentasjon for detaljer)
