@@ -113,7 +113,7 @@ Det er ikke nødvendig å fylle ut kundenummer.
 10.	**Administrasjon** 
   - Avslutt med å følge opp det som er omtalt under kapittel Administrasjon. 
   
-    Dette gjøres etter at Difi har åpnet tilgang til tjenesten. (Viktig å vere heilt klar på kva som skal skje først og sist)
+    Dette gjøres etter at Difi har åpnet tilgang til tjenesten. 
 
 11.	**Verifiser at tjenesten fungerer**
 
