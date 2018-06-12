@@ -83,6 +83,8 @@ Meldingsformidlingsapplikasjonen krever minimum versjon 1.8.0
 
 Dersom Java ikke er installert eller versjonen er for gammel, kan ny versjon lastes ned [her](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) og installeres.
 
+> **NB!** Husk å installere 64-bit Java om du har 64-bit operativsystem! 
+
 ### Installere Java Cryptography Extension (JCE)
 
 Bruker du ny versjon av Java, må ny JCE installeres. Last ned JCE fra [Oracles sider](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html)
