@@ -71,7 +71,7 @@ Disse genererer dere ved å logge på FIKS og konfigurere SvarUt og SvarInn.
 
 Forutsett at dere har akseptert bruksvilkår for Difis fellesløsninger, må følgende steg gjennomføres:
 
-1.	Signer avtale med KS (Slik komme du i gang med avtalen - se steg 2.)  
+1.	Signer avtale med KS (Slik komme du i gang med avtalen - [se steg 2.](https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling))  
 2.	Systemadministrator som får tildelt bruker i FIKS logger inn med tildelt brukernavn og passord. Passord mottar dere på SMS.
 3.	Følg prosessen i neste kapittel for å generere brukernavn og passord for SvarUT og SvarInn. NB! Dette er to sett med brukernavn og passord. Brukernavn og passord blir input i konfigurering av lokalt integrasjonspunkt og legges inn in integrasjonspunkt-local.properties-filen. Dette utføres av teknisk ressurs.
 
