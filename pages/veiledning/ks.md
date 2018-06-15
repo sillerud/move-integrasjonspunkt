@@ -33,8 +33,6 @@ Fordi det effektiviserer utveksling av meldinger på tvers av stat og kommune:
 -	vi sikrer og standardiserer hvordan vi sender og mottar digital post.
 -	vi respekterer mottaker sin valgte kanal for å ta imot post digitalt. 
 
-> Sjekk 
-
 I tillegg bidrar vi til samhandling på tvers av offentlig sektor, Difi anbefaler derfor at statlige virksomheter inngår avtale med KS med formål eFormidling.
 
 ### Fordeler ved å sette opp FIKS-plattformen for bruk i eFormidling
