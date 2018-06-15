@@ -52,7 +52,7 @@ Post fra kommuner med eldre versjon av SvarUt, mangler en del metadata, og derfo
 Kommuner og fylkeskommuner som ikke abonnerer på tjenesten SvarInn hos KS, må fortsatt hente post sendt via eFormidling hos Altinn. Det er derfor fortsatt viktig at alle virksomheter sørger for gode rutiner for å hente posten i Altinn.
 
 Viktig informasjon! 
-De som skal hente post i Altinn på vegne av virksomheten, må ha fått delegert rolle post/arkiv i Altinn. [Les mer her] (https://www.altinn.no/hjelp/profil/roller-og-rettigheter/hvordan-gi-rettigheter-til-andre/) eller <a href="mailto:servicedesk@altinn.no">servicedesk@altinn.no</a>. 
+De som skal hente post i Altinn på vegne av virksomheten, må ha fått delegert rolle post/arkiv i Altinn. [Les mer her](https://www.altinn.no/hjelp/profil/roller-og-rettigheter/hvordan-gi-rettigheter-til-andre/) eller <a href="mailto:servicedesk@altinn.no">servicedesk@altinn.no</a>. 
 
 ### Hva skal til for at eFormidling snakker med den kommunale FIKS plattformen?
 
