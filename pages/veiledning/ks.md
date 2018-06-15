@@ -1,5 +1,5 @@
 ---
-title: Konfigurere for kommunikasjon med kommunesektorens FIKS plattform (DPF)
+title: Konfigurering av DPF – for kommunikasjon på tvers av kommunal og statlig sektor
 description: Hvordan man opprette svarinn og svarut-bruker
 summary: "Hvordan man opprette svarinn og svarut-bruker"
 sidebar: veiledning_sidebar
@@ -7,50 +7,90 @@ permalink: ksfiks.html
 folder: veiledning
 ---
 
-# Konfigurering av DPF – Kobling av eFormidling til KS-FIKS 
+### Hvordan henger eFormidling og KS sin FIKS plattform sammen?
 
-> NB! Denne delen av veiledningen er basert på dokumentasjon delt av Fylkesmannen i Nordland. Det er viktig at dere følger den i detalj for å få opprette brukernavn og passord til SvarUt og SvarInn.  Dette er input til konfigurering av lokalt integrasjonspunkt, og legges inn i integrasjonspunkt-local.properties-filen.
+KS, Difi og KMD er blitt enige om at alle statlige virksomheter nå kan kommunisere med kommunal sektor via eFormidling. eFormidling og kommunene sin digitale plattform FIKS snakker sammen. Statlige virksomheter benytter <a href="mailto:idporten@difi.no">idporten@difi.no</a> som kontaktpunkt. Difi koordinerer med KS og ber de oversende avtaleverk med formål eFormidling til aktuell kontaktperson hos deg. Se Steg 2 [her](https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling)
+                                                       
+Avtalen må fylles ut, signeres og sendes i retur til KS. Administrator må oppgis. Denne personen vil bli lagt inn med tilgang til forvaltningsgrensesnittet KS SvarUt-forvalting. 
 
-Ta kontakt på <a href="mailto:idporten@difi.no">idporten@difi.no</a> dersom dere har spørsmål til dokumentasjon eller trenger støtte underveis.
+Etter integrasjonen er etablert vil SvarUt sendinger til deg, komme til ditt  sak/arkiv system, og kommuner som abonnerer på tjenesten SvarInn vil motta sending fra deg i sitt sak-/arkiv system. . 
 
-Ved spørsmål rundt KS SvarUt eller SvarInn ta kontakt med KS på e-post: <a href="mailto:svarut@ks.no">svarut@ks.no</a>
+### Hva er sammenhengen mellom eFormidling og KS’ FIKS-plattform?
 
-### Dette er punktene man må gå gjennom for å opprette kobling fra sak-arkivsystemet til KS-FIKS: 
+Alle statlige virksomheter kan nå kommunisere med kommunal sektor via eFormidling. Avsender bruker sitt sak/arkiv-system, sender dokument via eFormidling og kommunen mottar dokumentet via SvarInn. Eksempelvis kan statlige virksomheter (som bruker eFormidling) kommunisere med kommuner (som bruker KS FIKS-plattformen) helt sømløst på en enkel og sikker måte.   
 
-I Altinn må dere delegere post/arkiv rolle til de som skal ha tilgang til KS SvarUt-forvaltning. Denne rollen må man også inneha for å manuelt kunne laste ned SvarUt sendinger. 
- 
-For informasjon om delegering av post/arkiv-rolle i Altinn, kontakt med <a href="mailto:servicedesk@altinn.no">servicedesk@altinn.no</a>
+### Avtaleverk – KS
 
-### Knytte virksomheten til KS-FIKS.  
-For å kunne konfigurere KS SvarUt-forvaltning må avtale med KS være på plass. [Slik komme du i gang med avtalen - se steg 2](https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling). Nedenfor får du informasjon om stegene en må igjennom ved konfigurering av KS SvarUt. 
+Dersom virksomheten din skal ta i bruk hele eFormidling må dere inngå bruksvilkår for Difis fellesløsninger. Les mer om eFormidling og bruksvilkår på samarbeid.difi.no.
 
+For å ta i bruk FIKS-plattformen må KS sin avtale fylles ut, signeres og sendes til KS. Dere må oppgi en administrator. Denne personen vil få tilgang til forvaltningsgrensesnittet KS SvarUt-forvaltning.
+
+### Hvorfor skal vi sette opp tjenesten DPF i eFormidling?
+
+Fordi det effektiviserer utveksling av meldinger på tvers av stat og kommune:
+-	post sendt via SvarUt kommer rett inn til ditt sak-/arkiv system. 
+-	post fra dere mottas i sak-/arkiv system hos kommuner/fylkeskommuner som har tjenesten SvarInn fra KS. 
+-	vi sikrer og standardiserer hvordan vi sender og mottar digital post.
+-	vi respekterer mottaker sin valgte kanal for å ta imot post digitalt. 
+
+> Sjekk 
+
+I tillegg bidrar vi til samhandling på tvers av offentlig sektor, Difi anbefaler derfor at statlige virksomheter inngår avtale med KS med formål eFormidling.
+
+### Fordeler ved å sette opp FIKS-plattformen for bruk i eFormidling
+
+Ved å bruke alle deler av eFormidling blir utveksling av meldinger på tvers av stat og kommune mer effektiv:
+- post sendt via SvarUT blir tilgjengelig i ditt sak-/arkiv system
+- kommuner og fylkeskommuner kan motta post fra din virksomhet i SvarInn
+- dere kan sende og motta digital post på en sikker og standardisert måte
+- mottaker får post i sin valgte digitale kanal
+
+### Hvorfor må både stat og kommune fortsatt ha rutiner for å hente post i Altinn?
+
+Post fra kommuner med eldre versjon av SvarUt, mangler en del metadata, og derfor vil post fra disse enda havne i din Altinn. Mottar du post fra statlige virksomheter i Altinn? Kontakt avsender, og oppfordre dem til å ta i bruk eFormidling. 
+
+Kommuner og fylkeskommuner som ikke abonnerer på tjenesten SvarInn hos KS, må fortsatt hente post sendt via eFormidling hos Altinn. Det er derfor fortsatt viktig at alle virksomheter sørger for gode rutiner for å hente posten i Altinn.
+
+Viktig informasjon! 
+De som skal hente post i Altinn på vegne av virksomheten, må ha fått delegert rolle post/arkiv i Altinn. [Les mer her] (https://www.altinn.no/hjelp/profil/roller-og-rettigheter/hvordan-gi-rettigheter-til-andre/) eller <a href="mailto:servicedesk@altinn.no">servicedesk@altinn.no</a>. 
+
+### Hva skal til for at eFormidling snakker med den kommunale FIKS plattformen?
+
+1.	Dere har signert avtale med KS (Slik kommer du i gang med avtalen - [se steg 2.](https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling))  
+2.	Systemadministrator får deretter tildelt bruker i FIKS, og logger inn med tildelt brukernavn og passord som mottas på sms.
+3.	Følg prosessen i neste kapittel for å generere brukernavn og passord for SvarUt og SvarInn (to sett brukernavn og passord). 
+
+Disse to blir input i konfigurering av lokalt integrasjonspunkt. To sett brukernavn og passord legges inn i integrasjonspunkt-local.properties-filen. Utføres av teknisk ressurs.
+
+Det er avgjørende at arkivfaglig ressurs og teknisk ressurs samarbeider godt i denne prosessen.
+Noen virksomheter har slik ressurs internt, mens andre har egen driftsleverandør. Uansett er det virksomheten sitt ansvar å påse at nødvendig teknisk ressurs er tilgjengelig for å utføre konfigurering av lokalt integrasjonspunkt iht dokumentasjon. 
+
+Disse genererer dere ved å logge på FIKS og konfigurere SvarUt og SvarInn.
+
+### Hva må vi gjøre for å bruke eFormidling og FIKS-plattformen?
+
+Forutsett at dere har akseptert bruksvilkår for Difis fellesløsninger, må følgende steg gjennomføres:
+
+1.	Signer avtale med KS (Slik komme du i gang med avtalen - se steg 2.)  
+2.	Systemadministrator som får tildelt bruker i FIKS logger inn med tildelt brukernavn og passord. Passord mottar dere på SMS.
+3.	Følg prosessen i neste kapittel for å generere brukernavn og passord for SvarUT og SvarInn. NB! Dette er to sett med brukernavn og passord. Brukernavn og passord blir input i konfigurering av lokalt integrasjonspunkt og legges inn in integrasjonspunkt-local.properties-filen. Dette utføres av teknisk ressurs.
+
+#### Viktig samarbeid mellom tekniske og arkivfaglige ressurser
+
+Det er viktig at både arkivfaglige og tekniske ressurser samarbeider godt i prosessen om å ta i bruk eFormidling og FIKS-plattformen. Noen virksomheter har ressurser internt, andre benytter seg av driftsleverandør. Det er virksomheten sitt ansvar å påse at nødvendig teknisk ressurs er tilgjengelig for å utføre konfigureringen av lokalt integrasjonspunkt i henhold til dokumentasjon.
+
+### Hvordan generere brukernavn og passord for SvarUt og SvarInn - steg for steg
+
+Følg stegene under nøye, for å fullføre konfigurering i FIKS.
 - Konfigurasjon for mottak: SvarInn 
-  - legg inn alle organisasjonsnumre til virksomheten, også underenheter 
-  - brukernavn og servicepassord (difi.move.fiks.inn.username og password i integrasjonspunkt-local.properties-filen) 
-- konfigurasjon for sending: SvarUt 
-  - Fakturaopplysninger 
-  - brukernavn og servicepassord (difi.move.fiks.ut.username og password i integrasjonspunkt-local.properties-filen)  
- 
-### Hva er KS-FIKS og hvorfor er det så viktig i eFormidling? 
+  - legg inn alle organisasjonsnumre til virksomheten, også underenheter
+  - brukernavn og servicepassord (difi.move.fiks.inn.username og password i integrasjonspunkt-local.properties-filen)
+- Konfigurasjon for sending: SvarUt 
+  - Fakturaopplysninger
+  - brukernavn og servicepassord (difi.move.fiks.ut.username og password i integrasjonspunkt-local.properties-filen)
 
-eFormidling kommuniserer med FIKS og sørger for at du mottar elektronisk post sendt med SvarUt i ditt sak-/arkiv system.
+Under finner du veiledning med skjermbilder, delt av Fylkesmannen i Nordland.
 
-eFormidling kommuniserer med FIKS slik at mottakere som benytter SvarInn tjeneste mottar elektronisk post fra deg i sitt sak-/arkiv system.
-
-Post til virksomheter fra sak/arkiv system består til slutt av Digital post til offentlige virksomheter, Digital post til virksomheter(DPV), kommuner og fylkeskommuner (KS-FIKS). Sammen med digital postkasse til innbyggere (kommer til eFormidling ila sommeren 2018) har man så en helhetlig løsning 
-for digital forsendelse i sak/arkiv system som gjør det mulig å sende elektronisk til innbyggere og virksomheter. 
- 
-### Hvordan knytte seg til KS-FIKS? 
-
-KS, Difi og KMD er blitt enige om at alle statlige virksomheter nå kan koble seg til KS-FIKS.  
-Avtalen må fylles ut, signeres og sendes i retur til KS. Administrator må oppgis. Denne personen vil bli lagt inn med tilgang til forvaltningsgrensesnittet KS SvarUt-forvalting. [Hvordan komme i gang med svarut](http://www.ks.no/fagomrader/utvikling/digitalisering/svarut/komme-i-gang-med-svarut/)  
-
-Skal administrator ha mulighet til manuell nedlastning av SvarUt-sendinger, må vedkommende ha post/arkiv-rolle i Altinn for virksomheten.  
-
-**For å kunne opprette integrasjonen til KS-FIKS må 2 sett med brukernavn og passord opprettes; et for SvarInn og et for SvarUt. Disse må legges inn i integrasjonspunkt-local.properties-filen.** [Se her for nærmere informasjon.](https://difi.github.io/moveintegrasjonspunkt/properties_config.html#digital-post-til-virksomheter) 
- 
-Etter integrasjonen er etablert vil SvarUt sendinger komme frem til sak/arkiv systemet. 
- 
   
 ### Konfigurering av KS SvarUt-forvaltning 
 
@@ -104,7 +144,7 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
 
 - **Service: Dette er passord nr. 2 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!**  
 
-- **Offentlig nøkkel for sak-mottak: Her må en også laste opp den offentlige-nøkkelen til et virksomhetssertifikatet, det kan godt være den samme som integrasjonspunktet bruker.**
+- **Offentlig nøkkel for sak-mottak(virksomhetssertifikat): Her må en også laste opp den offentlige-nøkkelen til et virksomhetssertifikatet, det kan godt være den samme som integrasjonspunktet bruker.**
  
 ![bilde9](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/09_FIKS2.PNG?raw=true)
  
