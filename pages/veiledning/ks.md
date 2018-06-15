@@ -9,7 +9,7 @@ folder: veiledning
 
 ### Hvordan henger eFormidling og KS sin FIKS plattform sammen?
 
-KS, Difi og KMD er blitt enige om at alle statlige virksomheter nå kan kommunisere med kommunal sektor via eFormidling. eFormidling og kommunene sin digitale plattform FIKS snakker sammen. Statlige virksomheter benytter <a href="mailto:idporten@difi.no">idporten@difi.no</a> som kontaktpunkt. Difi koordinerer med KS og ber de oversende avtaleverk med formål eFormidling til aktuell kontaktperson hos deg. Se Steg 2 [her](https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling)
+KS, Difi og KMD er blitt enige om at alle statlige virksomheter nå kan kommunisere med kommunal sektor via eFormidling. eFormidling og kommunene sin digitale plattform FIKS snakker sammen. Statlige virksomheter benytter <a href="mailto:idporten@difi.no">idporten@difi.no</a> som kontaktpunkt. Difi koordinerer med KS og ber de oversende avtaleverk med formål eFormidling til aktuell kontaktperson hos deg. Se [Steg 2 her](https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling)
                                                        
 Avtalen må fylles ut, signeres og sendes i retur til KS. Administrator må oppgis. Denne personen vil bli lagt inn med tilgang til forvaltningsgrensesnittet KS SvarUt-forvalting. 
 
