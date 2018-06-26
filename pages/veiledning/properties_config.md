@@ -85,7 +85,7 @@ ___
 
 Informasjon om hvordan du logger på AltInn portal finner du <a href="her">https://www.altinn.no/no/Portalhjelp/Innlogging/</a>.
 
-### Opprette bruker til KS FIKS (DPF)
+### Opprette bruker til KS FIKS (Svarut & Svarinn (DPF))
 
 1.	Fortell Difi at du vil kommunisere med kommuner og andre som benytter KS sin FIKS-plattform.
    -	Ref steg 1 av 6 -  https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling
