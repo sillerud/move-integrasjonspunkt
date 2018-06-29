@@ -40,6 +40,16 @@ Loggene for denne tjenesten vil i utgangspunktet bli skrevet til feks ```c:\inte
 
 Om du ønsker å kjøre integrasjonspunktet på en minste rettighetsbruker så kan du enkelt endre hvilken bruker som kjører tjenesten ved å høyreklikke på den, velge "properties" og så velge "logg på" fanen. [Hvordan opprette en minste rettighetsbruker.](http://difi.github.io/move-integrasjonspunkt/ip_run.html#alt-3-kj%C3%B8re-via-task-scheduler-med-minste-rettigheter)
 
+#### Loggrotering
+I tillegg kan du legge inn loggrotering om det er ønskelig. Dermed kan du rotere logger på størrelse og velge hvor mange en ønsker å ta vare på. standardstørrelsen her er 10MB, denne kan du endre til ønsket størrelse. Antall filer som blir tatt vare på er 8. Dette kan også endres. Sørg for at dette er innenfor ``` <service> </service> ``` taggen slik som resten av konfigurasjonen.
+
+```
+<log mode="roll-by-size">
+	<sizeThreshold>10240</sizeThreshold>
+	<keepFiles>8</keepFiles>
+</log> 
+```
+
 ### Reinstallasjon av tjenesten
 
 Om du gjør endringer i versjon / ip-service.xml fil så må du reinstallere tjenesten. Det gjør du ved å åpne kommandovindu som administrator og navigere til integrasjonspunktmappa. Kjør så følgende kommandoer.
