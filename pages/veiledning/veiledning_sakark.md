@@ -14,7 +14,7 @@ Denne siden vil inneholde informasjon om konfigurasjon som må gjøres i det enk
 
 ## P360
 
-# UTGÅENDE INNSTILLINGER
+## UTGÅENDE INNSTILLINGER
 
 Innstillinger for utgående meldinger kan endres her:
 * Logg inn på server test-sakark01 med bruker difi\sakark_inst
@@ -33,7 +33,7 @@ Format: ![SnapIn](/SnapIn.png)
 Format: ![iisreset](../iisreset.png)
 
 
-# INNKOMMENDE INNSTILLINGER
+## INNKOMMENDE INNSTILLINGER
 
 For innkommende meldingen skal følgende service brukes.
 http://<maksinnavn>:8088/SI.WS.Core/Integration/EDUImport.svc/EDUImportService
@@ -41,3 +41,16 @@ Importen bør utføres med bruker <domene>\svc_sakark
 
 ## WebSak
 
+
+### Batch read for eInnsyn-meldinger
+
+Fra og med versjon 1.7.82 av integrasjonspunktet er det mulig å bruke batch read når en leser meldinger fra Azure Service-bus. Dette gjøres ved å benytte Advanced Message Queuing Protocol (AMQP). [Les mer her](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements) Dette fungerer ikke via rest-grensesnittet. 
+
+For å aktivere Batch read i ditt integrasjonspunkt så må du ha versjon 1.7.82 eller nyere og legge inn følgende i *integrasjonspunkt-local.properties* filen
+```
+difi.move.nextmove.serviceBus.batchRead=true
+```
+
+I tillegg må du åpne port 5671 for utgående trafikk. 
+
+---
