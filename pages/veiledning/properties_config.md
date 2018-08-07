@@ -83,7 +83,7 @@ Datasystem registrert:
 
 ___
 
-Informasjon om hvordan du logger på AltInn portal finner du <a href="her">https://www.altinn.no/no/Portalhjelp/Innlogging/</a>.
+Informasjon om hvordan du logger på AltInn portal finner du <a href="her">https://www.altinn.no/hjelp/innlogging/</a>.
 
 ### Opprette bruker til KS FIKS (Svarut & Svarinn (DPF))
 
