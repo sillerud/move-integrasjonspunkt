@@ -20,6 +20,8 @@ Vi anbefaler alle som skal konfigurere integrasjonspunktet for å ta i bruk eFor
 
 Vi anbefaler dere å konfigurere DPO før DPV/DPF/DPI for å unngå å motta post fra svarUt til virksomhetens SvarInn innboks. Ved å konfigurere DPO først vil dere motta post i sak-arkivsystemet
 
+> husk å melde fra til <a href="mailto:idporten@difi.no">idporten@difi.no</a> når dere har konfigurert slik at Difi kan åpne opp tilganger.
+
 
 ### integrasjonspunkt-local.properties
 
