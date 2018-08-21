@@ -13,7 +13,7 @@ Denne delen av veiledningen er delt opp slik at du først finner litt generell i
 
 Vi anbefaler alle som skal konfigurere integrasjonspunktet for å ta i bruk eFormidling om å sette opp konfigurasjonen i følgende rekkefølge.
 
-1. minimumskonfigurasjon for å få starte integrasjonspunktet. 
+1. Minimumskonfigurasjon for å få starte integrasjonspunktet. 
 2. Konfigurere sak-arkivsystem til å prate med integrasjonspunktet
 3. Konfigurere DPO innstillinger (brukernavn og passord) 
 4. Konfigurere DPV/DPF/DPI innstillinger
