@@ -11,7 +11,7 @@ folder: veiledning
 
 For å oppgradere til ny versjon må den siste versjonen av integrasjonspunkt[versjonsnr].jar filen lastes ned. Denne må så legges i integrasjonspunkt-mappen og oppstartskommando/tjeneste må endres til å peke på dette versjonsnummeret.
 
-
+## [Siste versjon av integrasjonspunktet kan lastes ned her (1.7.89)](https://beta-meldingsutveksling.difi.no/service/local/repositories/releases/content/no/difi/meldingsutveksling/integrasjonspunkt/1.7.89/integrasjonspunkt-1.7.89.jar) 
 
 ### Alt 1: Reinstallere en integrasjonspunkt tjeneste
 Last ned den siste versjon av integrasjonspunkt[versjonsnr].jar filen og legg den i integrasjonspunkt-mappen. Om du har integrasjonspunkt installert som en tjeneste så må du endre versjonsnummer i integrasjonspunkt-service.xml-filen og dermed reinstallere tjenesten.
