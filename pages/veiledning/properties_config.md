@@ -102,7 +102,7 @@ Informasjon om hvordan du logger på AltInn portal finner du <a href="https://ww
 ### Opprette bruker til KS FIKS (Svarut & Svarinn (DPF))
 
 1.	Fortell Difi at du vil kommunisere med kommuner og andre som benytter KS sin FIKS-plattform.
-   -	Ref steg 1 av 6 -  https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling
+   -	Ref steg 1 av 3 -  https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling
 2.	Difi kontakter KS og ber om at aktuelle avtaledokument blir tilsendt aktuell kontaktperson hos deg.
 3.	Du sørger for at avtalen blir signert i din virksomhet, skanner og sender tilbake til <a href="svarut@ks.no">svarut@ks.no</a>
    -	Viss du informerer <a href="idporten@difi.no">idporten@difi.no</a> at avtale med KS er signert, kan vi følge framdrift i saken. 
