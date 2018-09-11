@@ -9,15 +9,13 @@ folder: veiledning
 
 ### Hvordan henger eFormidling og KS sin FIKS plattform sammen?
 
-KS, Difi og KMD er blitt enige om at alle statlige virksomheter nå kan kommunisere med kommunal sektor via eFormidling. eFormidling og kommunene sin digitale plattform FIKS snakker sammen. Statlige virksomheter benytter <a href="mailto:idporten@difi.no">idporten@difi.no</a> som kontaktpunkt. Difi koordinerer med KS og ber de oversende avtaleverk med formål eFormidling til aktuell kontaktperson hos deg. Se [Steg 2 her](https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling)
+KS, Difi og KMD er blitt enige om at alle statlige virksomheter nå kan kommunisere med kommunal sektor via eFormidling.
+
+eFormidling og kommunene sin digitale plattform FIKS snakker sammen. Statlige virksomheter benytter <a href="mailto:idporten@difi.no">idporten@difi.no</a> som kontaktpunkt. Avsender bruker sitt sak/arkiv-system, sender dokument via eFormidling og kommunen mottar dokumentet via SvarInn. Eksempelvis kan statlige virksomheter (som bruker eFormidling) kommunisere med kommuner (som bruker KS FIKS-plattformen) helt sømløst på en enkel og sikker måte. Difi koordinerer med KS og ber de oversende avtaleverk med formål eFormidling til aktuell kontaktperson hos deg. Se [Steg 2 her](https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling)
                                                        
 Avtalen må fylles ut, signeres og sendes i retur til KS. Administrator må oppgis. Denne personen vil bli lagt inn med tilgang til forvaltningsgrensesnittet KS SvarUt-forvalting. 
 
 Etter integrasjonen er etablert vil SvarUt sendinger til deg, komme til ditt  sak/arkiv system, og kommuner som abonnerer på tjenesten SvarInn vil motta sending fra deg i sitt sak-/arkiv system. . 
-
-### Hva er sammenhengen mellom eFormidling og KS’ FIKS-plattform?
-
-Alle statlige virksomheter kan nå kommunisere med kommunal sektor via eFormidling. Avsender bruker sitt sak/arkiv-system, sender dokument via eFormidling og kommunen mottar dokumentet via SvarInn. Eksempelvis kan statlige virksomheter (som bruker eFormidling) kommunisere med kommuner (som bruker KS FIKS-plattformen) helt sømløst på en enkel og sikker måte.   
 
 ### Avtaleverk – KS
 
@@ -34,14 +32,6 @@ Fordi det effektiviserer utveksling av meldinger på tvers av stat og kommune:
 -	vi respekterer mottaker sin valgte kanal for å ta imot post digitalt. 
 
 I tillegg bidrar vi til samhandling på tvers av offentlig sektor, Difi anbefaler derfor at statlige virksomheter inngår avtale med KS med formål eFormidling.
-
-### Fordeler ved å sette opp FIKS-plattformen for bruk i eFormidling
-
-Ved å bruke alle deler av eFormidling blir utveksling av meldinger på tvers av stat og kommune mer effektiv:
-- post sendt via SvarUT blir tilgjengelig i ditt sak-/arkiv system
-- kommuner og fylkeskommuner kan motta post fra din virksomhet i SvarInn
-- dere kan sende og motta digital post på en sikker og standardisert måte
-- mottaker får post i sin valgte digitale kanal
 
 ### Hvorfor må både stat og kommune fortsatt ha rutiner for å hente post i Altinn?
 
