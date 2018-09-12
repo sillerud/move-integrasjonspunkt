@@ -1,13 +1,12 @@
 ---
-title: Endringslogg
+title: Endringslogg integrasjonspunktet
 description: Endringslogg for integrasjonspunktet
-summary: "Endringslogg for integrasjonspunktet."
 sidebar: veiledning_sidebar
 permalink: releasenotes.html
 folder: veiledning
 ---
 
-## Endringslogg integrasjonspunktet
+Endringslogg integrasjonspunktet
 
 ## 1.7.89
 21.08.2018
