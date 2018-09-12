@@ -9,7 +9,6 @@ folder: veiledning
 
 ## 1.7.89
 21.08.2018
-
 ```
 MOVE-794 - AppReceipts på egen kø
 MOVE-724 - fjernet personnr som ble logget dersom det oppstod feil
@@ -22,3 +21,41 @@ MOVE-837 - feil i mapping av svarSendesTil mot FIKS
 ```
 
 ## 1.7.88
+```
+
+```
+
+## 1.7.87
+```
+
+```
+
+## 1.7.86
+```
+
+```
+
+## 1.7.85
+```
+
+```
+
+## 1.7.84
+```
+
+```
+
+## 1.7.83
+```
+
+```
+
+## 1.7.82
+```
+
+```
+
+## 1.7.81
+```
+
+```
