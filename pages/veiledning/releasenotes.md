@@ -21,5 +21,4 @@ MOVE-328 - dumping av payload til disk når den når DLQ
 MOVE-817 - UUID-validering av sender- og receiver.ref i envelope
 MOVE-836 - fiks av kritisk bug som har eksistert siden 1.7.87 
 MOVE-837 - feil i mapping av svarSendesTil mot FIKS 
-
 ```
