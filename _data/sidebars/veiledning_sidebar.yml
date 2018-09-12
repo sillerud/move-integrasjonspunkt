@@ -42,3 +42,8 @@ entries:
        - title: Konfigurere DPF(KS FIKS) 
          url: /ksfiks.html
          output: web, pdf
+         
+       - title: Versjonslogg
+         url: /releasenotes.html
+         output: web, pdf
+         
