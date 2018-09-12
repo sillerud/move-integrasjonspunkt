@@ -1,3 +1,4 @@
+
 ---
 title:Endringslogg
 description: Endringslogg for integrasjonspunktet
