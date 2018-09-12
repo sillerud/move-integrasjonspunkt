@@ -43,7 +43,7 @@ entries:
          url: /ksfiks.html
          output: web, pdf
          
-       - title: Versjonslogg
+       - title: Endringslogg
          url: /releasenotes.html
          output: web, pdf
          
