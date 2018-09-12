@@ -6,7 +6,6 @@ permalink: releasenotes.html
 folder: veiledning
 ---
 
-Endringslogg integrasjonspunktet
 
 ## 1.7.89
 21.08.2018
