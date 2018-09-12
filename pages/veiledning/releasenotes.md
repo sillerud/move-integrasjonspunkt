@@ -1,6 +1,5 @@
-
 ---
-title:Endringslogg
+title: Endringslogg
 description: Endringslogg for integrasjonspunktet
 summary: "Endringslogg for integrasjonspunktet."
 sidebar: veiledning_sidebar
