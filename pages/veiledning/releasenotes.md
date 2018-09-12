@@ -9,7 +9,7 @@ folder: veiledning
 
 ## Endringslogg integrasjonspunktet
 
-# 1.7.89
+## 1.7.89
 Produksjonssatt 21.08.2018.
 
 ```
