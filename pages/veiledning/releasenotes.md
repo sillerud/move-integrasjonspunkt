@@ -14,8 +14,8 @@ Dette er endringer fra v1.7.90 t.o.m v.1.7.92. Ingen prod-release på 90 og 91.
 MOVE-852 endring av databasemodell for å støtte MySQL
 MOVE-839 Defaultverdier for jpInnhold, orgnr i SvarInn-melding. Mulighet for å angi "fiktiv" organisasjon dersom 
 det mangler; settes via. property: difi.move.fiks.inn.fallbackSenderOrgNr=123...
-MOVE-859 SvarSendesTil-felt i SvarUt-melding er nå alltid basert på InfoRecord til 
-mottaker (tidligere hentet fra Avsmot)
+MOVE-859 SvarSendesTil-felt i SvarUt-melding er nå alltid basert på InfoRecord til mottaker (tidligere hentet fra
+ Avsmot)
 MOVE-860 Retting av IndexOutOfBounds-feil ifm. polling av kvitteringer mot FIKS
 MOVE-858 Manglende xml-tag i AppReceipt fra p360
 MOVE-870 Oppgradering av azure-servicebus bibliotek (brukes ifm. batch-lesing av eInnsynsmeldinger)
