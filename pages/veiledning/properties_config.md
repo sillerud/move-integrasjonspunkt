@@ -71,7 +71,7 @@ Når en virksomhet sender digital post til virksomheter kan virksomheten sende b
 <button data-toggle="collapse" data-target="#demo6">Trykk her</button>
 <div id="demo6" class="collapse">
   {% include custom/properties/jks_generell.html %} 
-  <p> Brukernamnet og passordet for difi.move.dpv.username og difi.move.dpv.password er tjenesteeier påloggingen mot Altinn. [Mer info her](..)</p>
+  <p> Brukernamnet og passordet for difi.move.dpv.username og difi.move.dpv.password er tjenesteeier påloggingen mot Altinn. [Mer info her](https://altinn.github.io/docs/guides/digital-post-til-virksomheter/)</p>
   {% include custom/properties/dpv.html %}
 </div>
 
