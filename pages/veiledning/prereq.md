@@ -16,7 +16,7 @@ For å sette opp integrasjonspunktet til å støtte eInnsyn, må du gjøre følg
 
 + Tilgjengelig minne må være minimum 3 ganger større enn størrelsen på meldinger ønsket sendt.
 + Nødvendige brannmuråpninger
-+ Java 8 med JCE installert
++ Java 8 med JCE installert (JDK)
 + Virksomhetssertifikat utstedt av Buypass eller Commfides. [Les mer](http://difi.github.io/move-integrasjonspunkt/virksomhetssertifikat.html)
 + Tips: Installer integrasjonspunktet og eInnsynsklient på samme server.
 
@@ -72,14 +72,14 @@ Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp
 
 ### Installere Java runtime environment (JDK)
 
-Integrasjonspunktet er en Java applikasjon og krever derfor at man har Java kjøremiljø installert på serveren den skal kjøre.
-For å verifisere om java er installert og hvilken versjon kan du i et kommandolinje vindu bruke kommandoen
+Integrasjonspunktet er en Java applikasjon og krever derfor at man har Java(JDK) kjøremiljø installert på serveren den skal kjøre.
+For å verifisere om java er installert og hvilken versjon kan du i et kommandolinjevindu bruke kommandoen
 
 ```
 java -version
 ```
 
-Meldingsformidlingsapplikasjonen krever minimum versjon 1.8.0
+Integrasjonspunktet krever minimum versjon 1.8.0
 
 Dersom Java ikke er installert eller versjonen er for gammel, kan ny versjon lastes ned [her](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) og installeres.
 
