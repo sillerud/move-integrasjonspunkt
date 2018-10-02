@@ -139,4 +139,13 @@ Etter verifisering, meld til <a href="idporten@difi.no">idporten@difi.no</a> at 
 
  [**Se full veiledning her**](https://difi.github.io/move-integrasjonspunkt/ksfiks.html)
 
+### Øke loggnivået ved behov
+
+Det er mulig å øke loggnivået på integrasjonspunktet. Dette gjøres hovedsaklig kun under feilsøking og vil føre til mye ekstra loggmeldinger. Legg inn følgende i "integrasjonspunkt-local.properties" filen.
+
+```
+logging.level.org.springframework.ws.client.MessageTracing=TRACE
+logging.level.org.springframework.ws.server.MessageTracing=TRACE
+```
+
 --- 
