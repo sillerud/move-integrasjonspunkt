@@ -67,6 +67,7 @@ Eksempler på konfigurering finner du lenger nede under hver enkelt tjeneste.
 Når en virksomhet sender digital post til virksomheter kan virksomheten sende både til andre virksomheter som har et integrasjonspunkt, og til virksomheter som ikke har. 
 
 > NB! For å kople sak-arkivsystemet til integrasjonspunktet for DPV-forsendelser så må DPO være aktivert. 
+> Om du **ikke** bruker einnsyn må du i tillegg legge inn ```difi.move.feature.enableDPE=false```
 
 <button data-toggle="collapse" data-target="#demo6">Trykk her</button>
 <div id="demo6" class="collapse">
