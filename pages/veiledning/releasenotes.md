@@ -6,7 +6,7 @@ permalink: releasenotes.html
 folder: veiledning
 ---
 
-# 1.7.93
+## 1.7.93
 12.10.2018
 ```
 MOVE-956 setter connect- og sockettimeout i restklienten mot servicebus. For å unngå kø på servicebus. 
