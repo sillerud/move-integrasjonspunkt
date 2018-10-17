@@ -92,11 +92,12 @@ Eksempel:
 
 > I nedtrekksmenyen velger du "Formidling"
 
-Registrere datasystem
+**Registrere datasystem:**
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/altinnDatasystemRegistrer.PNG "registere datasystem i altinn")
 
+___
 
-Datasystem registrert:
+**Datasystem registrert:**
 
 
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/altinnDatasystemRegistrert.PNG "datasystem registrert")
