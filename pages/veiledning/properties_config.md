@@ -86,7 +86,11 @@ Når du oppretter datasystemet er det viktig at det gjøres av person som kan re
 
 Under opprettelse av datasystem velger du passord og får tildelt brukerid (ID), disse skal senere brukes i properties filen som beskrives lenger nede.
 
-Eksempel: (her kan du gi datasystemet akkurat det navnet du ønsker. Vi har valgt å kalle den "move".) Kall den gjerne eformidling_dittOrganisasjonsnummer eller annet valgfritt navn.
+Eksempel: 
+
+> (her kan du gi datasystemet akkurat det navnet du ønsker. Vi har valgt å kalle den "move".) Kall den gjerne eformidling_dittOrganisasjonsnummer eller annet valgfritt navn.
+
+> I nedtrekksmenyen velger du "Formidling"
 
 Registrere datasystem
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/altinnDatasystemRegistrer.PNG "registere datasystem i altinn")
