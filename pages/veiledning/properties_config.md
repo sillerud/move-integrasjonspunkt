@@ -88,7 +88,7 @@ Under opprettelse av datasystem velger du passord og får tildelt brukerid (ID),
 
 Eksempel: 
 
-> (her kan du gi datasystemet akkurat det navnet du ønsker. Vi har valgt å kalle den "move".) Kall den gjerne eformidling_dittOrganisasjonsnummer eller annet valgfritt navn.
+> Du kan gi datasystemet akkurat det navnet du ønsker. Vi har valgt å kalle den "move". Kall den gjerne eformidling_dittOrganisasjonsnummer eller annet valgfritt navn.
 
 > I nedtrekksmenyen velger du "Formidling"
 
