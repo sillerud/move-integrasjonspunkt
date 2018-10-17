@@ -92,6 +92,8 @@ Eksempel:
 
 > I nedtrekksmenyen velger du "Formidling"
 
+> Id'en du får er brukernavnet som skal inn i integrasjonspunkt-local.properties. Passordet du velger skal også inn i denne filen. Dette gjelder DPO. 
+
 **Registrere datasystem:**
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/altinnDatasystemRegistrer.PNG "registere datasystem i altinn")
 
