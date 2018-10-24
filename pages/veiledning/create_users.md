@@ -48,7 +48,7 @@ Informasjon om hvordan du logger på Altinn portal finner du <a href="https://ww
 
  Når beskrivelsen under er utført må brukernamn/passord for både SvarUt og SvarInn legges inn i integrasjonspunkt-local.properties. I tillegg til alt som er beskrevet i [tabellen her under "Spesifikk for Digital post til kommuner (DPF)"](https://difi.github.io/move-integrasjonspunkt/properties_config.html#digital-post-til-virksomheter). 
 
-[Se Samarbeidsportalen for alt om avtaler, begrunnelser, sammenhenger og lignende ikke teknisk. Avtaler må være på plass før en begynner å konfigurere](https://samarbeid.difi.no/felleslosninger/eformidling)
+Se [Samarbeidsportalen](https://samarbeid.difi.no/felleslosninger/eformidling) for alt om avtaler, begrunnelser, sammenhenger og lignende ikke teknisk. Avtaler må være på plass før en begynner å konfigurere
 
 ### Konfigurering av KS SvarUt-forvaltning(avsender)
 
