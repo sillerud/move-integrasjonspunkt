@@ -64,7 +64,7 @@ Eksempler på konfigurering finner du lenger nede under hver enkelt tjeneste.
 
 ### Digital Post til virksomheter
 
-Når en virksomhet sender digital post til virksomheter kan virksomheten sende både til andre virksomheter som har et integrasjonspunkt, og til virksomheter som ikke har. 
+Når en virksomhet sender digital post til virksomheter kan virksomheten sende både til og motta fra andre virksomheter som har et integrasjonspunkt. Sende til virksomheter som ikke har. 
 
 
 > Om du **ikke** bruker eInnsyn må du i tillegg legge inn ```difi.move.feature.enableDPE=false``` for å skru av eInnsyn. Ellers får du feilmeldinger.
