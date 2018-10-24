@@ -136,12 +136,16 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
  
 ![bilde9](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/09_FIKS2.PNG?raw=true)
  
-- **Administrasjon: Skal være utfylt på forhånd. Sjekk at e-postadressene er lagt inn rett. De brukes til varsel om driftsproblemer eller hvis KS vil varsle dere om noe de fanger opp som avvik.** 
+ ### Administrasjon
+**Administrasjon: Skal være utfylt på forhånd. Sjekk at e-postadressene er lagt inn rett. De brukes til varsel om driftsproblemer eller hvis KS vil varsle dere om noe de fanger opp som avvik.** 
 
 ![bilde10](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/10_FIKS.png?raw=true)
  
-- **Tilganger: Også her kan det legges til andre brukere.**
-- **Organisasjoner: Her legger du inn organisasjonsnummer til virksomheten og eventuelle underenheter. Dette sørger for at elektronisk SvarUt-post sendt til organisasjonsnummer til en underenhet også blir importert til sak/arkiv systemet. Hvis man ikke gjør dette vil slik post fortsette å komme til Altinn. Oversikt over underenhetene og organisasjonsnumre finner du i Altinn.**
+ ### Tilganger
+**Tilganger: Også her kan det legges til andre brukere.**
+
+### Organisasjoner
+**Organisasjoner: Her legger du inn organisasjonsnummer til virksomheten og eventuelle underenheter. Dette sørger for at elektronisk SvarUt-post sendt til organisasjonsnummer til en underenhet også blir importert til sak/arkiv systemet. Hvis man ikke gjør dette vil slik post fortsette å komme til Altinn. Oversikt over underenhetene og organisasjonsnumre finner du i Altinn.**
 
 > merk! Per i dag støtter ikke eFormidling forsendelser fra underenheter, kun til orgnummeret som er registrert i integrasjonspunktet. Så forsendelser til Svarinn på underorgnummer må hentes manuelt i Svarinn. Funksjonalitet for dette vil komme i Nextmove grensesnittet som er under arbeid.
 
