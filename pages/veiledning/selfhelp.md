@@ -95,4 +95,10 @@ logging.level.org.springframework.ws.client.MessageTracing=TRACE
 logging.level.org.springframework.ws.server.MessageTracing=TRACE
 ```
 
+### Batch read for eInnsyn-meldinger
+
+Fra og med versjon 1.7.82 av integrasjonspunktet er det mulig å bruke batch read når en leser meldinger fra Azure Service-bus. Dette gjøres ved å benytte Advanced Message Queuing Protocol (AMQP). [Les mer her](https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements) Dette fungerer ikke via rest-grensesnittet. 
+
+For å aktivere Batch read i ditt integrasjonspunkt så må du ha versjon 1.7.82 eller nyere og legge inn følgende i *integrasjonspunkt-local.properties* filen ```difi.move.nextmove.serviceBus.batchRead=true```. I tillegg må du åpne port 5671 for utgående trafikk. 
+
 ---
