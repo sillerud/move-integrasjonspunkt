@@ -10,7 +10,7 @@ folder: veiledning
 24.10.18 
 
 
-Gjort større endringer i både struktur, format og innhold for å betre brukaropplevelse. Dette gjelder blant annet:
+Gjort større endringer i både struktur, format og innhold for å forbedre brukaropplevelse. Dette gjelder blant annet:
 ```
 - Fjernet mye tekst rundt oppretting av bruker/passord DPF. All ikke konfigurasjonsrelatert informasjon er flyttet til Samarbeidsportalen. Siden er fjernet og konfigurasjonsrelatert informasjon ligger på https://difi.github.io/move-integrasjonspunkt/create_users.html
 - Oppretting av bruker for dpo/dpf/dpv har fått en egen side
