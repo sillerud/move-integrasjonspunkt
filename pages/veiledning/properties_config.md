@@ -54,7 +54,7 @@ Eksempler på konfigurering finner du lenger nede under hver enkelt tjeneste.
   {% include custom/properties/jks_generell.html %} 
 </div>
 
-### Digital post til innbyggere
+### eFormidling - Digital post til innbyggere
 
 <button data-toggle="collapse" data-target="#demo3">Trykk her</button>
 <div id="demo3" class="collapse">
@@ -62,7 +62,7 @@ Eksempler på konfigurering finner du lenger nede under hver enkelt tjeneste.
   {% include custom/properties/dpi.html %}
 </div>
 
-### Digital Post til virksomheter
+### eFormidling - Digital Post til virksomheter
 
 Når en virksomhet sender digital post til virksomheter kan virksomheten sende både til og motta fra andre virksomheter som har et integrasjonspunkt. Sende til virksomheter som ikke har. 
 
