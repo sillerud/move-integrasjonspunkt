@@ -66,7 +66,7 @@ Eksempler på konfigurering finner du lenger nede under hver enkelt tjeneste.
 
 Når en virksomhet sender digital post til virksomheter kan virksomheten sende både til andre virksomheter som har et integrasjonspunkt, og til virksomheter som ikke har. 
 
-> NB! For å kople sak-arkivsystemet til integrasjonspunktet for DPV-forsendelser så må DPO være aktivert. 
+> NB! For å kople sak-arkivsystemet til integrasjonspunktet for DPV-forsendelser så må DPO være aktivert. ```difi.move.feature.enableDPO=true``` 
 
 > Om du **ikke** bruker einnsyn må du i tillegg legge inn ```difi.move.feature.enableDPE=false```
 
@@ -77,7 +77,11 @@ Når en virksomhet sender digital post til virksomheter kan virksomheten sende b
   {% include custom/properties/dpv.html %}
 </div>
 
-### Opprette bruker til Altinn formidlingstjeneste (DPO)
+# Hvordan opprette brukere for DPO, DPV og DPF ?
+
+DPO og DPV har hver sin egen bruker. DPF har to, både for SvarInn og SvarUt. 
+
+## Opprette DPO-bruker (Altinn formidlingstjeneste)
 
 (Gjelder bare for digital post til offentlige virksomheter)
 Integrasjonspunktet kjører som [datasystem](https://www.altinn.no/no/Portalhjelp/Datasystemer/) mot AltInn's meldingsformidler. Integrasjonspunktet må registeres som et datasystem AltInn's portal. Informasjon om hvordan dette gjøres finnes [her](https://www.altinn.no/no/Portalhjelp/Datasystemer/Registrere-datasystem/). En person som representerer virksomheten må logge inn på Altinn for å gjøre dette.
@@ -106,55 +110,17 @@ ___
 
 ___
 
-Informasjon om hvordan du logger på AltInn portal finner du <a href="https://www.altinn.no/hjelp/innlogging/">https://www.altinn.no/hjelp/innlogging/</a>.
+Informasjon om hvordan du logger på Altinn portal finner du <a href="https://www.altinn.no/hjelp/innlogging/">https://www.altinn.no/hjelp/innlogging/</a>.
 
-### Opprette bruker til KS FIKS (Svarut & Svarinn (DPF))
+## Opprette DPF brukere (SvarInn og SvarUt)
 
-1.	Fortell Difi at du vil kommunisere med kommuner og andre som benytter KS sin FIKS-plattform.
-   -	Ref steg 1 av 3 -  https://samarbeid.difi.no/eformidling/hvordan-ta-i-bruk-eformidling
-2.	Difi kontakter KS og ber om at aktuelle avtaledokument blir tilsendt aktuell kontaktperson hos deg.
-3.	Du sørger for at avtalen blir signert i din virksomhet, skanner og sender tilbake til <a href="svarut@ks.no">svarut@ks.no</a>
-   -	Viss du informerer <a href="idporten@difi.no">idporten@difi.no</a> at avtale med KS er signert, kan vi følge framdrift i saken. 
-4.	Lokal administrator* oppgir fullt fødselsnummer til KS for å få opprettet bruker i FIKS.
-   -	Ring eller send sms til 906 53 432, Steinar Brun. 
-5.	Du mottar påloggingsinfo, logger inn i [https://svarut@ks.no](https://svarut@ks.no). Klikk på Konfigurasjon.
-6.	Klikk på **Organisasjonsnivået** (øverste linje i meny til venstre)
-  - Faktura: innholdet i feltet «Referanse» vil bli «Deres ref» i faktura fra KS
-Det er ikke nødvendig å fylle ut kundenummer.
-7.	Klikk på **Avsendernivå** (ligger under organisasjonsnivået i meny til venstre)
-   - Avsendernavn: Noter 
-   - Servicepassord: Generer og noter. Dette er passord nr 1 og gjelder SvarUt.
-  
-      Avsendernavn og Servicepassord er brukernavn og passord, som du benytter når du konfigurerer lokalt integrasjonspunkt.
+ [Se veiledning her](https://difi.github.io/move-integrasjonspunkt/ksfiks.html)
 
-8.	Klikk på **Mottakersystem** (i menyen på toppen, deretter på organisasjonen din i meny på venstre side)  
-   - Generer passord nr 2, dette gjeld SvarInn (ref fullstendig dokumentasjon for detaljer)
-   - Last opp offentlig nøkkel til virksomhetssertifikat
-  
-9.	Konfigurer lokalt integrasjonspunkt, ved å legge inn brukernavn og passord fra 7. og 8. 
+## Opprette DPV bruker
 
-    Meld til Difi at dere har konfigurert lokalt integrasjonspunkt for DPF, be om tilgang til tjenesten. Difi gir tilgang.
+Dette gjøres av Altinn etter at Difi sender bestilling. For at Difi skal sende bestillingen må kunden fylle ut et informasjonsskjema. Passord mottas på SMS.
 
-10.	**Administrasjon** 
-  - Avslutt med å følge opp det som er omtalt under kapittel Administrasjon. 
-  
-    Dette gjøres etter at Difi har åpnet tilgang til tjenesten. 
-
-11.	**Verifiser at tjenesten fungerer**
-
-Vi har god erfaring med å gjøre dette ved å utveksle meldinger med parter man har tett dialog med. 
-Etter verifisering, meld til <a href="idporten@difi.no">idporten@difi.no</a> at tjenesten DPF i eFormidling fungerer tilfredsstillende.
-
-
- [**Se full veiledning her**](https://difi.github.io/move-integrasjonspunkt/ksfiks.html)
-
-### Øke loggnivået ved behov
-
-Det er mulig å øke loggnivået på integrasjonspunktet. Dette gjøres hovedsaklig kun under feilsøking og vil føre til mye ekstra loggmeldinger. Legg inn følgende i "integrasjonspunkt-local.properties" filen.
-
-```
-logging.level.org.springframework.ws.client.MessageTracing=TRACE
-logging.level.org.springframework.ws.server.MessageTracing=TRACE
-```
+[Informasjonsskjema]()
+[Mer info](https://samarbeid.difi.no/felleslosninger/eformidling/ta-i-bruk-eformidling/1-forberedelser)
 
 --- 
