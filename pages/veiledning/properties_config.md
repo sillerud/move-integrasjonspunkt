@@ -90,7 +90,7 @@ Når du oppretter datasystemet er det viktig at det gjøres av person som kan re
 
 Under opprettelse av datasystem velger du passord og får tildelt brukerid (ID), disse skal senere brukes i properties filen som beskrives lenger nede. Dette er propertyene ```difi.move.dpo.username=``` og ```difi.move.dpo.password=```.
 
-Eksempel: 
+#### Eksempel
 
 > Du kan gi datasystemet akkurat det navnet du ønsker. Vi har valgt å kalle den "move". Kall den gjerne eformidling_dittOrganisasjonsnummer eller annet valgfritt navn.
 
