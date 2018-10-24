@@ -6,6 +6,25 @@ permalink: releasenotes.html
 folder: veiledning
 ---
 
+## Oppdatering på nettsiden
+24.10.18 
+
+```
+Lagt inn mange større endringer i både struktur, format og innhold for å betre brukaropplevinga. Desse endringene er blant annet:
+- Fjernet mye tekst rundt oppretting av bruker/passord DPF. All ikke konfigurasjonsrelatert informasjon er flyttet til Samarbeidsportalen. Siden er fjernet og konfigurasjonsrelatert informasjon ligger på https://difi.github.io/move-integrasjonspunkt/create_users.html
+- Oppretting av bruker for dpo/dpf/dpv har fått en egen side
+- Fjernet oppretting av dpo bruker fra properties siden
+- fjernet loggrotering og minnejustering fra https://difi.github.io/move-integrasjonspunkt/ip_run.html
+- lagt til ny side: Selvhjelp
+	- Loggrotering
+	- eformidling på 2 minutter
+	- justere minne
+	- øke loggnivået
+	- Trafikkflyt
+	- typiske feil og hvordan løse de
+	
+```
+
 ## 1.7.93
 12.10.2018
 ```
