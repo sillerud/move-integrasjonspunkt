@@ -9,8 +9,9 @@ folder: veiledning
 ## Oppdatering på nettsiden
 24.10.18 
 
-```
+
 Lagt inn mange større endringer i både struktur, format og innhold for å betre brukaropplevinga. Desse endringene er blant annet:
+```
 - Fjernet mye tekst rundt oppretting av bruker/passord DPF. All ikke konfigurasjonsrelatert informasjon er flyttet til Samarbeidsportalen. Siden er fjernet og konfigurasjonsrelatert informasjon ligger på https://difi.github.io/move-integrasjonspunkt/create_users.html
 - Oppretting av bruker for dpo/dpf/dpv har fått en egen side
 - Fjernet oppretting av dpo bruker fra properties siden
