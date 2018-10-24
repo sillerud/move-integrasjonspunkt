@@ -11,6 +11,7 @@ folder: veiledning
 Denne siden vil inneholde informasjon om konfigurasjon som må gjøres i det enkelte sakarkiv system
 
 ## ePhorte
+Ingen informasjon d.d
 
 ## P360
 
@@ -47,5 +48,6 @@ Importen bør utføres med bruker <domene>\svc_sakark
 
 ## WebSak
 
+Ingen informasjon d.d
 
 ---
