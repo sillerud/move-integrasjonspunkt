@@ -39,13 +39,6 @@ entries:
          url: /ip_upgrade.html
          output: web, pdf
          
-       - title: Endringslogg
-         url: /releasenotes.html
-         output: web, pdf
-      
-       - title: Support
-         url: /veiledning_sakark.html
-         output: web, pdf
          
    - title: Selvhjelp og nyttig informasjon
      output: web, pdf
@@ -57,5 +50,13 @@ entries:
 
       - title: Typiske feil
         url: /selfhelp_typical_errors.html
+        output: web, pdf
+        
+      - title: Endringslogg
+        url: /releasenotes.html
+        output: web, pdf
+      
+      - title: Support
+        url: /veiledning_sakark.html
         output: web, pdf
          
