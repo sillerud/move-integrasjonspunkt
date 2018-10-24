@@ -106,15 +106,15 @@ Menypunktene du ser markert med grønn hake skal du klikke deg gjennom og fylle 
  
 
 ### ReturAdresse/forside
-**ReturAdresse/forside: Legg inn organisasjonsnummer og adresse. Forsidetekst må ikke fylles ut.** 
+**Legg inn organisasjonsnummer og adresse. Forsidetekst må ikke fylles ut.** 
 
 ### Altinn
-**Altinn: Velg «ingen varsling»** 
+**Velg «ingen varsling»** 
  
 ![bilde4](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/04_FIKS.png?raw=true)
 
 ### Print
-**Print: Velg «manuell print»** 
+**Velg «manuell print»** 
 
 ![bilde5](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/05_FIKS.png?raw=true)
 
@@ -140,8 +140,6 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
 ---
 
 ### Service
-Velg så service.
-
 **Dette er passord nr. 2 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!**  
 
 #### Offentlig nøkkel / virksomhetssertifikat
