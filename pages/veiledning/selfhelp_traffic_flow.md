@@ -1,5 +1,5 @@
 ---
-title: Trafikkflyt i eFormidling
+title: Trafikkflyt i eFormidling og eInnsyn
 description: Trafikkflyt 
 summary: "Trafikkflyt i eFormidling og eInnsyn"
 permalink: selfhelp_traffic_flow.html
@@ -13,7 +13,9 @@ folder: veiledning
 ### Digital post til virksomheter (DPV)
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/flyt_dpv.jpg)
 
-Tekst
+Utgående: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet. Meldinga vil så bli levert til Altinn sin DPV tjeneste. Leverings- og lesekvittering blir levert tilbake til avsender. Meldingen kan hentes i virksomhetens innboks i Altinn. Personen som henter meldinga må ha riktige rettigheter i Altinn for å kunne lese denne posten (feks. sak-arkiv rolle)
+
+Innkommende: Om virksomheten din ikke har tatt i bruk eFormidling vil du få post i innboksen i Altinn.
 
 ---
 
