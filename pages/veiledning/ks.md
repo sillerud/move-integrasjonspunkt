@@ -80,7 +80,7 @@ Følg stegene under nøye, for å fullføre konfigurering i FIKS.
 Under finner du veiledning med skjermbilder, delt av Fylkesmannen i Nordland.
 
   
-### Konfigurering av KS SvarUt-forvaltning 
+# Konfigurering av KS SvarUt-forvaltning(avsender)
 
 Forvaltningsgrensesnittet som administrator får tilgang til (informeres om av KS) er laget for kommuner og andre som tar i bruk alle funksjonene i SvarUt og SvarInn.  
 
@@ -88,7 +88,7 @@ KS vil sende påloggingsadresse til administrator etter at virksomheten er oppre
  
 ![bilde1](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/01_FIKS.png?raw=true)
  
-NB: Alle eksemplene og skjermbildene er hentet fra oppsettet til FM Nordland. Det gjelder tilsvarende for din virksomhet – bare med deres eget navn og organisasjonsnummer. Det er bare opplysninger som nevnes heretter må utfylles i konfigureringen. 
+> Alle eksemplene og skjermbildene er hentet fra oppsettet til FM Nordland. Det gjelder tilsvarende for din virksomhet – bare med deres eget navn og organisasjonsnummer. Det er bare opplysninger som nevnes heretter må utfylles i konfigureringen. 
 
 ---
 
@@ -129,8 +129,10 @@ Menypunktene du ser markert med grønn hake skal du klikke deg gjennom og fylle 
 ![bilde7](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/07_FIKS.png?raw=true)
  
 Dere ser bort fra punktene SDP, Edialog og Admin. 
- 
-### Fortsett med konfigurering av «mottakersystem» (konfigurerer SvarInn-funksjonene) 
+
+--- 
+
+# Konfigurering av SvarInn (mottakersystem)
 
 **Klikk på «mottakersystem» i menyen på toppen og så på organisasjonen din i menyen på venstre side** 
 
@@ -151,8 +153,8 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
 **Dette feltet skal være utfylt på forhånd. Sjekk at e-postadressene er lagt inn rett. De brukes til varsel om driftsproblemer eller hvis KS vil varsle dere om noe de fanger opp som avvik.** 
 
 ![bilde10](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/10_FIKS.png?raw=true)
- 
- ### Tilganger
+  
+### Tilganger
 **Også her kan det legges til andre brukere.**
 
 ### Organisasjoner
