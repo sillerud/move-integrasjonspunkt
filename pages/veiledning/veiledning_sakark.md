@@ -22,15 +22,18 @@ Innstillinger for utgående meldinger kan endres her:
 * Velg 360 Code Table Edioter på venstre menyen
 * Deretter Document Dispatch Channel på høyre siden
 
-Format: ![ChanellData](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/_data/files/ChannelData.png)
+Format: 
+![ChanellData](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/_data/files/ChannelData.png)
 
 * Trykk på «Channel Data» kolonnen i BEST/EDU raden og legg inn riktig web service URL og kryss av for Update all languages.
 
-Format: ![SnapIn](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/_data/files/SnapIn.png)
+Format: 
+![SnapIn](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/_data/files/SnapIn.png)
 
 * Etter endringen, kjør en iisreset via CMD
 
-Format: ![iisreset](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/_data/files/iisreset.png)
+Format: 
+![iisreset](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/_data/files/iisreset.png)
 
 
 ### INNKOMMENDE INNSTILLINGER
