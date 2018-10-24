@@ -9,9 +9,6 @@ folder: veiledning
 
 Mykje kan gå feil når ein setter opp integrasjonspunktet. Under har vi forsøkt å liste opp vanlege feil og korleis du kan unngå eller løyse desse sjølv.
 
-Her vil det ligge forskjellige typer feil delt opp i 4 kategorier: Generelt, DPO, DPV, DPF.
-![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/Under_construction.png)
-
 ## Generelle feil
 - White spaces bak linjer i ```integrasjonspunkt-local.properties``` fila kan ofte føre til feil. Sørg for å fjerne desse
 
