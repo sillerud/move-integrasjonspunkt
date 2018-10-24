@@ -30,11 +30,7 @@ entries:
        - title: Oppstart av integrasjonspunktet
          url: /ip_run.html
          output: web, pdf
-      
-       - title: Support
-         url: /veiledning_sakark.html
-         output: web, pdf
-         
+
        - title: Opprette brukere i eFormidling
          url: /create_users.html
          output: web, pdf
@@ -45,5 +41,9 @@ entries:
          
        - title: Endringslogg
          url: /releasenotes.html
+         output: web, pdf
+      
+       - title: Support
+         url: /veiledning_sakark.html
          output: web, pdf
          
