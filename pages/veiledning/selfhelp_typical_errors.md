@@ -8,4 +8,4 @@ folder: veiledning
 ---
 
 Her vil det ligge forskjellige typer feil delt opp i 4 kategorier: Generelt, DPO, DPV, DPF.
-
+![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/Under_construction.png)
