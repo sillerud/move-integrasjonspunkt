@@ -1,7 +1,7 @@
 ---
 title: Typiske feil og hvordan løse de
 description: Selvhjelp og nyttig informasjon som øking av loggnivå, loggrullering, trafikkflyt mm. 
-summary: "Selvhjelp og nyttig informasjon om eFormidling"
+summary: "Typiske feil ved konfigurasjon av integrasjonspunktet og spesielt eFormidling"
 permalink: selfhelp_typical_errors.html
 sidebar: veiledning_sidebar
 folder: veiledning
