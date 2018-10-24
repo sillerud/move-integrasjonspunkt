@@ -77,11 +77,11 @@ Når en virksomhet sender digital post til virksomheter kan virksomheten sende b
   {% include custom/properties/dpv.html %}
 </div>
 
-# Hvordan opprette brukere for DPO, DPV og DPF ?
+## Hvordan opprette brukere for DPO, DPV og DPF ?
 
 DPO og DPV har hver sin egen bruker. DPF har to, både for SvarInn og SvarUt. 
 
-## Opprette DPO-bruker (Altinn formidlingstjeneste)
+### Opprette DPO-bruker (Altinn formidlingstjeneste)
 
 (Gjelder bare for digital post til offentlige virksomheter)
 Integrasjonspunktet kjører som [datasystem](https://www.altinn.no/no/Portalhjelp/Datasystemer/) mot AltInn's meldingsformidler. Integrasjonspunktet må registeres som et datasystem AltInn's portal. Informasjon om hvordan dette gjøres finnes [her](https://www.altinn.no/no/Portalhjelp/Datasystemer/Registrere-datasystem/). En person som representerer virksomheten må logge inn på Altinn for å gjøre dette.
@@ -112,11 +112,11 @@ ___
 
 Informasjon om hvordan du logger på Altinn portal finner du <a href="https://www.altinn.no/hjelp/innlogging/">https://www.altinn.no/hjelp/innlogging/</a>.
 
-## Opprette DPF brukere (SvarInn og SvarUt)
+### Opprette DPF brukere (SvarInn og SvarUt)
 
  [Se veiledning her](https://difi.github.io/move-integrasjonspunkt/ksfiks.html)
 
-## Opprette DPV bruker
+### Opprette DPV bruker
 
 Dette gjøres av Altinn etter at Difi sender bestilling. For at Difi skal sende bestillingen må kunden fylle ut et informasjonsskjema. Passord mottas på SMS.
 
