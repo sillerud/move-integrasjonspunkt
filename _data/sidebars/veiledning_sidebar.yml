@@ -35,6 +35,10 @@ entries:
          url: /veiledning_sakark.html
          output: web, pdf
          
+       - title: Opprette brukere i eFormidling
+         url: /create_users.html
+         output: web, pdf
+         
        - title: Oppgradere til ny versjon
          url: /ip_upgrade.html
          output: web, pdf
