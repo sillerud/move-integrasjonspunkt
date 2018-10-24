@@ -39,8 +39,8 @@ Typisk pga skrivefeil i brukernamn/passord.
 Typisk pga brukernamn/passord feil. Muligens white spaces
 
 ### ErrorId 40202. UserId 0. Not in SRR with appropriate rights
-```Failed to initiate Altinn broker service Reason: There was errors in the list of recipients: The following recipients is not in SRR with appropriate rights: "123456789". ErrorId 40202. UserId 0
-```
+```Failed to initiate Altinn broker service Reason: There was errors in the list of recipients: The following recipients is not in SRR with appropriate rights: "123456789". ErrorId 40202. UserId 0```
+
 Manglande SRR rettigheter hos Altinn. Kontakt Difi og oppgje orgnr og brukernamn til DPO. <a href="mailto:idporten@difi.no">idporten@difi.no</a>. Difi vil kontakte Altinn på vegne av dykk og få det retta.
 
 ### The given reportee is not authorized to send files.
