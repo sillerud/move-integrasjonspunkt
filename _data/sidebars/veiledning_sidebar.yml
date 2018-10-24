@@ -47,9 +47,9 @@ entries:
          url: /veiledning_sakark.html
          output: web, pdf
          
-  - title: Selvhjelp og nyttig informasjon
-    output: web, pdf
-    folderitems:
+   - title: Selvhjelp og nyttig informasjon
+     output: web, pdf
+     folderitems:
 
       - title: Nyttig informasjon
         url: /selfhelp.html
