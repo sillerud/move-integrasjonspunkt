@@ -51,6 +51,10 @@ entries:
       - title: Typiske feil
         url: /selfhelp_typical_errors.html
         output: web, pdf
+
+      - title: Trafikkflyt
+        url: /selfhelp_traffic_flow.html
+        output: web, pdf
         
       - title: Endringslogg
         url: /releasenotes.html
