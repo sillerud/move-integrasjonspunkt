@@ -47,3 +47,15 @@ entries:
          url: /veiledning_sakark.html
          output: web, pdf
          
+  - title: Selvhjelp og nyttig informasjon
+    output: web, pdf
+    folderitems:
+
+      - title: Nyttig informasjon
+        url: /selfhelp.html
+        output: web, pdf
+
+      - title: Typiske feil
+        url: /selfhelp_typical_errors.html
+        output: web, pdf
+         
