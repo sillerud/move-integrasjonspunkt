@@ -9,13 +9,6 @@ folder: veiledning
 
 Det finnes flere måter å kjøre integrasjonspunktet på. Den vi anbefaler for enkel start/stopp i tillegg til tilgangsstyring er å installere integrasjonspunktet som en tjeneste. Her vil vi vise tre forskjellige måter å kjøre integrasjonspunktet på.
 
-### Justere minnebruk (nyttig for eformidling)
-
-For å justere hvor mye minne integrasjonspunktet kan bruke så kan dette gjøres ved å endre oppstartkommandoen. Dette kan være veldig nyttig ved forsendelser via eFormidling (dpo,dpv,dpi,dpf) for å være sikker på at applikasjonen har nok minne til å sende større filer. 1GB minne burde holde lenge, men det kan variere.
-
-Du må legge inn ``` -Xmx1024m``` i oppstartskommandoen for å sette feks 1024 MB. Antallet kan justeres til ønsket mengde. For å gjøre dette på en service så må en legge inn enda et argument i integrasjonspunkt-service.xml-filen. feks slik: ```<argument>-Xmx2048m</argument>```. Sørg for at det er innen for ```<service>...</service>``` om du har satt opp integrasjonspunktet som en Windows tjeneste.
-
-
 ## Alt 1: Kjøre integrasjonspunktet som en tjeneste
 
 Integrasjonspunktet kan også installeres som en tjeneste på server. For å gjøre dette kan en laste ned en tredjepartsprogramvare og sette opp en egen liten config-fil.
@@ -36,19 +29,10 @@ Dokumentasjonen på programvaren du trenger ligger [på github](https://github.c
 
 I denne config-fila er det lagt inn automatisk loggrotering ved 10MB størrelse og 8 filer vil bli beholdt. Dette kan endres til ønsket størrelse ved å endre ```<sizeThreshold>```variabelen.  Om du ikke ønsker loggrotering kan du fjerne hele ```<logmode>``` fra integrasjonspunkt-service.xml
 
-Loggene for denne tjenesten vil i utgangspunktet bli skrevet til feks ```c:\integrasjonspunkt\integrasjonspunkt-logs``` og filen integrasjonspunkt-service.out. 
+Loggene for denne tjenesten vil i utgangspunktet bli skrevet til feks ```c:\integrasjonspunkt\integrasjonspunkt-logs``` og filen integrasjonspunkt-service.out. Innholdet i denne er veldig likt innholdet i application.log filen.
 
-Om du ønsker å kjøre integrasjonspunktet på en minste rettighetsbruker så kan du enkelt endre hvilken bruker som kjører tjenesten ved å høyreklikke på den, velge "properties" og så velge "logg på" fanen. [Hvordan opprette en minste rettighetsbruker.](http://difi.github.io/move-integrasjonspunkt/ip_run.html#alt-3-kj%C3%B8re-via-task-scheduler-med-minste-rettigheter)
-
-#### Loggrotering
-I tillegg kan du legge inn loggrotering om det er ønskelig. Dermed kan du rotere logger på størrelse og velge hvor mange en ønsker å ta vare på. standardstørrelsen her er 10MB, denne kan du endre til ønsket størrelse. Antall filer som blir tatt vare på er 8. Dette kan også endres. Sørg for at dette er innenfor ``` <service> </service> ``` taggen slik som resten av konfigurasjonen.
-
-```
-<log mode="roll-by-size">
-	<sizeThreshold>10240</sizeThreshold>
-	<keepFiles>8</keepFiles>
-</log> 
-```
+### Kjøre med lavest mulige rettigheter
+Vi anbefaler å kjøre integrasjonspunktet med en minste rettighetsbruker. For å endre hvilken bruker som kjører tjenesten ved å høyreklikke på den, velge "properties" og så velge "logg på" fanen. [Hvordan opprette en minste rettighetsbruker.](http://difi.github.io/move-integrasjonspunkt/ip_run.html#alt-3-kj%C3%B8re-via-task-scheduler-med-minste-rettigheter)
 
 ### Reinstallasjon av tjenesten
 
@@ -63,17 +47,16 @@ integrasjonspunkt-service.exe start
 
 Da er tjenesten reinstallert og restartet.
 
-
 ## Alt 2: Kjøre Integrasjonspunktet fra kommandovindu
 
 Integrasjonspunktet startes fra kommandolinjen med følgende kommandoer for henholdsvis test og produksjon. For å starte integrasjonspunktet kreves visse minimum brukerrettigheter, [les mer om dette her](http://difi.github.io/move-integrasjonspunkt/ip_run.html#alt-3-kj%C3%B8re-via-task-scheduler-med-minste-rettigheter). Eller så kan en eventuelt starte kommandovinduet som administrator og dermed også ha rettigheter til å starte det.
 
-> TEST
+### TEST
 ```powershell
 java -jar -Dspring.profiles.active=staging integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false 
 ```
 
-> PROD
+### PROD
 ```powershell
 java -jar integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false 
 ```
