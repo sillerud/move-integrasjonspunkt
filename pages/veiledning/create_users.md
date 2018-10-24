@@ -7,7 +7,7 @@ sidebar: veiledning_sidebar
 folder: veiledning
 ---
 
-## Det finnes forskjellige bruker
+## Det finnes forskjellige brukere
 
 DPO og DPV har hver sin egen bruker. DPF har to, både for SvarInn og SvarUt. 
 
@@ -50,7 +50,7 @@ Informasjon om hvordan du logger på Altinn portal finner du <a href="https://ww
 
 [Se Samarbeidsportalen for alt om avtaler, begrunnelser, sammenhenger og lignende ikke teknisk. Avtaler må være på plass før en begynner å konfigurere](https://samarbeid.difi.no/felleslosninger/eformidling)
 
-### Konfigurering av KS SvarUt-forvaltning(avsender)
+## Konfigurering av KS SvarUt-forvaltning(avsender)
 
 Forvaltningsgrensesnittet som administrator får tilgang til (informeres om av KS) er laget for kommuner og andre som tar i bruk alle funksjonene i SvarUt og SvarInn.  
 
