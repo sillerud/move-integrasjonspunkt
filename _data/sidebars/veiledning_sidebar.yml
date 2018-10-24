@@ -23,7 +23,7 @@ entries:
          url: /virksomhetssertifikat.html
          output: web, pdf
       
-       - title: Properties
+       - title: Konfigurasjon av properties
          url: /properties_config.html
          output: web, pdf
 
