@@ -39,7 +39,7 @@ Typisk pga skrivefeil i brukernamn/passord.
 
 ### ErrorId 6. UserId 0
 ```
-message Could not get list of available files from Altinn formidlingstjeneste. Reason: Reason: An exception happened when trying to authenticate the system . LocalizedErrorMessage: An exception happened when trying to authenticate the system . ErrorId: 6. UserId: 0
+Could not get list of available files from Altinn formidlingstjeneste. Reason: Reason: An exception happened when trying to authenticate the system . LocalizedErrorMessage: An exception happened when trying to authenticate the system . ErrorId: 6. UserId: 0
 ```
 
 Typisk pga brukernamn/passord feil. Muligens white spaces
