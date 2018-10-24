@@ -66,16 +66,32 @@ Eksempler på konfigurering finner du lenger nede under hver enkelt tjeneste.
 
 Når en virksomhet sender digital post til virksomheter kan virksomheten sende både til andre virksomheter som har et integrasjonspunkt, og til virksomheter som ikke har. 
 
-> NB! For å kople sak-arkivsystemet til integrasjonspunktet for DPV-forsendelser så må DPO være aktivert. ```difi.move.feature.enableDPO=true``` 
 
-> Om du **ikke** bruker einnsyn må du i tillegg legge inn ```difi.move.feature.enableDPE=false```
+> Om du **ikke** bruker eInnsyn må du i tillegg legge inn ```difi.move.feature.enableDPE=false``` for å skru av eInnsyn. Ellers får du feilmeldinger.
+
+---
+
+Når du skal ta i bruk DPF/DPO/DPV må du legge inn en rekke properties og fylle ut desse. Sjå etter overskrifta i tabellen under og legg inn innstillinger som kreves for denne tjenesten. Se under tabellen for unntak.
 
   {% include custom/properties/jks_generell.html %} 
-  <p> Brukernamnet og passordet for difi.move.dpv.username og difi.move.dpv.password er tjenesteeier påloggingen mot Altinn.  <a href="https://altinn.github.io/docs/guides/digital-post-til-virksomheter/">Mer info her</a></p>
+  
   {% include custom/properties/dpv.html %}
+  
+### Regel:
+Alle innstillinger for gitt type forsendelse(DPO/DPF/DPV) må legges inn, men det finnes noen unntak.
 
+#### DPF
+Du trenger alle innstillinger utenom ```difi.move.fiks.inn.fallbackSenderOrgNr=```. Denne er for at P360 skal kunne ta i mot svarUt fra virksomheter som ikke sender med orgnummer i metadata.
 
-### Hvordan opprette brukere?
+#### DPO
+Av erfaring så er av og til ikke følgende properties brukt. Dette kommer an på sak-arkivsystemet og lokalt oppsett. ```difi.move.noarkSystem.username``` , ```difi.move.noarkSystem.password=```, ```difi.move.noarkSystem.domain=``` 
+
+#### DPV og DPF
+Ikke et unntak, men også viktig å merke seg. For å kople sak-arkivsystemet til integrasjonspunktet for DPV- og DPF-forsendelser så **må** DPO være aktivert. ```difi.move.feature.enableDPO=true```. Altså for å få feks  ```difi.move.msh.endpointURL``` til å fungere
+
+---
+
+### Hvordan opprette brukere for DPO/DPF/DPV?
 
 [Denne delen er flyttet](https://difi.github.io/move-integrasjonspunkt/create_users.html#opprette-dpo-bruker-altinn-formidlingstjeneste)
 
