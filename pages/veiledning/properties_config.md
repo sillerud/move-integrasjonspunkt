@@ -77,7 +77,7 @@ Når en virksomhet sender digital post til virksomheter kan virksomheten sende b
   {% include custom/properties/dpv.html %}
 </div>
 
-## Hvordan opprette brukere?
+### Hvordan opprette brukere?
 
 [Denne delen er flyttet](https://difi.github.io/move-integrasjonspunkt/create_users.html#opprette-dpo-bruker-altinn-formidlingstjeneste)
 
