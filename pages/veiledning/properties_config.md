@@ -71,7 +71,7 @@ Når en virksomhet sender digital post til virksomheter kan virksomheten sende b
 
 ---
 
-Når du skal ta i bruk DPF/DPO/DPV må du legge inn en rekke properties og fylle ut desse. Sjå etter overskrifta i tabellen under og legg inn innstillinger som kreves for denne tjenesten. Se under tabellen for unntak.
+Når du skal ta i bruk DPF/DPO/DPV må du legge inn en rekke properties og fylle ut desse. Se etter DPV/DPO/DPF i tabellen under og legg inn innstillinger som kreves for denne tjenesten. Se under tabellen for unntak.
 
   {% include custom/properties/jks_generell.html %} 
   
