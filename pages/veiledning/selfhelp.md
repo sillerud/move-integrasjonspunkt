@@ -51,14 +51,14 @@ Ferdig konfigurert ser det feks slik ut:
 </service>
 ```
 
-### Justere tilgjenglig minne
+### Justere tilgjengelig minne
 
 For å justere hvor mye minne integrasjonspunktet kan bruke så kan dette gjøres ved å endre oppstartkommandoen. Dette kan være veldig nyttig ved forsendelser via eFormidling (dpo,dpv,dpi,dpf) for å være sikker på at applikasjonen har nok minne til å sende større filer. 1GB minne burde holde for eInnsyn, men for eFormidling bør en gjerne sette minst 2GB, gjerne mer. 
 
 ```-Xmx2048m``` setter minimum antall minne som applikasjonen har tilgjengelig
 
 #### fra kommandolinje 
-Du må legge inn ``` -Xmx2048m``` i oppstartskommandoen for å sette feks 1024 MB. Antallet kan justeres til ønske. 
+Du må legge inn ``` -Xmx2048m``` i oppstartskommandoen for å sette feks 2048 MB. Antallet kan justeres til ønske. 
 Feks: ```java -jar integrasjonspunkt-[versjon].jar --app.logger.enableSSL=false -Xmx2048m```
 
 #### I Windows service
