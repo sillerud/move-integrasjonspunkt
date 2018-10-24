@@ -10,6 +10,9 @@ redirect_from: "/vStaging/"
 
 ## [Siste versjon av integrasjonspunktet kan lastes ned her (1.7.93)](https://beta-meldingsutveksling.difi.no/service/local/repositories/releases/content/no/difi/meldingsutveksling/integrasjonspunkt/1.7.93/integrasjonspunkt-1.7.93.jar) 
 
+## Oppdatert innhold i veiledningen (24.10.18)
+Noen ting er flyttet på for å rydde opp. [Endringslogg finner du her](https://difi.github.io/move-integrasjonspunkt/releasenotes.html#oppdatering-av-innholdet-i-veiledningen)
+
 ### Bakgrunn 
 
 Integrasjonspunktet er per definisjon grenselinjen mellom det interne og eksterne miljøet. Intensjonen er at denne grenselinjen skal være så enkel som mulig. Erfaring viser at det kan være aktuelt å eksponere enkelte tjenester gjennom integrasjonspunktet. Dette vil være tjenester som i dag medfører kompleksitet for hver enkel leverandør, men der vi alle kan ha stor nytte av at det er en felles løsning. Eksempel på dette kan være tjenester for å bygge en sikker melding (lage ASIC-kontainer) og lokal eksponering av nasjonale tjenester relatert til adressering. En mulig tanke er at man legger alle tjenester som krever virksomhetssertifikat inn i integrasjonspunktet. Hvilke applikasjonstjenester trengs for avsender, og hvor bør de realiseres? Ved mottak av en melding, er det behov for en tilsvarende fordeling av ansvar.
