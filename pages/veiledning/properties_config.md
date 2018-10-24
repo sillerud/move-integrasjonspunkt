@@ -11,19 +11,19 @@ Denne delen av veiledningen er delt opp slik at du først finner litt generell i
 
 ### Anbefalt rekkefølge for installasjon av eFormidling
 
-Vi anbefaler alle som skal konfigurere integrasjonspunktet for å ta i bruk eFormidling om å sette opp konfigurasjonen i følgende rekkefølge.
+Vi anbefaler å konfigurere integrasjonspunktet i følgende rekkefølge.
 
 1. Minimumskonfigurasjon for å få starte integrasjonspunktet. 
-2. Konfigurere sak-arkivsystem til å prate med integrasjonspunktet
+2. Konfigurere sak-arkivsystem til å prate med integrasjonspunktet (under DPO innstillinger i tabellen under)
 3. Konfigurere DPO innstillinger (brukernavn og passord) 
 4. Konfigurere DPV/DPF/DPI innstillinger
 
 Vi anbefaler dere å konfigurere DPO før DPV/DPF/DPI for å unngå å motta post fra svarUt til virksomhetens SvarInn innboks. Ved å konfigurere DPO først vil dere motta post i sak-arkivsystemet
 
-> husk å melde fra til <a href="mailto:idporten@difi.no">idporten@difi.no</a> når dere har konfigurert slik at Difi kan åpne opp tilganger.
+Husk å melde fra til <a href="mailto:idporten@difi.no">idporten@difi.no</a> når dere har konfigurert slik at Difi kan åpne opp tilganger. Ellers vil du få 400 Bad request feil. 
 
 
-### integrasjonspunkt-local.properties
+### Integrasjonspunkt-local.properties
 
 Her laster du ned [integrasjonspunkt-local.properties-filen](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/integrasjonspunkt_local.properties) Per i dag så benytter vi Java Key Store (JKS). Vi jobber med en virtuell HSM-løsning som alternativ til JKS. Vi har valgt å pensjonere Windows Certificate Store løsningen fordi den ikke støtter alle former for eFormidling. Om du allerede bruker WCS og trenger støtte, ta kontakt med <a href="mailto:idporten@difi.no">idporten@difi.no</a>. 
 
