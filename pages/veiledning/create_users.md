@@ -11,7 +11,7 @@ folder: veiledning
 
 DPO og DPV har hver sin egen bruker. DPF har to, både for SvarInn og SvarUt. 
 
-### Opprette DPO-bruker (Altinn formidlingstjeneste)
+## Opprette DPO-bruker (Altinn formidlingstjeneste)
 
 (Gjelder bare for digital post til offentlige virksomheter)
 Integrasjonspunktet kjører som [datasystem](https://www.altinn.no/no/Portalhjelp/Datasystemer/) mot AltInn's meldingsformidler. Integrasjonspunktet må registeres som et datasystem AltInn's portal. Informasjon om hvordan dette gjøres finnes [her](https://www.altinn.no/no/Portalhjelp/Datasystemer/Registrere-datasystem/). En person som representerer virksomheten må logge inn på Altinn for å gjøre dette.
@@ -44,13 +44,13 @@ Informasjon om hvordan du logger på Altinn portal finner du <a href="https://ww
 
 ---
 
-### Opprette DPF brukere (SvarInn og SvarUt)
+## Opprette DPF brukere (SvarInn og SvarUt)
 
  Når beskrivelsen under er utført må brukernamn/passord for både SvarUt og SvarInn legges inn i integrasjonspunkt-local.properties. I tillegg til alt som er beskrevet i [tabellen her under "Spesifikk for Digital post til kommuner (DPF)"](https://difi.github.io/move-integrasjonspunkt/properties_config.html#digital-post-til-virksomheter). 
 
 [Se Samarbeidsportalen for alt om avtaler, begrunnelser, sammenhenger og lignende ikke teknisk. Avtaler må være på plass før en begynner å konfigurere](https://samarbeid.difi.no/felleslosninger/eformidling)
 
-## Konfigurering av KS SvarUt-forvaltning(avsender)
+### Konfigurering av KS SvarUt-forvaltning(avsender)
 
 Forvaltningsgrensesnittet som administrator får tilgang til (informeres om av KS) er laget for kommuner og andre som tar i bruk alle funksjonene i SvarUt og SvarInn.  
 
@@ -75,25 +75,25 @@ Menypunktene du ser markert med grønn hake skal du klikke deg gjennom og fylle 
 ![bilde3](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/03_FIKS.png?raw=true) 
  
 
-### ReturAdresse/forside
+#### ReturAdresse/forside
 **Legg inn organisasjonsnummer og adresse. Forsidetekst må ikke fylles ut.** 
 
-### Altinn
+#### Altinn
 **Velg «ingen varsling»** 
  
 ![bilde4](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/04_FIKS.png?raw=true)
 
-### Print
+#### Print
 **Velg «manuell print»** 
 
 ![bilde5](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/05_FIKS.png?raw=true)
 
-### Servicepassord
+#### Servicepassord
 **Dette er passord nr. 1 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!**
  
 ![bilde6](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/06_FIKS.png?raw=true) 
 
-### Tilganger
+#### Tilganger
 **Her kan administrator legge til flere brukere som skal ha administratorrettigheter i SvarUt-forvaltning. Sett i så fall hake i alle tilganger.** 
 
 ![bilde7](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/07_FIKS.png?raw=true)
@@ -102,7 +102,7 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
 
 --- 
 
-## Konfigurering av SvarInn (mottakersystem)
+#### Konfigurering av SvarInn (mottakersystem)
 
 **Klikk på «mottakersystem» i menyen på toppen og så på organisasjonen din i menyen på venstre side** 
 
@@ -111,23 +111,23 @@ Dere ser bort fra punktene SDP, Edialog og Admin.
 
 ---
 
-### Service
+#### Service
 **Dette er passord nr. 2 dere må notere dere. Passord generes ved å klikke på «generer nytt servicepassord». Pass på at du ikke endrer dette senere ved å klikke på «generer» på nytt!**  
 
-#### Offentlig nøkkel / virksomhetssertifikat
+##### Offentlig nøkkel / virksomhetssertifikat
 **Her må en også laste opp den offentlige-nøkkelen til et virksomhetssertifikatet, det kan godt være den samme som integrasjonspunktet bruker.**
  
 ![bilde9](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/09_FIKS2.PNG?raw=true)
  
-### Administrasjon
+#### Administrasjon
 **Dette feltet skal være utfylt på forhånd. Sjekk at e-postadressene er lagt inn rett. De brukes til varsel om driftsproblemer eller hvis KS vil varsle dere om noe de fanger opp som avvik.** 
 
 ![bilde10](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/10_FIKS.png?raw=true)
   
-### Tilganger
+#### Tilganger
 **Også her kan det legges til andre brukere.**
 
-### Organisasjoner
+#### Organisasjoner
 **Her legger du inn organisasjonsnummer til virksomheten og eventuelle underenheter. Dette sørger for at elektronisk SvarUt-post sendt til organisasjonsnummer til en underenhet også blir importert til sak/arkiv systemet. Hvis man ikke gjør dette vil slik post fortsette å komme til Altinn. Oversikt over underenhetene og organisasjonsnumre finner du i Altinn.**
 
 > Per i dag støtter ikke eFormidling forsendelser fra underenheter, kun til orgnummeret som er registrert i integrasjonspunktet. Så forsendelser til Svarinn på underorgnummer må hentes manuelt i Svarinn. Funksjonalitet for dette vil komme. Etter planen vil dette være første kvartal 2019.
@@ -137,7 +137,7 @@ Man må vente med å legge inn organisasjonsnumrene til konfigurasjon av integra
 ![bilde11](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/11_FIKS.png?raw=true)
 
 
-### Opprette DPV bruker
+## Opprette DPV bruker
 
 Dette gjøres av Altinn etter at Difi sender bestilling. For at Difi skal sende bestillingen må kunden fylle ut et informasjonsskjema. Passord mottas på SMS.
 
