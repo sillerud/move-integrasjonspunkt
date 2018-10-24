@@ -7,7 +7,7 @@ sidebar: veiledning_sidebar
 folder: veiledning
 ---
 
-## Hva slags brukere trenger du?
+## Det finnes forskjellige bruker
 
 DPO og DPV har hver sin egen bruker. DPF har to, både for SvarInn og SvarUt. 
 
