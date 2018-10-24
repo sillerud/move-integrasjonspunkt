@@ -20,7 +20,7 @@ Ingen informasjon d.d
 Innstillinger for utgående meldinger kan endres her:
 * Logg inn på server test-sakark01 med bruker difi\sakark_inst
 * Dobbeltklikk på 360SnapIn.msc som du finner på skrivebordet.
-* Velg 360 Code Table Edioter på venstre menyen
+* Velg 360 Code Table Editer på venstre menyen
 * Deretter Document Dispatch Channel på høyre siden
 
 Format: 
