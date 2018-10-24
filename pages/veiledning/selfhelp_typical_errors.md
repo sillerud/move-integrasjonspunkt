@@ -24,12 +24,16 @@ Kontakt Difi på <a href="mailto:idporten@difi.no">idporten@difi.no</a> og be om
 Typiske feil: brukernamn/passord, manglande tilganger, feil i integrasjonspunkt-local.properties. Sørg for at brukernamnet er det som blei autogenerert når du oppretta brukaren. [Les her for meir info](https://difi.github.io/move-integrasjonspunkt/create_users.html#opprette-dpo-bruker-altinn-formidlingstjeneste)
 
 ### ErrorId 0. UserId 0
-```Could not get list of available files from Altinn formidlingstjeneste. Reason: reason: null. LocalizedErrorMessage: Errorid 0. UserId 0```
+```
+Could not get list of available files from Altinn formidlingstjeneste. Reason: reason: null. LocalizedErrorMessage: Errorid 0. UserId 0
+```
 
 Feil med brukernamn/passord. Antageligvis mangler det innhold i propertyen ```difi.move.dpo.password=``` og ```difi.move.dpo.username=```
 
 ### ErrorId 5. UserId 0
-```InvalidSystemName/Id. Must be a number or valid username. Errorid 5. Userid: 0```
+```
+InvalidSystemName/Id. Must be a number or valid username. Errorid 5. Userid: 0
+```
 
 Typisk pga skrivefeil i brukernamn/passord. 
 
@@ -41,12 +45,16 @@ message Could not get list of available files from Altinn formidlingstjeneste. R
 Typisk pga brukernamn/passord feil. Muligens white spaces
 
 ### ErrorId 40202. UserId 0. Not in SRR with appropriate rights
-```Failed to initiate Altinn broker service Reason: There was errors in the list of recipients: The following recipients is not in SRR with appropriate rights: "123456789". ErrorId 40202. UserId 0```
+```
+Failed to initiate Altinn broker service Reason: There was errors in the list of recipients: The following recipients is not in SRR with appropriate rights: "123456789". ErrorId 40202. UserId 0
+```
 
 Manglande SRR rettigheter hos Altinn. Kontakt Difi og oppgje orgnr og brukernamn til DPO. <a href="mailto:idporten@difi.no">idporten@difi.no</a>. Difi vil kontakte Altinn på vegne av dykk og få det retta.
 
 ### The given reportee is not authorized to send files.
-```no.difi.meldingsutveksling.shipping.ws.AltinnWsException: failed to initiate Altinn broker service Reason: The given reportee is not authorized to send files..```
+```
+no.difi.meldingsutveksling.shipping.ws.AltinnWsException: failed to initiate Altinn broker service Reason: The given reportee is not authorized to send files..
+```
 
 Dette er også ein SRR feil. Kontakt Difi og oppgje orgnr og brukernamn til DPO. <a href="mailto:idporten@difi.no">idporten@difi.no</a>. Difi vil kontakte Altinn på vegne av dykk og få det retta.
 
