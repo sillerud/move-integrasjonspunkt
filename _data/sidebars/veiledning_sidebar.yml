@@ -6,7 +6,7 @@ entries:
   product: Integrasjonspunkt
   folders:
   
-   - title: Generelt
+   - title: Sette opp integrasjonspunktet
      output: web, pdf
      folderitems:
 
