@@ -95,6 +95,4 @@ logging.level.org.springframework.ws.client.MessageTracing=TRACE
 logging.level.org.springframework.ws.server.MessageTracing=TRACE
 ```
 
-### Flyt
-
-### Typiske feil og hvordan løse de
+---
