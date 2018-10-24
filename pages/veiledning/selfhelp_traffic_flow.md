@@ -1,7 +1,7 @@
 ---
 title: Trafikkflyt i eFormidling
 description: Trafikkflyt 
-summary: "Selvhjelp og nyttig informasjon om eFormidling"
+summary: "Trafikkflyt i eFormidling og eInnsyn"
 permalink: selfhelp_traffic_flow.html
 sidebar: veiledning_sidebar
 folder: veiledning
@@ -31,10 +31,17 @@ Tekst
 
 ---
 
-### Digital post til innbygger
+### Digital post til innbygger (DPI)
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/flyt_dpi.jpg)
 
 Tekst
+
+---
+### eInnsyn (DPE)
+
+Legg inn bilde
+
+tekst
 
 ---
 
