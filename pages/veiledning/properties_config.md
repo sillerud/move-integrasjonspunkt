@@ -87,7 +87,7 @@ Du trenger alle innstillinger utenom ```difi.move.fiks.inn.fallbackSenderOrgNr=`
 Av erfaring så er av og til ikke følgende properties brukt. Dette kommer an på sak-arkivsystemet og lokalt oppsett. ```difi.move.noarkSystem.username``` , ```difi.move.noarkSystem.password=```, ```difi.move.noarkSystem.domain=``` 
 
 #### DPV og DPF
-Ikke et unntak, men også viktig å merke seg. For å koble sak-arkivsystemet til integrasjonspunktet for DPV- og DPF-forsendelser så **må** DPO være aktivert. ```difi.move.feature.enableDPO=true```. Altså for å få feks  ```difi.move.msh.endpointURL``` til å fungere
+Ikke et unntak, men også viktig å merke seg. For å koble sak-arkivsystemet til integrasjonspunktet for DPV- og DPF-forsendelser så **må** DPO være aktivert. ```difi.move.feature.enableDPO=true```. Altså for å få feks  ```difi.move.noarkSystem.endpointURL``` til å fungere
 
 ---
 
