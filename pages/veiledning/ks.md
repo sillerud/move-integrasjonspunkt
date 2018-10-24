@@ -9,6 +9,8 @@ folder: veiledning
 
 Når beskrivelsen under er utført må brukernamn/passord for både SvarUt og SvarInn legges inn i integrasjonspunkt-local.properties. I tillegg til alt som er beskrevet i [tabellen her under "Spesifikk for Digital post til kommuner (DPF)"](https://difi.github.io/move-integrasjonspunkt/properties_config.html#digital-post-til-virksomheter). 
 
+[Se Samarbeidsportalen for alt om avtaler, begrunnelser, samenhenger og lignende ikke teknisk](https://samarbeid.difi.no/felleslosninger/eformidling)
+
 # Konfigurering av KS SvarUt-forvaltning(avsender)
 
 Forvaltningsgrensesnittet som administrator får tilgang til (informeres om av KS) er laget for kommuner og andre som tar i bruk alle funksjonene i SvarUt og SvarInn.  
