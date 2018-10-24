@@ -6,7 +6,7 @@ permalink: releasenotes.html
 folder: veiledning
 ---
 
-## Oppdatering på nettsiden
+## Oppdatering av innholdet i veiledningen
 24.10.18 
 
 
