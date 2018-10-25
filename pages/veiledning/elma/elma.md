@@ -68,7 +68,7 @@ Click the "delete endpoint" button
 
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/elma/delete_endpoint_0.PNG)
 
-Carefully read the warning and confirm the delete operation.
+Carefully read the warning and confirm the delete operation. If you wish to cancel just click anywhere outside of the textbox.
 
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/elma/delete_endpoint_1.PNG)
 
