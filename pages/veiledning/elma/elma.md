@@ -24,8 +24,9 @@ Here are some terms which will be used throughout this page.
 - Identifier = This is a set prefix and your organization number. i.e 9908:991825827
 
 ## Endpoints
+Here you will see all the endpoints linked to you as a service provider
 
-**add screenshot and text**
+![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/elma/endpoints_0.PNG)
 
 ### Add endpoint
 To add a new endpoint you go to the Endpoint page and click "add endpoint" just above the title line.
@@ -45,8 +46,9 @@ You may add several endpoints if you wish.
 ---
 
 ### Edit endpoint
+To edit an endpoint you click on an endpoint and then the "edit endpoint" button at the top of the page. Make sure you don't leave any text fields empty before you click "save".
 
-**add screenshot and text**
+**add screenshot. Fix MOVE-984 first?**
 
 ### Adding endpointURL or participant to endpoint
 First you need to choose the endpoint you want and click on it. To add either a endpoint URL or a participant to your endpoint you click the links at the bottom of this window. 
@@ -57,15 +59,15 @@ See the next two sections for further instructions
 
 #### EndpointURL
 
-**add screenshot and text**
+**add screenshot and text requires working certificate** 
 
 #### Participant
-**add text**
+To add a new participant to your endpoint you first open up the selected endpoint and at the bottom of the page you will see "add participants". 
 
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/elma/add_participant_0.PNG)
 
 
-![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/elma/add_participant_1.PNG)
+**need new screenshot to show successfully added participant**
 
 ### Delete endpoint
 First choose the endpoint you wish to delete from the Endpoints list. To delete an endpoint you first need to remove all poarticipants and endpoint URL's linked to the endpoint. If you don't, you will receive an error message telling you to remove them.
@@ -87,17 +89,16 @@ Delete ok
 ## Processes
 Here you see the different processes currently in use as well as deprecated ones. By clicking on either one you can see the document types connected to that process. Only the Elma admins are allowed to add, edit or remove processes.
 
-**add screenshot**
-![]()
+![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/elma/process.PNG)
 
 ---
 
 ## Organizations 
 Is is possible to search through all the organizations in the list based on their name. You also have an option to add a new organization (more on this in the next section). Only one organization with a given identifier may be in the list at any time.
 
-![]()
+![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/elma/organizations.PNG)
 
-**add screenshot of organizations**
+---
 
 ### Add organizations
 Navigate to the Organizations page and click on "Add organization".
