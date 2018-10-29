@@ -58,7 +58,7 @@ KS vil sende påloggingsadresse til administrator etter at virksomheten er oppre
  
 ![bilde1](https://github.com/difi/move-integrasjonspunkt/blob/gh-pages/resources/01_FIKS.png?raw=true)
  
-> Alle eksemplene og skjermbildene er hentet fra oppsettet til FM Nordland. Det gjelder tilsvarende for din virksomhet – bare med deres eget navn og organisasjonsnummer. Det er bare opplysninger som nevnes heretter må utfylles i konfigureringen. 
+> Alle eksemplene og skjermbildene er hentet fra oppsettet til FM Nordland. Det gjelder tilsvarende for din virksomhet – bare med deres eget navn og organisasjonsnummer. Det er bare opplysninger som nevnes heretter må utfylles i konfigureringen. I dette tilfellet er brukernamnet for svarut brukeren vist venstre side av skjermbildet over, altså "fm_nordland". ```difi.move.fiks.ut.username=fm_nordland```
 
 ---
 
