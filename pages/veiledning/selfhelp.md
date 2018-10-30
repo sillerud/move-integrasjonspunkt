@@ -106,7 +106,7 @@ For å aktivere Batch read i ditt integrasjonspunkt så må du ha versjon 1.7.82
 
 Etter oppgraderinger kan det skje at det blir liggande igjen gamle kvitteringer i integrasjonspunktet. Dette kan føre til warnings og i nokre tilfeller errors. For å få en fersk installasjon av integrasjonspunktet bør du gjere følgande:
 
-1.Stopp integrasjonspunktet. 
+1. Stopp integrasjonspunktet. 
 2. Ta backup av ```activemq-data``` mappa og ```receipts.mv.db``` fila.
 3. Flytt så desse utav mappa. Sørg for at dei er fjerna frå integrasjonspunktmappa før du går vidare.
 4. Start integrasjonspunktet igjen. Nå vil desse filene bli lasta ned på nytt.
