@@ -16,6 +16,7 @@ folder: veiledning
 - Integrasjonspunktet både sender og mottar meldinger.
 - "Started IntegrasjonspunktApplication ..." blir logget i ```\integrasjonspunkt\integrasjonspunkt-logs\application.log``` like etter fullført oppstart.
 - Bruksvilkår/avtale må være på plass for å bruke eFormidling. Se lenke under.
+- [Mer om eFormidling og hvordan det fungerer](https://difi.github.io/eformidling/index.html)
 
 For informasjon om ikke tekniske ting og bruksvilkår/avtaler [se Samarbeidsportalen](https://samarbeid.difi.no/felleslosninger/eformidling/ta-i-bruk-eformidling/1-forberedelser)
 
