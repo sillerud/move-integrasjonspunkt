@@ -37,7 +37,7 @@ Gjelder både produksjon og test.
 | meldingsutveksling.difi.no lb1 | 93.94.10.45:443 | 79.170.81.231:443 |
 | meldingsutveksling.difi.no lb2 | 93.94.10.5:443 | 79.170.81.232:443 |
 | meldingsutveksling.difi.no lb3 | 93.94.10.30:443 | 79.170.81.233:443 |
-| Logging | 93.94.10.18:8400^ | 79.170.81.233:840 |
+| Logging | 93.94.10.18:8400^ | 79.170.81.233:8400^ |
 
 ^ 8300= test, 8400= prod via tcp. SSL 5443 prod, SSL 5343 test.
 
