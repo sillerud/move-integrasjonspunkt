@@ -26,7 +26,7 @@ Bekreftelse på at en bruker er autentisert sendes fra OIDC til innholdsleverand
 [For mer informasjon om Network Time Protocol.](https://no.wikipedia.org/wiki/Network_Time_Protocol)
 Tjenesteleverandør velger selv tidskilde, denne bør være lokalisert internt i datasenteret.
 
-# Viktig - Framtidig endring i brannmuråpninger! 
+## Viktig - Framtidig endring i brannmuråpninger! 
 Difi bytter ISP og det fører til nye IP-adresser. Dette medfører at integrasjonspunktene vil måtte ha brannmuråpning for utgående trafikk mot de nye IP-adressene. Endringen ligger an til å skje 28.01.19, endelig dato og informasjon vil også bli sendt ut på e-postvarsel 20.11 og 21.11.  *Denne teksten vil også bli oppdatert.*
 
 Gjelder både produksjon og test.
