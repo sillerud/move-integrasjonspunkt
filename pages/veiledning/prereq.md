@@ -26,6 +26,21 @@ Bekreftelse på at en bruker er autentisert sendes fra OIDC til innholdsleverand
 [For mer informasjon om Network Time Protocol.](https://no.wikipedia.org/wiki/Network_Time_Protocol)
 Tjenesteleverandør velger selv tidskilde, denne bør være lokalisert internt i datasenteret.
 
+# Viktig - Framtidig endring i brannmuråpninger! 
+Difi bytter ISP og det fører til nye IP-adresser. Dette medfører at integrasjonspunktene vil måtte ha brannmuråpning for utgående trafikk mot de nye IP-adressene. Endringen ligger an til å skje 28.01.19, endelig dato og informasjon vil også bli sendt ut på e-postvarsel 20.11 og 21.11.  *Denne teksten vil også bli oppdatert.*
+
+Gjelder både produksjon og test.
+
+
+|    Tjeneste     | Gammel IP-adresse  | Ny IP-adresse |
+| ------------- |:-------------:| :-----:|
+| meldingsutveksling.difi.no lb1 | 93.94.10.45:443 | 79.170.81.231:443 |
+| meldingsutveksling.difi.no lb2 | 93.94.10.5:443 | 79.170.81.232:443 |
+| meldingsutveksling.difi.no lb3 | 93.94.10.30:443 | 79.170.81.233:443 |
+| Logging | 93.94.10.18:8400^ | 79.170.81.233:840 |
+
+^ 8300= test, 8400= prod via tcp. SSL 5443 prod, SSL 5343 test.
+
 ### Brannmuråpninger i testmiljø
 
 Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp noen brannmuråpninger. I akkordion lenger nede så må du åpne både generelle og spesifikke for den tjenesten du skal installere.
