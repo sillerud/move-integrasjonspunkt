@@ -10,8 +10,9 @@ redirect_from: "/vStaging/"
 
 ## [Siste versjon av integrasjonspunktet kan lastes ned her (1.7.93)](https://beta-meldingsutveksling.difi.no/service/local/repositories/releases/content/no/difi/meldingsutveksling/integrasjonspunkt/1.7.93/integrasjonspunkt-1.7.93.jar) 
 
-## Oppdatert innhold i veiledningen (24.10.18)
-Noen ting er flyttet på for å forbedre brukeropplevelsen. [Endringslogg finner du her](https://difi.github.io/move-integrasjonspunkt/releasenotes.html#oppdatering-av-innholdet-i-veiledningen)
+### Endringslogg
+
+[Endringslogg finner du her](https://difi.github.io/move-integrasjonspunkt/releasenotes.html#oppdatering-av-innholdet-i-veiledningen)
 
 ### Bakgrunn 
 
