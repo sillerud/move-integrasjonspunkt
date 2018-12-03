@@ -10,31 +10,37 @@ folder: veiledning
 ### Digital post til virksomheter (DPV)
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/flyt_dpv.jpg)
 
-Utgående: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet. Meldinga vil så bli levert til Altinn sin DPV tjeneste. Leverings- og lesekvittering blir levert tilbake til avsender. Meldingen kan hentes i virksomhetens innboks i Altinn. Personen som henter meldinga må ha riktige rettigheter i Altinn for å kunne lese den (feks. sak-arkiv rolle)
+Utgående: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet. Meldinga vil så bli levert til Altinn sin DPV tjeneste. Appreceipt blir levert til avsender etter at Integrasjonspunktet får "ok" på forsendelserequesten mot Altinn. Leverings- og lesekvittering blir levert tilbake til avsender. Meldingen kan hentes i virksomhetens innboks i Altinn. Personen som henter meldinga må ha riktige rettigheter i Altinn for å kunne lese den (feks. sak-arkiv rolle)
 
 Innkommende: Om virksomheten din ikke har tatt i bruk eFormidling vil du få post i innboksen i Altinn. 
+
+Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
 
 ---
 
 ### Digital post til offentlige virksomheter (DPO)
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/flyt_dpo.jpg)
 
-Utgående/innkommende: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet. Denne meldingen blir lastet opp til Altinn's meldingsformidler og sendt videre til mottaker sitt integrasjonspunkt og mottas i sak-arkivsystemet. 
+Utgående/innkommende: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet. Denne meldingen blir lastet opp til Altinn's meldingsformidler og sendt videre til mottaker sitt integrasjonspunkt og mottas i sak-arkivsystemet. Appreceipt blir levert til avsender når mottakende integrasjonspunkt laster ned meldingen.
 
 Integrasjonspunktet velger DPO som avsendermetode om både avsender og mottaker har fått tilganger til å bruke DPO ( Åpnet av Difi). Om mottaker ikke har konfigurert sitt integrasjonspunkt for mottak av DPO vil denne meldingen ikke komme frem før dette er gjort. Derfor er det viktig at virksomheter som skal bruke eFormidling sørger for å konfigurere integrasjonspunktet sitt riktig før de ber Difi om å åpne tilgang til DPO. 
+
+Dersom en DPO-melding havner i Dead letter queue (DLQ) hos mottaker, sender mottaker en error appreceipt tilbake. Viss avsender ikke får leveringskvittering/kvittering som avslutter polling innen satt timeout(24t), får meldingen feilstatus i statusgrensesnittet. 
 
 ---
 
 ### Digital post KS FIKS SvarInn/SvarUt (DPF)
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/flyt_dpf.jpg)
 
-Utgående: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet. Meldinga blir sendt til KS FIKS sin meldingsformidler for og så bli ekspedert til mottaker sin SvarInn innboks. Leveringskvittering vil bli sendt tilbake. 
+Utgående: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet. Meldinga blir sendt til KS FIKS sin meldingsformidler for og så bli ekspedert til mottaker sin SvarInn innboks. Appreceipt blir levert til avsender når svarUt mottar forsendelsen, svarUt har leveringsgaranti.
 
-Innkommende: Meldinger som blir sendt til SvarInn, enten via SvarUt eller som beskrevet over vil først blir lagt i SvarInn innboksen før integrasjonspunktet vil forsøke å hente meldinga for å sende den til sak-arkivsystemet. Mottaker vil kvittere tilbake.
+Innkommende: Meldinger som blir sendt til SvarInn, enten via SvarUt eller som beskrevet over vil først blir lagt i SvarInn innboksen før integrasjonspunktet vil forsøke å laste ned meldinga for å sende den direkte til sak-arkivsystemet. 
 
 Om mottaker ønsker det er det mulighet for å skru på e-postlevering av post frå SvarInn innboksen slik at en slipper å hente den der (om en ikke kan få det levert i sak-arkivsystemet. feks ved feil.). Dette tar eFormidling seg av vha e-postkonfigurasjonen som er satt opp i integrasjonspunkt-local.properties under DPF innstillingene. Da sender den via lokal smtp-server (den du konfigurerte). Dette må spesifikt settes på i properties-filen og er satt til false som default. ```difi.move.fiks.inn.mailOnError=false```.
 
 eFormidling støtter også både sikkerhetsnivå 3 og 4. Ved forsendelser vil integrasjonspunktet slå opp mot Service Registry (adresse/tilgangsregister) for å sjekke det høyeste sikkerhetsnivået mottaker støtter. Meldinga blir dermed sendt på høyste støttede sikkerhetsnivå.  Det er for e-postutsendelser dette er aktuelt, ved sikkerhetsnivå 3 ligger vedlegg ved i e-posten, i sikkerhetsnivå 4 blir det sendt lenke til vedlegget i stedet. 
+
+Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
 
 ---
 
