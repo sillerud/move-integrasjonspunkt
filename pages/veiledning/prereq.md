@@ -89,6 +89,8 @@ Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp
 
 ### Installere Java runtime environment (JDK)
 
+> Fra 01.01.19 vil Oracle Java være lisensbasert. Denne kan brukes, eller en kan bruke gratisalternativ som OpenJDK. [Les mer] (https://www.oracle.com/corporate/pressrelease/java-se-subscription-offering-062118.html)
+
 Integrasjonspunktet er en Java applikasjon og krever derfor at man har Java(JDK) kjøremiljø installert på serveren den skal kjøre.
 For å verifisere om java er installert og hvilken versjon kan du i et kommandolinjevindu bruke kommandoen
 
@@ -98,7 +100,13 @@ java -version
 
 Integrasjonspunktet krever minimum versjon 1.8.0
 
-Dersom Java ikke er installert eller versjonen er for gammel, kan ny versjon lastes ned [her](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) og installeres.
+### OpenJDK Java 8 (gratis)
+For å laste ned en gratisversjon av Java finnes det mange ulike tilbydere av OpenJDK. Her kan en velge den tilbyderen en selv ønsker, men versjon må være Java 8. Vi har valgt å bruke JDK 8 fra [https://adoptopenjdk.net/](https://adoptopenjdk.net/) med HotSpot som JVM. Denne vil integrasjonspunktet støtte. 
+
+Installasjonsveiledning for OpenJDK finner du her [https://adoptopenjdk.net/installation.html#x64_win-jdk](https://adoptopenjdk.net/installation.html#x64_win-jdk) . Om du bruker et annet OS enn Windows x64 bit kan du velge din platform inne på lenken.
+
+### Oracle Java 8 (lisensbasert)
+Dersom Java ikke er installert eller versjonen er for gammel, kan ny versjon lastes ned [her](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) og installeres. Denne vil integrasjonspunktet støtte.
 
 > **NB!** Husk å installere 64-bit Java om du har 64-bit operativsystem! 
 
