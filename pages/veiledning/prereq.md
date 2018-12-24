@@ -89,7 +89,7 @@ Når du installerer den typen eFormidling du skal ta i bruk så må du åpne opp
 
 ### Installere Java runtime environment (JDK)
 
-> Fra 01.01.19 vil Oracle Java være lisensbasert. Denne kan brukes, eller en kan bruke gratisalternativ som OpenJDK. [Les mer] (https://www.oracle.com/corporate/pressrelease/java-se-subscription-offering-062118.html)
+> Fra 01.01.19 vil Oracle Java være lisensbasert. Denne kan brukes, eller en kan bruke gratisalternativ som OpenJDK. [Les mer](https://www.oracle.com/corporate/pressrelease/java-se-subscription-offering-062118.html)
 
 Integrasjonspunktet er en Java applikasjon og krever derfor at man har Java(JDK) kjøremiljø installert på serveren den skal kjøre.
 For å verifisere om java er installert og hvilken versjon kan du i et kommandolinjevindu bruke kommandoen
