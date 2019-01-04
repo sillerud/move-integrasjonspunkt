@@ -18,7 +18,7 @@ Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
 
  ### DPV statuser
  
- Alt i tabellen under er logget av avsender sitt integrasjonspunkt.
+ Alt i tabellen under er logget av avsender sitt integrasjonspunkt. Per i dag støtter ikke DPV lese-bekreftelse.
  
  | Status | Kommentar| 
  | :--- | :--- |
@@ -73,7 +73,7 @@ Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
   Denne tabellen viser statusmeldinger der statlig virksomhet med integrasjonspunkt er avsender og kommune / fylkeskommune er mottaker.
   
   | Status | Kommentar |
-  | :--- | :--- | :--- |  
+  | :--- | :--- | 
   | OPPRETTET | Integrasjonspunktet mottar bestEdu-melding fra sak-arkivsystem og oppretter en DPF-melding |
   | SENDT | Integrasjonspunkt har sendt forsendelsen til meldingsformidler |
   | KLAR_FOR_MOTTAK | Venter på at forsendelse skal bli lastet ned av mottaker |
@@ -82,7 +82,7 @@ Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
   Denne tabellen viser statusmeldinger der kommune / fylkeskommune er avsender og statlig virksomhet med integrasjonspunkt er mottaker.
   
   | Status | Kommentar |
-  | :--- | :--- | :--- |  
+  | :--- | :--- |  
   | OPPRETTET | Integrasjonspunkt laster frå KS ned og oppretter meldingen hos seg |
   | INNKOMMENDE_MOTTATT | Meldingen blir konvertert til internt format | 
   | INNKOMMENDE_LEVERT | Meldingen er levert til sak-arkivsystem | 
@@ -103,6 +103,32 @@ DPI via eFormidling bruker NextMove grensesnittet. Det betyr at avsendersystemet
 *Kommer*
 
 ---
+
+### Mottakende sak-arkivsystem
+
+Når sak-arkivsystem mottar meldinger fra de forskjellige kanalene responderer de litt ulikt. Appreceipts blir sendt ut og statuser blir oppdatert.
+
+#### ePhorte mottar 
+
+DPO: Applikasjonskvittering sendes når melding har kommet inn til mottakers integrasjonspunkt.   
+DPF: Når mottaker tar imot posten via SvarInn, sendes ok kvittering når posten importeres (på vei inn til sak). Dette er per i dag en manuell operasjon og det betyr at det kan ta ekstra tid før avsender blir oppdatert. Det er en utviklingsoppgave å gjøre dette automatisk.
+DPV: Mottar leveringsbekreftelse umiddelbart etter leveranse til Altinn DPV.  
+DPI: har ikkje implementert lesebekreftelse. Opp til innbygger å gi lesebekreftelse. Gir difor lite meining å implementere. 
+
+#### P360 mottar 
+
+DPO:  Applikasjonskvittering sendes når melding har kommet inn til mottakers integrasjonspunkt.   
+
+DPF: Sender applikasjonskvittering når melding har kommet inn til mottakers integrasjonspunkt, før import til P360
+DPV: Mottar leveringsbekreftelse umiddelbart etter leveranse til Altinn DPV.
+
+#### Websak mottar 
+
+DPO: Applikasjonskvittering sendes når melding har kommet inn til mottakers integrasjonspunkt.  
+
+DPF:  Kvittering sendes når SvarInn har tatt imot. 
+DPV: Mottar leveringsbekreftelse umiddelbart etter leveranse til Altinn DPV.
+
 ### eInnsyn (DPE)
 
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/flyt_dpe.png)
