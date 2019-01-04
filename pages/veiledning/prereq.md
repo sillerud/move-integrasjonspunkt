@@ -37,11 +37,11 @@ Gjelder både produksjon og test.
 | meldingsutveksling.difi.no lb1 | 93.94.10.45:443 | 79.170.81.231:443 | 2001:67c:2d68:d1f1::1b:1 |
 | meldingsutveksling.difi.no lb2 | 93.94.10.5:443 | 79.170.81.232:443 | 2001:67c:2d68:d1f1::1b:2 | 
 | meldingsutveksling.difi.no lb3 | 93.94.10.30:443 | 79.170.81.233:443 | 2001:67c:2d68:d1f1::1b:3 | 
-| Logging | 93.94.10.18:8400^ | 79.170.81.228:8400^ | 2001:67c:2d68:d1f1::56:1  | 
+| logging | 93.94.10.18:8400^ | 79.170.81.228:8400^ | 2001:67c:2d68:d1f1::56:1  | 
 
 ^ 8300= test, 8400= prod via tcp. SSL 5443 prod, SSL 5343 test.
 
-En kan også åpne DNS mot domenet lb.difi.no som dekker alle 3 lastbalansererene. 
+En kan også åpne DNS mot domenet ```lb.difi.no``` som dekker alle 3 lastbalansererene. DNS for logging er ```stream.difi.no```.
 
 ### Brannmuråpninger i testmiljø
 
