@@ -18,7 +18,8 @@ Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
 
  ### DPV statuser
  
- Alt i tabellen under er logget av avsender integrasjonspunkt
+ Alt i tabellen under er logget av avsender sitt integrasjonspunkt.
+ 
  | Status | Kommentar| 
  | :--- | :--- |
  | OPPRETTET | Integrasjonspunktet mottar bestEdu-melding fra sak-arkivsystem og oppretter en DPV-melding |
