@@ -81,7 +81,7 @@ Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
   
   Denne tabellen viser statusmeldinger der kommune / fylkeskommune er avsender og statlig virksomhet med integrasjonspunkt er mottaker.
   
-   | Status | Kommentar |
+  | Status | Kommentar |
   | :--- | :--- | :--- |  
   | OPPRETTET | Integrasjonspunkt laster frå KS ned og oppretter meldingen hos seg |
   | INNKOMMENDE_MOTTATT | Meldingen blir konvertert til internt format | 
