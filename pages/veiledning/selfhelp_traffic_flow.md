@@ -26,7 +26,7 @@ Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
  | SENDT | Integrasjonspunkt har sendt forsendelsen til Altinn's DPV tjeneste | 
  | LEVERT | Når DPV-melding er levert til Altinn sin DPV tjeneste blir en appreceipt sendt tilbake og status oppdatert | 
  | LEST | Når mottaker har åpnet og lest meldingen blir status oppdatert til lest | 
- | | |
+ 
 
 ---
 
@@ -39,6 +39,20 @@ Integrasjonspunktet velger DPO som avsendermetode om både avsender og mottaker 
 
 Dersom en DPO-melding havner i Dead letter queue (DLQ) hos mottaker, sender mottaker en error appreceipt tilbake. Viss avsender ikke får leveringskvittering/kvittering som avslutter polling innen satt timeout(24t), får meldingen feilstatus i statusgrensesnittet. 
 
+ ### DPO statuser
+ 
+  | Status | Logget av Avsender/mottaker | Kommentar |
+  | :--- | :--- | :--- |  
+  | OPPRETTET| Avsender | Integrasjonspunktet mottar bestEdu-melding fra sak-arkivsystem og oppretter en DPO-melding |
+  | SENDT| Avsender| Integrasjonspunkt har sendt forsendelsen til meldingsformidler | 
+  | OPPRETTET | Mottaker | Integrasjonspunkt laster frå meldingsformidler ned og oppretter meldingen hos seg | 
+  | INNKOMMENDE_MOTTATT | Mottaker| Bekrefter at melding er mottatt hos seg | 
+  | INNKOMMENDE_LEVERT | Mottaker | Har generert to mottakskvitteringer og disse blir sendt til avsender | 
+  | LEVERING | Avsender | Avsender mottar bekreftelse på at mottak | 
+  | AAPNING | Avsender | Videresending til sak-arkivsystem |  
+  | LEST | Avsender| Appreceipter mottatt fra mottaker. Dette er både en kvittering og meldingstype som indikerer at sak-arkivsystemet har mottatt meldingen | 
+  
+  
 ---
 
 ### Digital post KS FIKS SvarInn/SvarUt (DPF)
@@ -54,6 +68,27 @@ eFormidling støtter også både sikkerhetsnivå 3 og 4. Ved forsendelser vil in
 
 Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
 
+ ### DPF statuser
+  
+  Denne tabellen viser statusmeldinger der statlig virksomhet med integrasjonspunkt er avsender og kommune / fylkeskommune er mottaker.
+  
+  | Status | Kommentar |
+  | :--- | :--- | :--- |  
+  | OPPRETTET | Integrasjonspunktet mottar bestEdu-melding fra sak-arkivsystem og oppretter en DPF-melding |
+  | SENDT | Integrasjonspunkt har sendt forsendelsen til meldingsformidler |
+  | KLAR_FOR_MOTTAK | Venter på at forsendelse skal bli lastet ned av mottaker |
+  | LEST | En forsendelse er lest når hele forsendelsesfilen er lastet ned av mottaker | 
+  
+  Denne tabellen viser statusmeldinger der kommune / fylkeskommune er avsender og statlig virksomhet med integrasjonspunkt er mottaker.
+  
+   | Status | Kommentar |
+  | :--- | :--- | :--- |  
+  | OPPRETTET | Integrasjonspunkt laster frå KS ned og oppretter meldingen hos seg |
+  | INNKOMMENDE_MOTTATT | Meldingen blir konvertert til internt format | 
+  | INNKOMMENDE_LEVERT | Meldingen er levert til sak-arkivsystem | 
+
+ I dette tilfellet blir appreceipt fra sak-arkivsystem discardet, fordi kommuner / fylkeskommuner som avsender ikke kan behandle den.
+ 
 ---
 
 ### Digital post til innbygger (DPI)
@@ -62,6 +97,10 @@ Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
 Utgående: Vil bli initiert i sak-arkivsystemet og sendt til Posten sin meldingsformidler. Der vil det bli formidlet til innbygger sin digitale postkasse, eBoks eller Digipost. Om innbygger ikke har en digital postkasse vil brevet bli sendt til innboksen i Altinn. Om avsender ønsker det kan det bli sendt til print i stedet for til Altinn. 
 
 DPI via eFormidling bruker NextMove grensesnittet. Det betyr at avsendersystemet ditt må støtte dette. DPI støtter også printtjenesten til Posten.
+
+### DPI statuser
+
+*Kommer*
 
 ---
 ### eInnsyn (DPE)
