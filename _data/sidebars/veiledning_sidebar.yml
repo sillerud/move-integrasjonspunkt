@@ -52,7 +52,7 @@ entries:
         url: /selfhelp_typical_errors.html
         output: web, pdf
 
-      - title: Trafikkflyt
+      - title: Trafikkflyt, kvitteringer og status
         url: /selfhelp_traffic_flow.html
         output: web, pdf
         
