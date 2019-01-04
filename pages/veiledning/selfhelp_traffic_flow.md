@@ -87,6 +87,14 @@ Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
   | INNKOMMENDE_MOTTATT | Meldingen blir konvertert til internt format | 
   | INNKOMMENDE_LEVERT | Meldingen er levert til sak-arkivsystem | 
 
+DPF relaterte feilstatuser
+
+| Status | Kommentar | 
+| :--- | :--- |  
+| FEIL | Forsendelse har feilet, les logg for mer informasjon | 
+| MANUELT HÅNDTERT | Forsendelsen er manuelt avsluttet, f.eks pga en feilsituasjon |
+| AVVIST | Forsendelsen er ikke validert pga. manglende/korrupt metadata, eller fordi forsendelsesfil ikke kunne dannes |
+ 
  I dette tilfellet blir appreceipt fra sak-arkivsystem discardet, fordi kommuner / fylkeskommuner som avsender ikke kan behandle den.
  
 ---
