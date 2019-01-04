@@ -1,7 +1,7 @@
 ---
-title: Trafikkflyt i eFormidling og eInnsyn
-description: Trafikkflyt 
-summary: "Trafikkflyt i eFormidling og eInnsyn"
+title: Trafikkflyt, kvitteringer og statuser i eFormidling og eInnsyn
+description: Trafikkflyt, kvitteringer og statuser
+summary: "Trafikkflyt, kvitteringer og statuser i eFormidling og eInnsyn"
 permalink: selfhelp_traffic_flow.html
 sidebar: veiledning_sidebar
 folder: veiledning
@@ -15,6 +15,17 @@ Utgående: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet
 Innkommende: Om virksomheten din ikke har tatt i bruk eFormidling vil du få post i innboksen i Altinn. 
 
 Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
+
+ ### DPV statuser
+ 
+ Alt i tabellen under er logget av avsender integrasjonspunkt
+ |** Status** | **Kommentar **| 
+ | :--- | :--- |
+ | OPPRETTET | Integrasjonspunktet mottar bestEdu-melding fra sak-arkivsystem og oppretter en DPV-melding |
+ | SENDT | Integrasjonspunkt har sendt forsendelsen til Altinn's DPV tjeneste | 
+ | LEVERT | Når DPV-melding er levert til Altinn sin DPV tjeneste blir en appreceipt sendt tilbake og status oppdatert | 
+ | LEST | Når mottaker har åpnet og lest meldingen blir status oppdatert til lest | 
+ 
 
 ---
 
