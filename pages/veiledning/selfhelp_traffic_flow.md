@@ -25,7 +25,7 @@ Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
  | SENDT | Integrasjonspunkt har sendt forsendelsen til Altinn's DPV tjeneste | 
  | LEVERT | Når DPV-melding er levert til Altinn sin DPV tjeneste blir en appreceipt sendt tilbake og status oppdatert | 
  | LEST | Når mottaker har åpnet og lest meldingen blir status oppdatert til lest | 
- 
+ | | |
 
 ---
 
