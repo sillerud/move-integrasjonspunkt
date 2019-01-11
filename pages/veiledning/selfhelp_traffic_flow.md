@@ -33,28 +33,6 @@ Dersom en DPO-melding havner i Dead letter queue (DLQ) hos mottaker, sender mott
   
 ---
 
-### Digital post til virksomheter (DPV)
-![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/flyt_dpv.jpg)
-
-Utgående: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet. Meldinga vil så bli levert til Altinn sin DPV tjeneste. Appreceipt blir levert til avsender etter at Integrasjonspunktet får "ok" på forsendelserequesten mot Altinn. Leverings- og lesekvittering blir levert tilbake til avsender. Meldingen kan hentes i virksomhetens innboks i Altinn. Personen som henter meldinga må ha riktige rettigheter i Altinn for å kunne lese den (feks. sak-arkiv rolle)
-
-Innkommende: Om virksomheten din ikke har tatt i bruk eFormidling vil du få post i innboksen i Altinn. 
-
-Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
-
- ### DPV statuser
- 
- Alt i tabellen under er logget av avsender sitt integrasjonspunkt. Per i dag støtter ikke DPV lese-bekreftelse.
- 
- | Status | Kommentar| 
- | :--- | :--- |
- | OPPRETTET | Integrasjonspunktet mottar bestEdu-melding fra sak-arkivsystem og oppretter en DPV-melding |
- | SENDT | Integrasjonspunkt har sendt forsendelsen til Altinn's DPV tjeneste | 
- | LEVERT | Når DPV-melding er levert til Altinn sin DPV tjeneste blir en appreceipt sendt tilbake og status oppdatert | 
- | LEST | Når mottaker har åpnet og lest meldingen blir status oppdatert til lest | 
- 
-
----
 
 
 
@@ -101,6 +79,31 @@ DPF relaterte feilstatuser
  I dette tilfellet blir appreceipt fra sak-arkivsystem discardet, fordi kommuner / fylkeskommuner som avsender ikke kan behandle den.
  
 ---
+
+### Digital post til virksomheter (DPV)
+![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/flyt_dpv.jpg)
+
+Utgående: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet. Meldinga vil så bli levert til Altinn sin DPV tjeneste. Appreceipt blir levert til avsender etter at Integrasjonspunktet får "ok" på forsendelserequesten mot Altinn. Leverings- og lesekvittering blir levert tilbake til avsender. Meldingen kan hentes i virksomhetens innboks i Altinn. Personen som henter meldinga må ha riktige rettigheter i Altinn for å kunne lese den (feks. sak-arkiv rolle)
+
+Innkommende: Om virksomheten din ikke har tatt i bruk eFormidling vil du få post i innboksen i Altinn. 
+
+Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
+
+ ### DPV statuser
+ 
+ Alt i tabellen under er logget av avsender sitt integrasjonspunkt. Per i dag støtter ikke DPV lese-bekreftelse.
+ 
+ | Status | Kommentar| 
+ | :--- | :--- |
+ | OPPRETTET | Integrasjonspunktet mottar bestEdu-melding fra sak-arkivsystem og oppretter en DPV-melding |
+ | SENDT | Integrasjonspunkt har sendt forsendelsen til Altinn's DPV tjeneste | 
+ | LEVERT | Når DPV-melding er levert til Altinn sin DPV tjeneste blir en appreceipt sendt tilbake og status oppdatert | 
+ | LEST | Når mottaker har åpnet og lest meldingen blir status oppdatert til lest | 
+ 
+
+---
+
+
 
 ### Digital post til innbygger (DPI)
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/flyt_dpi.jpg)
