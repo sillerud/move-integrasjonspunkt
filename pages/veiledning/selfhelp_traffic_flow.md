@@ -68,7 +68,7 @@ Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
   | INNKOMMENDE_MOTTATT | Meldingen blir konvertert til internt format | 
   | INNKOMMENDE_LEVERT | Meldingen er levert til sak-arkivsystem | 
 
-DPF relaterte feilstatuser
+### DPF relaterte feilstatuser
 
 | Status | Kommentar | 
 | :--- | :--- |  
@@ -89,7 +89,7 @@ Innkommende: Om virksomheten din ikke har tatt i bruk eFormidling vil du få pos
 
 Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
 
- ### DPV statuser
+### DPV statuser
  
  Alt i tabellen under er logget av avsender sitt integrasjonspunkt. Per i dag støtter ikke DPV lese-bekreftelse.
  
