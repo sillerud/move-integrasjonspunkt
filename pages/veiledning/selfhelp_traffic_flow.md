@@ -26,11 +26,11 @@ Dersom en DPO-melding havner i Dead letter queue (DLQ) hos mottaker, sender mott
   | OPPRETTET| Avsender | Integrasjonspunktet mottar bestEdu-melding fra sak-arkivsystem og oppretter en DPO-melding |
   | SENDT| Avsender| Integrasjonspunkt har sendt forsendelsen til meldingsformidler | 
   | OPPRETTET | Mottaker | Integrasjonspunkt laster frå meldingsformidler ned og oppretter meldingen hos seg | 
-  | INNKOMMENDE_MOTTATT | Mottaker| Bekrefter at melding er mottatt hos seg | 
+  | INNKOMMENDE_MOTTATT | Mottaker| Integrasjonspunkt hos mottaker har mottatt melding. | 
   | INNKOMMENDE_LEVERT | Mottaker | Har generert to mottakskvitteringer og disse blir sendt til avsender | 
-  | LEVERING | Avsender | Avsender mottar bekreftelse på at mottak | 
+  | LEVERING | Avsender | Avsender mottar bekreftelse på at mottakende integrasjonspunkt har mottatt. | 
   | AAPNING | Avsender | Videresending til sak-arkivsystem |  
-  | LEST | Avsender| Appreceipter mottatt fra mottaker. Dette er både en kvittering og meldingstype som indikerer at sak-arkivsystemet har mottatt meldingen | 
+  | LEST | Avsender| Appreceipter fra mottaker av avsender. Dette er både en kvittering og meldingstype som indikerer at sak-arkivsystemet hos mottaker har fått meldingen. Leveransen er bekreftet fullført. | 
   
 ---
 
@@ -40,7 +40,7 @@ Dersom en DPO-melding havner i Dead letter queue (DLQ) hos mottaker, sender mott
 ### Digital post KS FIKS SvarInn/SvarUt (DPF)
 ![](https://raw.githubusercontent.com/difi/move-integrasjonspunkt/gh-pages/resources/flyt_dpf.jpg)
 
-Utgående: Vil bli initiert i sak-arkivsystemet og sendt til integrasjonspunktet. Meldinga blir sendt til KS FIKS sin meldingsformidler for og så bli ekspedert til mottaker sin SvarInn innboks. Appreceipt blir levert til avsender når svarUt mottar forsendelsen, svarUt har leveringsgaranti.
+Utgående: Melding blir initiert i sak-arkivsystemet og sendt til avsenders integrasjonspunkt. Meldinga blir sendt til KS FIKS sin meldingsformidler SvarInn, for så å bli ekspedert til mottaker sin SvarInn innboks. Appreceipt blir levert til avsender når SvarInn mottar forsendelsen. Tjenesten har leveringsgaranti, ref bruksvilkår hos KS.
 
 Innkommende: Meldinger som blir sendt til SvarInn, enten via SvarUt eller som beskrevet over vil først blir lagt i SvarInn innboksen før integrasjonspunktet vil forsøke å laste ned meldinga for å sende den direkte til sak-arkivsystemet. 
 
