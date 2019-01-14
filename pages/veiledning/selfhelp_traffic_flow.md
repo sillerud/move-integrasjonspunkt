@@ -20,6 +20,7 @@ Dersom en DPO-melding havner i Dead letter queue (DLQ) hos mottaker, sender mott
 
  ### DPO statuser
  
+ 
   | Status | Logget av Avsender/mottaker | Kommentar |
   | :--- | :--- | :--- |  
   | OPPRETTET| Avsender | Integrasjonspunktet mottar bestEdu-melding fra sak-arkivsystem og oppretter en DPO-melding |
@@ -50,6 +51,7 @@ eFormidling støtter også både sikkerhetsnivå 3 og 4. Ved forsendelser vil in
 Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
 
  ### DPF statuser
+ 
   
   Denne tabellen viser statusmeldinger der statlig virksomhet med integrasjonspunkt er avsender og kommune / fylkeskommune er mottaker.
   
