@@ -132,7 +132,7 @@ DPF: Når mottaker tar imot posten via SvarInn, sendes ok kvittering når posten
 
 DPV: Mottar leveringsbekreftelse umiddelbart etter leveranse til Altinn DPV.  
 
-DPI: har ikkje implementert lesebekreftelse. Opp til innbygger å gi lesebekreftelse. Gir difor lite meining å implementere. 
+DPI: har ikke implementert lesebekreftelse. Opp til innbygger å gi lesebekreftelse. Gir difor lite meining å implementere. 
 
 #### P360 mottar 
 
