@@ -126,21 +126,21 @@ Når sak-arkivsystem mottar meldinger fra de forskjellige kanalene responderer d
 
 #### ePhorte mottar 
 
-DPO: Applikasjonskvittering sendes når melding har kommet inn til mottakers integrasjonspunkt.   
+DPO: Applikasjonskvittering sendes når melding har kommet inn til mottakers sak-arkivsystem. Dette er per i dag en manuell operasjon og det betyr at det kan ta ekstra tid før avsender blir oppdatert. Det er en utviklingsoppgave å gjøre dette automatisk.
 DPF: Når mottaker tar imot posten via SvarInn, sendes ok kvittering når posten importeres (på vei inn til sak). Dette er per i dag en manuell operasjon og det betyr at det kan ta ekstra tid før avsender blir oppdatert. Det er en utviklingsoppgave å gjøre dette automatisk.
 DPV: Mottar leveringsbekreftelse umiddelbart etter leveranse til Altinn DPV.  
 DPI: har ikkje implementert lesebekreftelse. Opp til innbygger å gi lesebekreftelse. Gir difor lite meining å implementere. 
 
 #### P360 mottar 
 
-DPO:  Applikasjonskvittering sendes når melding har kommet inn til mottakers integrasjonspunkt.   
+DPO:  Applikasjonskvittering sendes når melding har kommet inn til mottakers sak-arkivsystem.   
 
 DPF: Sender applikasjonskvittering når melding har kommet inn til mottakers integrasjonspunkt, før import til P360
 DPV: Mottar leveringsbekreftelse umiddelbart etter leveranse til Altinn DPV.
 
 #### Websak mottar 
 
-DPO: Applikasjonskvittering sendes når melding har kommet inn til mottakers integrasjonspunkt.  
+DPO: Applikasjonskvittering sendes når melding har kommet inn til mottakers sak-arkivsystem. 
 
 DPF:  Kvittering sendes når SvarInn har tatt imot. 
 DPV: Mottar leveringsbekreftelse umiddelbart etter leveranse til Altinn DPV.
