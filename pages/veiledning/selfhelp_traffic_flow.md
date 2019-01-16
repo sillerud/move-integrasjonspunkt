@@ -18,6 +18,7 @@ Integrasjonspunktet velger DPO som avsendermetode om både avsender og mottaker 
 
 Dersom en DPO-melding havner i Dead letter queue (DLQ) hos mottaker, sender mottaker en error appreceipt tilbake. Viss avsender ikke får leveringskvittering/kvittering som avslutter polling innen satt timeout(24t), får meldingen feilstatus i statusgrensesnittet. 
 
+
  ### DPO statuser
  
  
