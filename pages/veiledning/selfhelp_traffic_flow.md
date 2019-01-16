@@ -19,7 +19,7 @@ Integrasjonspunktet velger DPO som avsendermetode om både avsender og mottaker 
 Dersom en DPO-melding havner i Dead letter queue (DLQ) hos mottaker, sender mottaker en error appreceipt tilbake. Viss avsender ikke får leveringskvittering/kvittering som avslutter polling innen satt timeout(24t), får meldingen feilstatus i statusgrensesnittet. 
 
 
- ### DPO statuser
+### DPO statuser
  
  
   | Status | Logget av Avsender/mottaker | Kommentar |
@@ -51,7 +51,7 @@ eFormidling støtter også både sikkerhetsnivå 3 og 4. Ved forsendelser vil in
 
 Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
 
- ### DPF statuser
+### DPF statuser
  
   
   Denne tabellen viser statusmeldinger der statlig virksomhet med integrasjonspunkt er avsender og kommune / fylkeskommune er mottaker.
