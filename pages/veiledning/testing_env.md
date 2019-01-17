@@ -17,7 +17,7 @@ Informasjon om oppstart av integrasjonspunktet mot testmiljøet finner du her [h
 
 Det er opprettet test virksomheter en kan bruke som mottakere. Her vil du kunne logge inn å finne forsendelsen din. Disse virksomhetene og brukeren vil være **felles** for alle virksomheter i testmiljø. Pass på hvilken informasjon du sender i testingen.
 
-Brukernamn og passord fåes ved å kontakte <a href="mailto:idporten@difi.no">idporten@difi.no</a> 
+Testbruker og passord til innlogging i Altinn testmiljøet fåes ved å kontakte <a href="mailto:idporten@difi.no">idporten@difi.no</a> 
 
 For å logge inn i Altinn sitt testmiljø bruker du denne lenken <a href="https://tt02.altinn.no">https://tt02.altinn.no</a>
 
