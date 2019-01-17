@@ -19,7 +19,7 @@ Det er opprettet test virksomheter en kan bruke som mottakere. Her vil du kunne 
 
 Brukernamn og passord fåes ved å kontakte <a href="mailto:idporten@difi.no">idporten@difi.no</a> 
 
-For å logge inn i Altinn sitt testmiljø bruker du denne lenken <a href"https://tt02.altinn.no">https://tt02.altinn.no</a>
+For å logge inn i Altinn sitt testmiljø bruker du denne lenken <a href="https://tt02.altinn.no">https://tt02.altinn.no</a>
 
 | Orgnr | Navn |Enhetstype |  
 |:---| :--- | :--- |
