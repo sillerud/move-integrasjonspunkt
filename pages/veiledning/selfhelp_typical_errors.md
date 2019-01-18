@@ -116,7 +116,7 @@ Nede i stack tracen vil det være ei eller fleire linjer som viser til KS SvarUt
 no.difi.meldingsutveksling.ks.svarut.SvarUtWebServiceClientImpl.sendMessage
 ```
 
-Dette er pga feil brukernamn/passord på svarUt brukeren. Det finnes også ein liknande feilmelding for svarInn
+Dette kan være pga feil brukernamn/passord på svarUt brukeren. Det kan også være mangel i konfigurasjonen i KS SvarUt. Feks felt som ikkje er utfyllt. Det finnes også ein liknande feilmelding for svarInn. 
 
 ### Failed to send message
 Generell feilmelding med en lenger stack trace . Nede i stack tracen står feks
