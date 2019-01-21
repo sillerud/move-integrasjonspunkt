@@ -16,7 +16,7 @@ Utgående/innkommende: Vil bli initiert i sak-arkivsystemet og sendt til integra
 
 Integrasjonspunktet velger DPO som avsendermetode om både avsender og mottaker har fått tilganger til å bruke DPO ( Åpnet av Difi). Om mottaker ikke har konfigurert sitt integrasjonspunkt for mottak av DPO vil denne meldingen ikke komme frem før dette er gjort. Derfor er det viktig at virksomheter som skal bruke eFormidling sørger for å konfigurere integrasjonspunktet sitt riktig før de ber Difi om å åpne tilgang til DPO. 
 
-Dersom en DPO-melding havner i Dead letter queue (DLQ) hos mottaker, sender mottaker en error appreceipt tilbake. Viss avsender ikke får leveringskvittering/kvittering som avslutter polling innen satt timeout(24t), får meldingen feilstatus i statusgrensesnittet. 
+Dersom en DPO-melding havner i Dead letter queue (DLQ) hos mottaker, sender mottaker en error appreceipt tilbake. Viss avsender ikke får leveringskvittering som avslutter polling innen satt timeout(24t), får meldingen feilstatus i statusgrensesnittet. 
 
 
 ### DPO statuser
@@ -47,7 +47,7 @@ Innkommende: Meldinger som blir sendt til SvarInn, enten via SvarUt eller som be
 
 Om mottaker ønsker det er det mulighet for å skru på e-postlevering av post frå SvarInn innboksen slik at en slipper å hente den der (om en ikke kan få det levert i sak-arkivsystemet. feks ved feil.). Dette tar eFormidling seg av vha e-postkonfigurasjonen som er satt opp i integrasjonspunkt-local.properties under DPF innstillingene. Da sender den via lokal smtp-server (den du konfigurerte). Dette må spesifikt settes på i properties-filen og er satt til false som default. ```difi.move.fiks.inn.mailOnError=false```.
 
-eFormidling støtter også både sikkerhetsnivå 3 og 4. Ved forsendelser vil integrasjonspunktet slå opp mot Service Registry (adresse/tilgangsregister) for å sjekke det høyeste sikkerhetsnivået mottaker støtter. Meldinga blir dermed sendt på høyste støttede sikkerhetsnivå.  Det er for e-postutsendelser dette er aktuelt, ved sikkerhetsnivå 3 ligger vedlegg ved i e-posten, i sikkerhetsnivå 4 blir det sendt lenke til vedlegget i stedet. 
+eFormidling støtter også både sikkerhetsnivå 3 og 4. Ved forsendelser vil integrasjonspunktet slå opp mot Service Registry (adresse/tilgangsregister) for å sjekke det høyeste sikkerhetsnivået mottaker støtter. Meldinga blir dermed sendt på høyeste støttede sikkerhetsnivå.  Det er for e-postutsendelser dette er aktuelt, ved sikkerhetsnivå 3 ligger vedlegg ved i e-posten, i sikkerhetsnivå 4 blir det sendt lenke til vedlegget i stedet. 
 
 Om forsendelsen feiler blir det levert error appreceipt tilbake til avsender.
 
