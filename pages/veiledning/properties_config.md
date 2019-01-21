@@ -69,6 +69,8 @@ Når en virksomhet sender digital post til virksomheter kan virksomheten sende b
 
 > Om du **ikke** bruker eInnsyn må du i tillegg legge inn ```difi.move.feature.enableDPE=false``` for å skru av eInnsyn. Ellers får du feilmeldinger.
 
+> **NB!** Sørg for å fjerne  alle whitespace bak hver linje.
+
 ---
 
 Når du skal ta i bruk DPF/DPO/DPV må du legge inn en rekke properties og fylle ut desse. Se etter DPV/DPO/DPF i tabellen under og legg inn innstillinger som kreves for denne tjenesten. Se under tabellen for unntak.
