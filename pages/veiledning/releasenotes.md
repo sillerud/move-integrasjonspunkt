@@ -13,8 +13,7 @@ folder: veiledning
 MOVE-1125 - Dersom en DPO-melding havner i dlq'en til mottaker, sender mottaker en appreceipt tilbake (dette for å si i fra hvis meldingen stopper opp på vei til sakark f.eks)
 MOVE-1246 - Endring av IP-adresser i Difis driftmiljø. Opdaterte logstash URL for staging og produksjon profilene (miljøene)
 ```
-<!--dersom avsender ikke får leveringskvittering/kvittering som avslutter "polling" innen den tid timeout er satt (24t), får meldingen feilstatus i statusgrensesnittet. 
--->
+
 
 ## Oppdatering av innholdet i veiledningen
 24.10.18 
@@ -70,5 +69,3 @@ MOVE-817 - UUID-validering av sender- og receiver.ref i envelope
 MOVE-836 - fiks av kritisk bug som har eksistert siden 1.7.87 
 MOVE-837 - feil i mapping av svarSendesTil mot FIKS 
 ```
-
-
