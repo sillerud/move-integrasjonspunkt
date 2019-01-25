@@ -10,19 +10,17 @@ folder: veiledning
 ## 1.7.94
 25.01.19
 ```
-
 MOVE-1125 - Dersom en DPO-melding havner i dlq'en til mottaker, sender mottaker en appreceipt tilbake (dette for å si i fra hvis meldingen stopper opp på vei til sakark f.eks)
 MOVE-1246 - Endring av IP-adresser i Difis driftmiljø. Opdaterte logstash URL for staging og produksjon profilene (miljøene)
-
+```
 <!--dersom avsender ikke får leveringskvittering/kvittering som avslutter "polling" innen den tid timeout er satt (24t), får meldingen feilstatus i statusgrensesnittet. 
 -->
 
 ## Oppdatering av innholdet i veiledningen
 24.10.18 
-
-
-Gjort større endringer i både struktur, format og innhold for å forbedre brukeropplevelse. Dette gjelder blant annet:
 ```
+Gjort større endringer i både struktur, format og innhold for å forbedre brukeropplevelse. Dette gjelder blant annet:
+
 - Fjernet mye tekst rundt oppretting av bruker/passord DPF. All ikke konfigurasjonsrelatert informasjon er flyttet til Samarbeidsportalen. Siden er fjernet og konfigurasjonsrelatert informasjon ligger på https://difi.github.io/move-integrasjonspunkt/create_users.html
 - Oppretting av bruker for dpo/dpf/dpv har fått en egen side
 - Fjernet oppretting av dpo bruker fra properties siden
@@ -34,7 +32,6 @@ Gjort større endringer i både struktur, format og innhold for å forbedre bruk
 	- øke loggnivået
 	- Trafikkflyt
 	- typiske feil og hvordan løse de
-	
 ```
 
 ## 1.7.93
