@@ -6,13 +6,15 @@ permalink: releasenotes.html
 folder: veiledning
 ---
 
-<!--
+
 ## 1.7.94
-30.11.12
+25.01.19
 ```
-- Dersom en DPO-melding havner i dlq'en til mottaker, sender mottaker en appreceipt tilbake (dette for å si i fra hvis meldingen stopper opp på vei til sakark f.eks)
-- dersom avsender ikke får leveringskvittering/kvittering som avslutter "polling" innen den tid timeout er satt (24t), får meldingen feilstatus i statusgrensesnittet. 
-```
+
+MOVE-1125 - Dersom en DPO-melding havner i dlq'en til mottaker, sender mottaker en appreceipt tilbake (dette for å si i fra hvis meldingen stopper opp på vei til sakark f.eks)
+MOVE-1246 - Endring av IP-adresser i Difis driftmiljø. Opdaterte logstash URL for staging og produksjon profilene (miljøene)
+
+<!--dersom avsender ikke får leveringskvittering/kvittering som avslutter "polling" innen den tid timeout er satt (24t), får meldingen feilstatus i statusgrensesnittet. 
 -->
 
 ## Oppdatering av innholdet i veiledningen
