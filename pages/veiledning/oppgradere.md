@@ -11,7 +11,7 @@ folder: veiledning
 
 For å oppgradere til ny versjon må den siste versjonen av integrasjonspunkt[versjonsnr].jar filen lastes ned. Denne må så legges i integrasjonspunkt-mappen og oppstartskommando/tjeneste må endres til å peke på dette versjonsnummeret.
 
-## [Siste versjon av integrasjonspunktet kan lastes ned her (1.7.93)](https://beta-meldingsutveksling.difi.no/service/local/repositories/releases/content/no/difi/meldingsutveksling/integrasjonspunkt/1.7.93/integrasjonspunkt-1.7.93.jar) 
+## [Siste versjon av integrasjonspunktet kan lastes ned her (1.7.94)](https://beta-meldingsutveksling.difi.no/service/local/repositories/releases/content/no/difi/meldingsutveksling/integrasjonspunkt/1.7.94/integrasjonspunkt-1.7.94.jar) 
 
 > Om du oppgraderer fra en versjon eldre enn 1.7.85 kan det bli konflikt i database-filene. Løsningen for dette er å ta backup av og så slette "activemq-data" mappa og "receipt.mv.db" filen som ligg i integrasjonspunktmappen. Da vil en få en "clean" installasjon. Sørg for at dei gamle filene ikkje lenger ligger i mappa før du starter opp.
 
