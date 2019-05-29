@@ -3,8 +3,9 @@
             <name>einnsyn-integrasjonspunkt</name>
             <description>Klient for opplasting av journaldata og nedlasting av innsynskrav</description>
             <argument>-jar</argument>
-            <argument>integrasjonspunkt-1.7.79-20171130.123832-1.jar</argument>
+            <argument>integrasjonspunkt-1.7.94.jar</argument>
             <argument>--app.logger.enableSSL=false</argument>
+	    <argument>-Xmx2048m</argument>
             <logpath>%BASE%/integrasjonspunkt-logs</logpath>
 			<log mode="roll-by-size">
 				<sizeThreshold>10240</sizeThreshold>
