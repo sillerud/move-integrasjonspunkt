@@ -5,12 +5,12 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import lombok.RequiredArgsConstructor;
 import no.difi.meldingsutveksling.domain.sbdh.SBDUtil;
-import no.difi.meldingsutveksling.nextmove.ConversationDirection;
 import no.difi.meldingsutveksling.nextmove.NextMoveOutMessage;
 import no.difi.meldingsutveksling.receipt.*;
 
-import java.util.List;
 import java.util.Optional;
+
+import static org.junit.Assert.assertTrue;
 
 @RequiredArgsConstructor
 public class MessageOnInternalQueueIsExpiredSteps {
@@ -19,6 +19,7 @@ public class MessageOnInternalQueueIsExpiredSteps {
     private final NextMoveOutMessage msg;
     private final ConversationService conversationService;
     private final MessageStatusFactory messageStatusFactory;
+    private final MessageStatusRepository messageStatusRepository;
     private final Conversation conversation;
     private final ConversationRepository repo;
 
@@ -42,12 +43,6 @@ public class MessageOnInternalQueueIsExpiredSteps {
         Optional<Conversation> conv = conversationService.findConversation(msg.getConversationId());
         conversationService.registerStatus(msg.getConversationId(), messageStatusFactory.getMessageStatus(ReceiptStatus.LEVETID_UTLOPT));
         conv.ifPresent(conversationService::markFinished);
-        // registrer status og setter finsihedflag. Bør vel egentlig settast mot ein mock. Mock av ConversationRepo ?
-        // //Må vel sjekkast med assert: Korleis kan ein sjekke at det faktisk er satt som forventa?
-        List<Conversation> convList = repo.findByConversationIdAndDirection(msg.getConversationId(), ConversationDirection.OUTGOING);
-
-
-        // må kanskje inn i messageStatusFactory for å hente det
-        // kvifor blir det void som returntype når eg sette ei liste av messagestatus for å lagre objektet?
+        assertTrue(conv.get().getMessageStatuses().stream().anyMatch(s -> ReceiptStatus.LEVETID_UTLOPT.toString().equals(s.getStatus())));
     }
 }
