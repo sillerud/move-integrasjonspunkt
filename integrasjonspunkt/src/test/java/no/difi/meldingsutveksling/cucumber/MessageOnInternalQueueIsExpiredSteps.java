@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import no.difi.meldingsutveksling.domain.sbdh.SBDUtil;
 import no.difi.meldingsutveksling.nextmove.NextMoveOutMessage;
 import no.difi.meldingsutveksling.receipt.*;
+import org.junit.Before;
 
 import java.util.Optional;
 
@@ -16,12 +17,20 @@ import static org.junit.Assert.assertTrue;
 public class MessageOnInternalQueueIsExpiredSteps {
 
     private final SBDUtil sbdUtil;
-    private final NextMoveOutMessage msg;
     private final ConversationService conversationService;
     private final MessageStatusFactory messageStatusFactory;
     private final MessageStatusRepository messageStatusRepository;
-    private final Conversation conversation;
+
     private final ConversationRepository repo;
+
+    NextMoveOutMessage msg;
+    Conversation conversation;
+    @Before
+    public void setUp() {
+         msg = new NextMoveOutMessage();
+         conversation = new Conversation();
+    }
+
 
     @Given("^a message exists on the internal queue$")
     public void aMessageExistsOnTheInternalQueue() {
